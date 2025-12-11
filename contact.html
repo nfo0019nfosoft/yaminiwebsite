@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yamini Multi Speciality Hospital</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/contact.css">
+
+</head>
+
+<body>
+
+
+<header>
+  <div class="nav-container">
+
+    
+    <div class="logo">
+      <img src="image.jpg" alt="Yamini Multi Speciality Hospital Logo">
+    </div>
+
+    
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+      
+      <li class="services-dropdown">
+    <a href="#" class="nav-link">Services ▾</a>
+
+    <div class="dropdown">
+
+        <ul>
+
+            <!-- ===================== -->
+            <!-- 1. PAEDIATRICS        -->
+            <!-- ===================== -->
+            <li class="submenu-item">
+
+                <!-- Clickable main link -->
+                <a href="paediatrics.html" class="main-link">Paediatrics</a>
+
+                <!-- Toggle Arrow -->
+                <span class="toggle" onclick="toggleMenu('paediatricsMenu')">▸</span>
+
+                <!-- Submenu -->
+                <ul id="paediatricsMenu" class="submenu">
+                    <li>NICU (Neonatal Intensive Care)</li>
+                    <li>PICU (Paediatric Intensive Care)</li>
+                    <li>New-born Care</li>
+                    <li>Jaundice Treatment</li>
+                    <li>Preterm Baby Care</li>
+                    <li>Vaccination</li>
+                    <li>Fever – Cold – Cough – Flu</li>
+                    <li>Asthma – Respiratory Problems</li>
+                    <li>Skin Allergy & Rashes</li>
+                    <li>Stomach Pain – Diarrhea – Vomiting</li>
+                    <li>Skin Infections</li>
+                    <li>ENT Infections</li>
+                    <li>Growth & Development</li>
+                    <li>Seizures / Headache</li>
+                    <li>Urinary & Kidney Problems</li>
+                    <li>Bone & Joint Problems</li>
+                    <li>Paediatric Surgeries</li>
+                    <li>Laparoscopic Surgeries</li>
+                    <li>Tonsillectomy / Adenoidectomy</li>
+                    <li>Hernia / Hydrocele</li>
+                </ul>
+
+            </li>
+
+            <hr>
+
+            <!-- ===================== -->
+            <!-- 2. ORTHOPAEDIC        -->
+            <!-- ===================== -->
+            <li class="submenu-item">
+
+                <a href="orthopaedic.html" class="main-link">Orthopaedic</a>
+
+                <span class="toggle" onclick="toggleMenu('orthoMenu')">▸</span>
+
+                <ul id="orthoMenu" class="submenu">
+                    <li>Trauma Management</li>
+                    <li>Total Knee Replacement</li>
+                    <li>Total Hip Replacement</li>
+                    <li>Shoulder Replacement</li>
+                    <li>Revision Surgeries</li>
+                    <li>Fracture Care</li>
+                    <li>Arthritis Treatment</li>
+                    <li>Sports Injuries</li>
+                    <li>Joint Pain Evaluation</li>
+                    <li>Back & Neck Pain</li>
+                    <li>Disc Problems</li>
+                    <li>Spine Fractures</li>
+                    <li>Complex Fractures</li>
+                    <li>Shoulder Dislocation</li>
+                    <li>Wrist & Elbow Disorders</li>
+                    <li>Tendon Injuries</li>
+                </ul>
+
+            </li>
+
+            <hr>
+
+            <!-- ===================== -->
+            <!-- 3. GYNAECOLOGY        -->
+            <!-- ===================== -->
+            <li class="submenu-item">
+
+                <a href="gyn.html" class="main-link">Gynaecology</a>
+
+                <span class="toggle" onclick="toggleMenu('gynMenu')">▸</span>
+
+                <ul id="gynMenu" class="submenu">
+                    <li>Menstrual Disorders</li>
+                    <li>PCOS / PCOD</li>
+                    <li>Thyroid / BP Issues</li>
+                    <li>White Discharge</li>
+                    <li>Uterine Fibroids</li>
+                    <li>Ovarian Cysts</li>
+                    <li>Endometriosis</li>
+                    <li>Pelvic Pain</li>
+                    <li>Vaginal Infections</li>
+                    <li>Pregnancy Care</li>
+                    <li>Normal Delivery</li>
+                    <li>C-Section</li>
+                    <li>High-risk Pregnancy</li>
+                    <li>Laparoscopic Surgeries</li>
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
+</li>
+
+
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+  </div>
+</header>
+
+
+<div class="contact-wrapper">
+    <h1>Yamini Multi Speciality Hospital</h1>
+    <p class="subtitle">Get in touch with us for appointments and enquiries</p>
+
+    <div class="contact-container">
+     
+      <div class="contact-form">
+        <h2>Enter Your Details</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+
+      
+      <div class="contact-info">
+    
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div class="info-text">
+            <h3>Call Now</h3>
+            <p>+91 800 8718 777,<br>   +91 800 8742 777</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div class="info-text">
+            <h3>Address</h3>
+            <p>
+              6-12-14 &amp; 6-12-12,13<br>
+              Near Ganesh Temple,<br>
+              Kothagudem, Telangana
+            </p>
+          </div>
+        </div>
+
+        
+          </div>
+        </div>
+
+        <div class="map-box">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30434.918487791958!2d80.59287672271589!3d17.537809507268868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6-12-14%20%266-12-12%2C13%20Near%20Ganesh%20Temple%2C%20Kothagudem%2C%20Telangana!5e0!3m2!1sen!2sin!4v1765279402677!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- LOGO -->
+    <div class="footer-logo-box">
+      <img src="Yamini Logo.jpg" class="footer-logo">
+      <p>For All Healthcare Needs of Children, Women & Orthopaedic Patients.</p>
+    </div>
+
+    
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+      <h3>QUICK LINKS</h3>
+      <a href="home.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+      <h3>SERVICES</h3>
+      <a href="paediatrics.html">Paediatrics & Neonatology</a>
+      <a href="orthopaedic.html">Orthopaedic </a>
+      <a href="gyn.html">Gynaecology & Obstetrics</a>
+      
+    </div>
+    <!-- CONTACT SECTION -->
+    <div class="footer-box">
+      <h3>CONTACT</h3>
+      <p class="footer-address">
+        
+        <p>Yamini Multi Speciality Hospital</p>
+        <p>6-12-14 &6-12-12,13 Near Ganesh Temple, Kothagudem, Telangana
+    
+
+      
+
+      <h3>FOLLOW US</h3>
+
+      <div class="social-icons">
+        <a href="#" class="social instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="social youtube"><i class="bi bi-youtube"></i></a>
+        <a href="#" class="social facebook"><i class="bi bi-facebook"></i></a>
+
+        <!-- WHATSAPP POPUP BUTTON -->
+        <a onclick="openWhatsApp()" class="social whatsapp">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+  <hr>
+  
+  <p class="footer-copy">©2025 | Yamini MultiSpeciality Hospital | All Rights Reserved</p>
+</footer>
+</body>
+</html>
