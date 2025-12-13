@@ -9,8 +9,9 @@
     body{
       margin:0;
       font-family:Arial, Helvetica, sans-serif;
-      background:#9CA7B7
+       background:#9CA7B7
     }
+
     /* TOP BAR */
 .top-bar {
     width: 100%;
@@ -86,121 +87,9 @@
       color:var(--accent);
     }
 
-    
-/* Blue Appointment Button */
-.btn-appointment-nav {
-  background: #08254c;        /* dark blue */
-  color: white !important;
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-weight: 600;
-  border: 2px solid #00008B;
-  transition: 0.3s;
-}
-
-.btn-appointment-nav:hover {
-  background: white;
-  color: #08254c !important;
-  border-color: #08254c;
-  transform: scale(1.06);
-}
-.nav-links {
-  list-style: none !important;   /* Removes bullets */
-  padding: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.nav-links li {
-  list-style: none !important;
-}
 
 
-     
-
-    footer{
-      background:#08254c; 
-      color:white; 
-      padding:40px 20px; 
-      margin-top:40px;
-    }
-    footer a{
-      color:white;
-      text-decoration:none;
-    }
-    footer a:hover{
-      text-decoration:underline;
-    }
-   
-
-
-
- /* DROPDOWN */
-    /* SERVICES DROPDOWN PARENT */
-.services-dropdown {
-  position: relative;
-}
-
-/* DROPDOWN BOX */
-.services-dropdown .dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 220px;
-  background: #08254c;      /* blue background */
-  border-radius: 12px;      /* <<< rounded dropdown */
-  padding: 10px 0;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  display: none;
-  z-index: 999;
-}
-
-/* SHOW WHEN HOVER */
-.services-dropdown:hover .dropdown {
-  display: block;
-}
-
-/* REMOVE BULLETS */
-.services-dropdown .dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* SERVICE MENU ITEMS */
-.service-item {
-  display: block;
-  padding: 10px 18px;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: 0.3s ease;
-  border-radius: 8px;
-  margin: 3px 8px;
-  white-space: nowrap;   /* <<< keeps all text in ONE line */
-}
-
-
-/* HOVER EFFECT */
-.service-item:hover {
-  background: #08254c;      /* hover blue */
-  color: white !important;
-  padding-left: 22px;       /* slight slide-in effect */
-}
-
-
-
-
-.title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 40px 0;
-    color: #08254c;
-}
-.gyn-wrapper {
+    .gyn-wrapper {
     width: 90%;
     max-width: 1100px;
     margin: auto;
@@ -242,6 +131,174 @@
 }
 
 .gyn-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .gyn-box,
+    .gyn-box.reverse {
+        flex-direction: column;
+    }
+
+    .gyn-img {
+        height: 240px;
+    }
+}
+
+    /* SERVICES DROPDOWN PARENT */
+.services-dropdown {
+  position: relative;
+}
+
+/* DROPDOWN BOX */
+.services-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #08254c;      /* blue background */
+  border-radius: 12px;      /* <<< rounded dropdown */
+  padding: 10px 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
+}
+
+/* SHOW WHEN HOVER */
+.services-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* REMOVE BULLETS */
+.services-dropdown .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* SERVICE MENU ITEMS */
+  .service-item {
+  display: block;
+  padding: 10px 18px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  margin: 3px 8px;
+  white-space: nowrap;   /* <<< keeps all text in ONE line */
+}
+
+
+/* HOVER EFFECT */
+.service-item:hover {
+  background: #08254c;      /* hover blue */
+  color: white !important;
+  padding-left: 22px;       /* slight slide-in effect */
+}
+
+/* Blue Appointment Button */
+.btn-appointment-nav {
+  background: #08254c;        /* dark blue */
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #08254c;
+  transition: 0.3s;
+}
+
+.btn-appointment-nav:hover {
+  background: white;
+  color: #08254c !important;
+  border-color: #08254c;
+  transform: scale(1.06);
+}
+.nav-links {
+  list-style: none !important;   /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-links li {
+  list-style: none !important;
+}
+
+
+     
+
+    footer{
+      background:#08254c; 
+      color:white; 
+      padding:40px 20px; 
+      margin-top:40px;
+    }
+    footer a{
+      color:white;
+      text-decoration:none;
+    }
+    footer a:hover{
+      text-decoration:underline;
+    }
+   
+
+
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 40px 0;
+    color: #08254c;
+}
+.medwrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.med-box {
+    display: flex;
+    background: #ffffff;
+    margin-bottom: 40px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.med-box.reverse {
+    flex-direction: row-reverse;
+}
+
+.med-img {
+    flex: 50%;
+    max-height: 350px;
+}
+
+.med-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.med-content {
+    flex: 50%;
+    padding: 25px;
+}
+
+.med-content h3 {
+    font-size: 22px;
+    color: #08254c;
+    margin-bottom: 10px;
+}
+
+.med-content p {
     font-size: 16px;
     color: #444;
     line-height: 1.5;
@@ -421,10 +478,10 @@
   border-radius: 12px;
   display: inline-block;   /* ALLOWS box to shrink */
 } /* Moves logo up */
-
 .footer-logo-box p {
   margin-top: 15px;   /* Increase this number for more gap */
 }
+
 
 /* Box styling */
 .footer-box h3 {
@@ -493,7 +550,3 @@
     height: 120px;
   }
 }
-
-
-
-

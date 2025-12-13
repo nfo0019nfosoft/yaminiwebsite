@@ -8,140 +8,57 @@
   <!-- BOOTSTRAP 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="stylesheet" href="css/gyn.css">
 
 </head>
 
 <body>
+    
+
+   <div class="top-bar">
+    <div class="top-left">
+        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp; | &nbsp;
+        <i class="fa-solid fa-phone-volume top-icon"></i> +91 8008718777
+    </div>
+
+    <div class="top-right">
+        <i class="fa-solid fa-location-dot top-icon"></i> Kothagudem, Telangana
+    </div>
+</div>
 
   <header>
     <div class="nav-container">
-
-    
-    <div class="logo">
-      <img src="image.jpg" alt="Yamini Multi Speciality Hospital Logo">
+        <div class="logo">
+      <img src="x.jpg" alt="Yamini Multi Speciality Hospital Logo">
       </div>
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
+      <li class="services-dropdown">
+  <a href="#" class="nav-link">Services ▾</a>
 
-        <li class="services-dropdown">
-    <a href="#" class="nav-link">Services ▾</a>
-
-    <div class="dropdown">
-
-        <ul>
-
-            <!-- ===================== -->
-            <!-- 1. PAEDIATRICS        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <!-- Clickable main link -->
-                <a href="paediatrics.html" class="main-link">Paediatrics</a>
-
-                <!-- Toggle Arrow -->
-                <span class="toggle" onclick="toggleMenu('paediatricsMenu')">▸</span>
-
-                <!-- Submenu -->
-                <ul id="paediatricsMenu" class="submenu">
-                    <li>NICU (Neonatal Intensive Care)</li>
-                    <li>PICU (Paediatric Intensive Care)</li>
-                    <li>New-born Care</li>
-                    <li>Jaundice Treatment</li>
-                    <li>Preterm Baby Care</li>
-                    <li>Vaccination</li>
-                    <li>Fever – Cold – Cough – Flu</li>
-                    <li>Asthma – Respiratory Problems</li>
-                    <li>Skin Allergy & Rashes</li>
-                    <li>Stomach Pain – Diarrhea – Vomiting</li>
-                    <li>Skin Infections</li>
-                    <li>ENT Infections</li>
-                    <li>Growth & Development</li>
-                    <li>Seizures / Headache</li>
-                    <li>Urinary & Kidney Problems</li>
-                    <li>Bone & Joint Problems</li>
-                    <li>Paediatric Surgeries</li>
-                    <li>Laparoscopic Surgeries</li>
-                    <li>Tonsillectomy / Adenoidectomy</li>
-                    <li>Hernia / Hydrocele</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 2. ORTHOPAEDIC        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="orthopaedic.html" class="main-link">Orthopaedic</a>
-
-                <span class="toggle" onclick="toggleMenu('orthoMenu')">▸</span>
-
-                <ul id="orthoMenu" class="submenu">
-                    <li>Trauma Management</li>
-                    <li>Total Knee Replacement</li>
-                    <li>Total Hip Replacement</li>
-                    <li>Shoulder Replacement</li>
-                    <li>Revision Surgeries</li>
-                    <li>Fracture Care</li>
-                    <li>Arthritis Treatment</li>
-                    <li>Sports Injuries</li>
-                    <li>Joint Pain Evaluation</li>
-                    <li>Back & Neck Pain</li>
-                    <li>Disc Problems</li>
-                    <li>Spine Fractures</li>
-                    <li>Complex Fractures</li>
-                    <li>Shoulder Dislocation</li>
-                    <li>Wrist & Elbow Disorders</li>
-                    <li>Tendon Injuries</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 3. GYNAECOLOGY        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="gyn.html" class="main-link">Gynaecology</a>
-
-                <span class="toggle" onclick="toggleMenu('gynMenu')">▸</span>
-
-                <ul id="gynMenu" class="submenu">
-                    <li>Menstrual Disorders</li>
-                    <li>PCOS / PCOD</li>
-                    <li>Thyroid / BP Issues</li>
-                    <li>White Discharge</li>
-                    <li>Uterine Fibroids</li>
-                    <li>Ovarian Cysts</li>
-                    <li>Endometriosis</li>
-                    <li>Pelvic Pain</li>
-                    <li>Vaginal Infections</li>
-                    <li>Pregnancy Care</li>
-                    <li>Normal Delivery</li>
-                    <li>C-Section</li>
-                    <li>High-risk Pregnancy</li>
-                    <li>Laparoscopic Surgeries</li>
-                </ul>
-
-            </li>
-
-        </ul>
-
-    </div>
+  <div class="dropdown">
+    <ul>
+      <li><a href="paediatrics.html" class="service-item">Paediatrics & neonatology</a></li>
+      <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
+      <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics</a></li>
+       <li><a href="general.html" class="service-item">General Medicine </a></li>
+    </ul>
+  </div>
 </li>
 
-        <li><a href="contact.html">Contact  Us </a></li>
-      </ul>
+     <li><a href="contact.html">Contact Us</a></li>
+      
+      <li><a href="contact.html" class="btn-appointment-nav"> Book Appointment</a></li>
+    </ul>
+
     </div>
   </header>
 
+  
 
 
     <h2 class="title">Gynaecology & Obstetrics Services</h2>
@@ -151,33 +68,35 @@
     <!-- 1. Menstrual Disorders -->
     <section class="gyn-box">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
         </div>
 
         <div class="gyn-content">
             <h3>Menstrual Disorders Treatment</h3>
             <p>
-                Treatment for irregular cycles, heavy bleeding and severe cramps.Menstrual disorders are a wide range of conditions that involve problems with a woman's normal menstrual cycle, including irregular periods, heavy bleeding, painful menstruation, or absent periods
-                Includes ultrasound evaluation & hormone testing.
-                Personalized medication and lifestyle correction.
-                Focus on restoring pain-free and regular menstruation.
+                Menstrual disorders include irregular cycles, heavy bleeding and severe cramps that affect daily life.
+                Ultrasound and hormone evaluation help identify underlying causes like PCOS or thyroid imbalance.
+                Treatment is customized to correct cycle irregularity and reduce discomfort. Nutritional and lifestyle
+                counseling support long-term hormonal stability. Medications help regulate the menstrual cycle safely.
+                Early diagnosis prevents complications such as anemia and fertility problems. Our goal is restoring
+                a healthy, predictable menstrual cycle for overall well-being.
             </p>
         </div>
     </section>
 
-    <!-- 2. PCOS (reverse) -->
+    <!-- 2. PCOS / PCOD -->
     <section class="gyn-box reverse">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
         </div>
-
         <div class="gyn-content">
             <h3>PCOS / PCOD Management</h3>
             <p>
-                Comprehensive evaluation of hormonal imbalance and metabolic issues.PCOD (Polycystic Ovarian Disease) and PCOS (Polycystic Ovary Syndrome) are both hormonal conditions affecting women, but they differ in severity and scope. PCOD is a more common, generally milder condition focused on ovarian dysfunction, while PCOS is a complex, serious metabolic and endocrine syndrome with broader long-term health implications
-                Helps manage irregular cycles, acne, hair growth & weight issues.
-                Includes tailored medications, diet and lifestyle plans.
-                Supports long-term hormonal balance & fertility.
+                PCOS causes irregular periods, weight gain, acne and hormonal imbalance in many women. Diagnosis involves
+                hormonal profiling and pelvic ultrasound. Treatment focuses on restoring ovulation and cycle regularity.
+                Lifestyle changes such as diet and exercise greatly improve hormonal health. Medications help balance
+                insulin levels and regulate periods. Early management prevents long-term risks like diabetes and infertility.
+                Continuous monitoring ensures steady improvement and better reproductive outcomes.
             </p>
         </div>
     </section>
@@ -185,71 +104,299 @@
     <!-- 3. Thyroid & High BP -->
     <section class="gyn-box">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
         </div>
-
         <div class="gyn-content">
             <h3>Thyroid & High Blood Pressure</h3>
             <p>
-                Evaluation & management of thyroid disorders in women.Blood pressure (BP) is the force of blood pushing against the walls of your arteries as your heart pumps blood throughout your body. It is a vital sign that indicates the efficiency of your cardiovascular system
-                Treatment for pregnancy-related BP and long-term hypertension.
-                Prevents complications for both mother and baby.High blood pressure (hypertension) is often called the "silent killer" because most people experience no symptoms, even at dangerously high levels.
-                Regular monitoring ensures safe outcomes.
+                Thyroid disorders can lead to fatigue, weight changes and menstrual problems. BP issues affect pregnancy
+                and overall health. We perform detailed hormonal tests and regular BP monitoring. Treatment includes
+                safe medications and lifestyle modifications. Early control prevents complications during pregnancy.
+                Ongoing follow-up ensures stable health. Proper management restores hormonal balance and improves energy.
             </p>
         </div>
     </section>
 
-    <!-- 4. Vaginal / UTI (reverse) -->
+    <!-- 4. White Discharge -->
     <section class="gyn-box reverse">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
         </div>
+        <div class="gyn-content">
+            <h3>White Discharge Treatment</h3>
+            <p>
+                Abnormal discharge may indicate infections, hormonal issues or pelvic conditions. We perform examination
+                and necessary lab tests to detect the cause. Treatment includes antibiotics or antifungal medications.
+                Hygiene guidance prevents recurrence and irritation. Early care avoids spread to the uterus or tubes.
+                Patients receive supportive counseling for comfort and confidence. Our aim is restoring normal, healthy
+                vaginal function safely.
+            </p>
+        </div>
+    </section>
 
+    <!-- 5. Uterine Fibroids -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Uterine Fibroids</h3>
+            <p>
+                Fibroids are non-cancerous growths that cause heavy bleeding, pelvic pain and infertility. Diagnosis is
+                done through ultrasound and medical evaluation. Treatment ranges from medication to minimally invasive
+                surgery depending on size and symptoms. Managing fibroids early prevents anemia and pregnancy issues.
+                Regular monitoring ensures they don’t grow or return. Our treatment focuses on long-term comfort and
+                preserving fertility whenever possible.
+            </p>
+        </div>
+    </section>
+
+    <!-- 6. Ovarian Cyst -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Ovarian Cyst Diagnosis & Treatment</h3>
+            <p>
+                Ovarian cysts can cause pelvic pain, delayed periods and hormonal fluctuations. We use ultrasound to
+                evaluate their size and type. Small cysts often resolve with medication and monitoring. Larger or
+                painful cysts may require laparoscopy for safe removal. Early treatment avoids complications like
+                rupture or torsion. Our care plan protects ovarian function and future fertility.
+            </p>
+        </div>
+    </section>
+
+    <!-- 7. Endometriosis -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Endometriosis</h3>
+            <p>
+                Endometriosis causes severe menstrual pain, infertility and chronic pelvic discomfort. Diagnosis requires
+                medical history, ultrasound and sometimes laparoscopy. Treatment includes hormonal therapies to reduce
+                pain and inflammation. Surgical correction may be needed for severe cases. Early care improves fertility
+                chances and reduces long-term complications. We provide continuous support for symptom management and
+                overall well-being.
+            </p>
+        </div>
+    </section>
+
+    <!-- 8. Pelvic Pain -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Pelvic Pain Evaluation</h3>
+            <p>
+                Pelvic pain can arise from infections, cysts, uterus conditions or intestinal issues. We conduct a
+                thorough evaluation including scans and lab tests. Treatment targets the root cause to ensure proper
+                recovery. Pain relief measures help improve daily function. Early diagnosis prevents chronic conditions.
+                Guidance is provided on lifestyle, posture and reproductive care. Our approach ensures safe and complete
+                healing.
+            </p>
+        </div>
+    </section>
+
+    <!-- 9. Cervical Screening -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Cervical Screening (Pap Smear)</h3>
+            <p>
+                A Pap smear detects early cell changes that can lead to cervical cancer. The test is quick, painless and
+                highly effective. Regular screening helps catch abnormalities early for timely treatment. HPV testing
+                may be advised alongside Pap tests. Early detection greatly improves treatment outcomes. We ensure a
+                safe, comfortable screening experience. Essential for every woman’s reproductive health.
+            </p>
+        </div>
+    </section>
+
+    <!-- 10. Vaginal Infections -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+
+        </div>
         <div class="gyn-content">
             <h3>Vaginal Infections / UTI Treatment</h3>
             <p>
-                Treatment for itching, discharge and burning urination.vaginal relates to the vagina, which is an elastic, muscular canal that is an essential part of the female reproductive tract. It serves multiple critical biological functions throughout a woman's life.
-                Lab tests ensure accurate diagnosis.
-                Proper medication & hygiene guidance.Vaginal delivery offers numerous advantages for both the mother and the baby
-                Restores comfort and long-term vaginal health.
+                Vaginal infections cause itching, odor, burning and discharge, while UTIs affect urinary comfort.
+                Diagnosis is done through swab tests and urine analysis. Treatment includes antibiotics or antifungal
+                medication. Proper hygiene and hydration reduce recurrence risk. Ignoring symptoms may lead to kidney
+                infections. Early care restores comfort and prevents complications. Our approach ensures fast relief and
+                long-term protection.
             </p>
         </div>
     </section>
 
-    <!-- 5. Normal Delivery -->
+    <!-- 11. Family Planning -->
     <section class="gyn-box">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
         </div>
+        <div class="gyn-content">
+            <h3>Family Planning</h3>
+            <p>
+                Family planning helps couples choose safe and effective pregnancy spacing methods. Options include
+                hormonal pills, copper-T, implants and permanent methods. We provide personalized counseling based on
+                age, health and future pregnancy plans. Proper planning prevents complications. Education ensures safe
+                sexual and reproductive health. Our goal is empowering families to make informed decisions confidently.
+            </p>
+        </div>
+    </section>
 
+    <!-- 12. Menopause Management -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Menopause Management</h3>
+            <p>
+                Menopause causes hot flashes, sleep issues, mood swings and bone weakness. Hormone evaluation helps guide
+                safe treatment options. Lifestyle modifications improve comfort significantly. Supplements may be
+                recommended for bone protection. Regular monitoring prevents long-term effects like osteoporosis.
+                Compassionate care helps women adjust with confidence. We support physical and emotional well-being.
+            </p>
+        </div>
+    </section>
+
+    <!-- 13. High Risk Pregnancy -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+ <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>High-Risk Pregnancy Care</h3>
+            <p>
+                High-risk pregnancies require close monitoring to protect mother and baby. Conditions like hypertension,
+                diabetes and thyroid disorders are managed with expert care. Frequent scans ensure normal baby growth.
+                Early detection of complications allows timely interventions. A specialized team is available 24/7 for
+                emergencies. Personalized pregnancy plans ensure safety. Our focus is a healthy and successful delivery.
+            </p>
+        </div>
+    </section>
+
+    <!-- 14. Normal Delivery -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
         <div class="gyn-content">
             <h3>Normal Delivery</h3>
             <p>
-                Safe natural birthing with continuous monitoring.
-                Experienced obstetric team ensures comfort & safety.
-                Pain-relief options and birthing guidance available.
-                Focus on healthy labour & joyful childbirth.
-                A normal delivery, medically known as a vaginal birth or spontaneous vaginal delivery (SVD), is the natural process of giving birth through the birth canal (vagina) without surgical intervention like a C-section. It is considered the optimal and safest method of childbirth for most pregnancies
+                Normal delivery is encouraged whenever safe for mother and baby. Continuous monitoring helps identify
+                progress and ensure safety. Pain-relief options are available for comfort. Skilled guidance supports
+                smooth labour. Faster postpartum recovery is a key advantage. Mother and baby bonding begins early.
+                Our team ensures a safe and positive birthing experience.
             </p>
         </div>
     </section>
 
-    <!-- 6. C-Section (reverse) -->
+    <!-- 15. Painless Delivery -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+             </div>
+        <div class="gyn-content">
+            <h3>Painless / Epidural Delivery</h3>
+            <p>
+                Epidural anesthesia significantly reduces labour pain and stress. Mothers stay active, calm and alert
+                during childbirth. This enhances the birthing experience and reduces exhaustion. The procedure is safe
+                for both mother and baby when monitored correctly. It helps labour progress smoothly. Faster recovery
+                and improved comfort make it a preferred option. Our team ensures safe administration and monitoring.
+            </p>
+        </div>
+    </section>
+
+    <!-- 16. C-Section -->
     <section class="gyn-box reverse">
         <div class="gyn-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg" alt="">
-        </div>
-
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+             </div>
         <div class="gyn-content">
             <h3>Cesarean Section (C-Section)</h3>
             <p>
-                A Cesarean section (C-section) is a surgical procedure used to deliver a baby through incisions made in the mother's abdomen and uterus, rather than through the vagina. It is a common procedure that can be planned in advance or performed as an emergency based on medical necessity.Safe surgical delivery when medically needed.
-                Performed in a sterile, modern operating theatre.
-                Quick-recovery protocols and post-operative care included
-                Ensures a safe birth in emergency & high-risk cases.
+                A C-section is performed when normal delivery is unsafe for mother or baby. Our surgical team ensures a
+                controlled, safe procedure with minimal discomfort. Pain management improves early mobility and recovery.
+                Follow-up care focuses on wound healing and breastfeeding support. This procedure prevents complications
+                in high-risk pregnancies. The goal is delivering a healthy baby safely. We guide mothers through every
+                step with compassion.
             </p>
         </div>
     </section>
+
+    <!-- 17. Post Delivery Care -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Post-Delivery Recovery Support</h3>
+            <p>
+                Post-delivery care ensures mothers recover physically and emotionally after childbirth. Guidance on
+                breastfeeding, nutrition and wound care is provided. Early identification of postpartum depression is
+                essential. Support improves confidence during the newborn phase. Gentle exercises help regain strength.
+                Follow-up visits ensure smooth healing. Our care supports a healthy transition into motherhood.
+            </p>
+        </div>
+    </section>
+
+    <!-- 18. Laparoscopic Hysterectomy -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+             <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Laparoscopic Hysterectomy (TLH)</h3>
+            <p>
+                TLH removes the uterus using minimally invasive techniques. Smaller cuts lead to faster recovery and
+                minimal scarring. Recommended for fibroids, heavy bleeding or uterine disorders. Patients experience
+                less pain and quicker mobility post-surgery. Regular follow-up ensures smooth healing. This procedure
+                greatly improves quality of life. A safe, effective modern surgical option.
+            </p>
+        </div>
+    </section>
+
+    <!-- 19. Laparoscopic Myomectomy -->
+    <section class="gyn-box">
+        <div class="gyn-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Laparoscopic Myomectomy</h3>
+            <p>
+                Myomectomy removes fibroids while preserving the uterus. Ideal for women wishing to maintain fertility.
+                Minimally invasive surgery reduces pain and blood loss. It restores normal menstrual cycles and reduces
+                pelvic pain. Recovery is quicker compared to open surgery. Regular monitoring ensures fibroids do not
+                return. A highly effective treatment for symptomatic fibroids.
+            </p>
+        </div>
+    </section>
+
+    <!-- 20. Laparoscopic Ovarian Cystectomy -->
+    <section class="gyn-box reverse">
+        <div class="gyn-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="">
+        </div>
+        <div class="gyn-content">
+            <h3>Laparoscopic Ovarian Cystectomy</h3>
+            <p>
+                This procedure removes ovarian cysts safely while preserving the ovary. Minimally invasive surgery
+                ensures faster recovery and minimal discomfort. Recommended when cysts cause pain or persist long-term.
+                Helps prevent rupture and torsion. The surgery improves hormonal balance and reproductive health.
+                Regular follow-up supports complete healing. A precise and effective treatment option.
+            </p>
+        </div>
+    </section>
+
+</div>
 
 </div>
 </body>
@@ -263,7 +410,7 @@
 
     <!-- LOGO -->
     <div class="footer-logo-box">
-      <img src="Yamini Logo.jpg" class="footer-logo">
+      <img src="x.jpg" class="footer-logo">
       <p>For All Healthcare Needs of Children, Women & Orthopaedic Patients.</p>
     </div>
 
@@ -284,6 +431,8 @@
       <a href="paediatrics.html">Paediatrics & Neonatology</a>
       <a href="orthopaedic.html">Orthopaedic </a>
       <a href="gyn.html">Gynaecology & Obstetrics</a>
+      <a href="general.html">General Medicine</a>
+      
       
     </div>
     <!-- CONTACT SECTION -->

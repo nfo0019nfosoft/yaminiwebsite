@@ -1,8 +1,8 @@
 :root{
-      --primary:#00008B;
-      --accent:#0000B8;
+      --primary:#08254c;
+      --accent:#08254c;
       --text-dark:rgb(225, 34, 66);
-      --header-dark:#00008B;
+      --header-dark:#08254c;
     }
 
     body{
@@ -39,11 +39,13 @@
       height:110px;
       width:auto;
       border-radius:2px;
+      padding-left: 40px;
     }
 
     .nav-links{
       display:flex;
       gap:18px;
+      
       
    
 
@@ -57,11 +59,12 @@
     }
 
     .nav-links a{
-      font-size:15px;
+      font-size:20px;
       font-weight:600;
       color:var(--header-dark);
       text-decoration:none;
       padding:6px 8px;
+       margin-left: 25px;
     }
 
     .nav-links a:hover{
@@ -69,40 +72,97 @@
     }
 
     /* DROPDOWN */
-    .dropdown{
-      display:none;
-      position:absolute;
-      top:100%;
-      left:0;
-      min-width:260px;
-      background:white;
-      border-radius:6px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.15);
-      padding:10px 0;
-      z-index:20;
-    }
+    /* --------------------------------------------- */
+/* SERVICES DROPDOWN - FULL WORKING CSS          */
+/* --------------------------------------------- */
 
-    .nav-links > li{
-      position:relative;
-    }
+/* Position Services menu item */
+.services-dropdown {
+  position: relative;
+}
 
-    .nav-links li:hover .dropdown{
-      display:block;
-    }
+/* Dropdown box */
+.services-dropdown .dropdown {
+  position: absolute;
+  top: 100%;             /* appears directly below Services */
+  left: 0;
+  min-width: 220px;
+  background: #08254c;   /* BLUE dropdown background */
+  border-radius: 12px;
+  padding: 8px 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: none;         /* hidden by default */
+  z-index: 999;
+}
 
-    .dropdown ul{
-      list-style:none;
-      max-height:300px;
-      overflow-y:auto;
-      margin:0;
-      padding:0;
-    }
+/* Show dropdown on hover */
+.services-dropdown:hover .dropdown {
+  display: block;
+}
 
-    .dropdown li{
-      padding:8px 15px;
-      font-size:14px;
-      color:#333;
+/* Remove bullet points */
+.services-dropdown .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Service items default style */
+.service-item {
+  display: block;
+  padding: 10px 15px;
+  color: white;                 /* default text white */
+  font-size: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.service-item:hover {
+  background: #08254c;          /* lighter blue hover */
+  color: white !important;      /* text stays white */
+  padding-left: 20px;           /* smooth slide effect (optional) */
+}
+
+/* Optional: Space between dropdown and menu */
+.services-dropdown .dropdown {
+  margin-top: 2px;
+}
+
+/* TOP BAR */
+.top-bar {
+    width: 100%;
+    background: #08254c;           /* hospital blue */
+    color: white;
+    padding: 4px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left i,
+.top-right i {
+    margin-right: 10px;
+    color:white;                /* accent color */
+}
+
+.top-left, .top-right {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+        padding: 6px 0;
     }
+}
 
     .dropdown li:hover{
       background:#eef7ff;
@@ -222,7 +282,7 @@
     width: 150px;
     margin: 15px auto 20px;   /* centers the button */
     padding: 10px 0;
-    background: #0b3a60;
+    background: #08254c;
     color: white;
     font-weight: 600;
     border-radius: 20px;
@@ -232,97 +292,188 @@
 }
 
 .know-btn:hover {
-    background: #074066;
+    background: #08254c;
     transform: scale(1.05);
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Carousel full screen */
+.hero .carousel-item img.hero-img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(65%);   /* Darkens image for better text visibility */
+}
+
+/* ------------------------------
+   TEXT OVERLAY
+------------------------------- */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: white;
+  max-width: 500px;
+}
+#quoteText {
+  color:white!important;
+}
+
+.hero-overlay h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Text fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ------------------------------
+   BOOK APPOINTMENT BUTTON
+------------------------------- */
+.btn-appointment {
+  background-color:#08254c;
+  padding: 12px 28px;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-appointment:hover {
+  background-color: #09254c;
+  transform: scale(1.05);
+  
+}
+
+/* ------------------------------
+   CAROUSEL CONTROLS
+------------------------------- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* White icons */
+}
+
+/* ------------------------------
+   FOOTER (Optional clean-up)
+------------------------------- */
+.footer {
+  background: #08254c;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
 }
 
 
 
-    /* HERO SECTION */
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:40px 5vw;
-      background:white;
-    }
+.footer-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fff;
+  display: inline-block;
+}
 
-    .hero-card{
-      display:flex;
-      align-items:center;
-      gap:40px;
-      max-width:1200px;
-    }
+.footer-box a {
+  display: block;
+  color: white;
+  margin: 5px 0;
+  text-decoration: none;
+  transition: 0.2s;
+}
 
-    .hero-text{
-      flex:1;
-    }
+.footer-box a:hover {
+  color: #02b5b8;
+}
 
-    .hero-text h1{
-      font-size:2.8rem;
-      color:var(--text-dark);
-      font-weight:700;
-      margin-bottom:1rem;
-    }
+.social-icons a {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: white;
+  transition: 0.3s;
+}
 
-    .hero-text h1 span{
-      color:var(--primary);
-    }
-
-    .hero-text p{
-      max-width:420px;
-      color:#555;
-      margin-bottom:1.5rem;
-      line-height:1.5;
-    }
-
-    .btn-appointment{
-      background:var(--primary);
-      color:#fff;
-      padding:0.75rem 1.8rem;
-      border:none;
-      border-radius:50px;
-      font-weight:600;
-      transition:.2s;
-    }
-
-    .btn-appointment:hover{
-      opacity:.9;
-      transform:translateY(-2px);
-    }
-
-    .hero-carousel{
-      flex:1;
-      border-radius:30px;
-      overflow:hidden;
-      box-shadow:0 10px 25px rgba(0,0,0,.15);
-      height:400px; /* fixed height for uniform carousel */
-    }
-
-    .carousel-img{
-      width:100%;
-      height:100%;
-      object-fit:cover; /* ensures uniform size without stretching */
-    }
+.social-icons a:hover {
+  color: #08254c
+}
 
 
-    .facility-card {
-      border-radius: 12px;
-      padding: 20px;
-      background: #f8f9fa;
-      transition: 0.3s;
-      text-align: center;
-    }
-    .facility-card:hover {
-      background: #e8f5ff;
-      transform: translateY(-5px);
-    }
-    .facility-icon {
-      font-size: 40px;
-      color: #0d6efd;
-      margin-bottom: 15px;
-    }
+
+/* Blue Appointment Button */
+.btn-appointment-nav {
+  background: #08254c;        /* dark blue */
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #08254c;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn-appointment-nav:hover {
+  background: white;
+  color: #08254c !important;
+  border-color: #08254c;
+  transform: scale(1.06);
+}
+.nav-links {
+  list-style: none !important;   /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-links li {
+  list-style: none !important;
+}
+
+
+
+
+    
+
+/* ----------------------------------------- */
+/* FULL-WIDTH FACILITY SECTION */
+/* ----------------------------------------- */
+
+.facility-section {
+    width: 100%;
+    background: #08254c;        /* Full blue background */
+    padding: 60px 0;
+    margin: 0;
+}
+
+/* Centers content inside full-width section */
+.facility-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+
 
     @media(max-width:900px){
       .hero-card{
@@ -551,7 +702,7 @@
 
     /* FOOTER */
     footer{
-      background:#00008B; 
+      background:#08254c; 
       color:white; 
       padding:40px 20px; 
       margin-top:40px;
@@ -689,7 +840,8 @@
     margin: 20px auto 40px;
     width: fit-content;
     padding: 10px 18px;
-    background: #00008B;
+    background: #E40066;
+
     color: white;
     text-decoration: none;
     font-weight: bold;
@@ -698,7 +850,7 @@
 }
 
 .know-btn:hover {
-    background: #0202c2;
+    background: #08252c;
 }
 
 
@@ -708,13 +860,14 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 25px;
-    color: #0202c2;
+    color: #08254c;
+    margin-top:50px;
 }
 
 * FOOTER */
 /* FOOTER */
 .footer {
-  background: #00008B;
+  background: #08254c;
   color: white;
   padding: 60px 20px 40px;
 }
@@ -731,13 +884,22 @@
 /* Logo at top with spacing */
 .footer-logo-box {
   text-align: center;
-  margin-bottom: 20px;
+ 
+  margin-top: 40px;
 }
 
 .footer-logo {
-  height: 160px;
-  margin-top: -40px; /* Moves logo up */
+   height: 70px;           /* logo stays same size */
+  margin-top: -40px;
+  background: white;
+  padding: 5px 10px;       /* decrease box size */
+  border-radius: 12px;
+  display: inline-block;   /* ALLOWS box to shrink */
+} /* Moves logo up */
+.footer-logo-box p {
+  margin-top: 15px;   /* Increase this number for more gap */
 }
+
 
 /* Box styling */
 .footer-box h3 {
@@ -805,4 +967,250 @@
   .footer-logo {
     height: 120px;
   }
+}
+
+
+
+/* NEW APPOINTMENT LAYOUT CLEANUP */
+/* ----------------------------------------- */
+/* GOOGLE REVIEW SECTION */
+/* ----------------------------------------- */
+
+.google-review-section {
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.review-heading {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #08254c;
+}
+
+/* Horizontal scrolling reviews */
+.google-review-wrapper {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+}
+
+.google-review-wrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.google-review-wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Each review card */
+.google-review-box {
+    min-width: 270px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.review-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.review-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.review-stars {
+    color: #ffa500;
+    margin: 0;
+    font-size: 15px;
+}
+
+.review-text {
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+}
+
+
+
+/* ----------------------------------------- */
+/* APPOINTMENT SECTION */
+/* ----------------------------------------- */
+
+.appointment-section {
+    background: #eef5ff;
+    padding: 60px 0;
+}
+
+.appoint-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #08254c;
+}
+
+/* Left contact box */
+.contact-details-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Map styling */
+.map-box iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+}
+
+/* Right side form */
+.appointment-form {
+    background: #08254c;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+    border-radius: 6px;
+}
+
+.submit-btn {
+    background: #E40066;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #b80052;
+}
+
+
+
+/* ----------------------------------------- */
+/* RESPONSIVE */
+/* ----------------------------------------- */
+
+@media(max-width: 768px) {
+    .google-review-box {
+        min-width: 85%;
+    }
+
+    .map-box iframe {
+        height: 250px;
+    }
+}
+
+
+
+
+.stats-section {
+    background: #f1f5f6
+    font-color=#08254c;
+}
+
+.stat-card {
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.stat-card h2 {
+    color: #08254c;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.stat-card p {
+    color: #444;
+    margin-top: 8px;
+}
+
+
+
+
+/* FULL BLUE BACKGROUND ACROSS ENTIRE SCREEN */
+.facility-section {
+    width: 100%;
+    background: #08254c;   /* deep hospital blue */
+    padding: 60px 0;
+    margin: 0;
+}
+
+/* Inner wrapper to center cards */
+.facility-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Title */
+.facility-title {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Facility cards */
+.facility-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 25px 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.facility-card:hover {
+    background: #e8f5ff;
+    transform: translateY(-6px);
+}
+
+.facility-icon {
+    font-size: 40px;
+    color: #08254c;
+    margin-bottom: 12px;
+}
+
+.facility-card h5 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #08254c;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .facility-title {
+        font-size: 26px;
+    }
+    .facility-card {
+        padding: 20px;
+    }
 }

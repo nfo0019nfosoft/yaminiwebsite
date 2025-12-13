@@ -8,289 +8,133 @@
   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="stylesheet" href="css/home.css">
 
 </head>
 
 <body>
+  <!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-left">
+        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp; | &nbsp;
+        <i class="fa-solid fa-phone-volume top-icon"></i> +91 8008718777
+    </div>
+
+    <div class="top-right">
+        <i class="fa-solid fa-location-dot top-icon"></i> Kothagudem, Telangana
+    </div>
+</div>
+
+
 
  
   <header>
     <div class="nav-container">
         <div class="logo">
-      <img src="image.jpg" alt="Yamini Multi Speciality Hospital Logo">
+      <img src="x.jpg" alt="Yamini Multi Speciality Hospital Logo">
       </div>
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
       <li class="services-dropdown">
-    <a href="#" class="nav-link">Services ▾</a>
+  <a href="#" class="nav-link">Services ▾</a>
 
-    <div class="dropdown">
-
-        <ul>
-
-            <!-- ===================== -->
-            <!-- 1. PAEDIATRICS        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <!-- Clickable main link -->
-                <a href="paediatrics.html" class="main-link">Paediatrics</a>
-
-                <!-- Toggle Arrow -->
-                <span class="toggle" onclick="toggleMenu('paediatricsMenu')">▸</span>
-
-                <!-- Submenu -->
-                <ul id="paediatricsMenu" class="submenu">
-                    
-                    <li>PICU (Paediatric Intensive Care)</li>
-                    <li>New-born Care</li>
-                    <li>Jaundice Treatment</li>
-                    <li>Preterm Baby Care</li>
-                    <li>Vaccination</li>
-                    <li>Fever – Cold – Cough – Flu</li>
-                    <li>Asthma – Respiratory Problems</li>
-                    <li>Skin Allergy & Rashes</li>
-                    <li>Stomach Pain – Diarrhea – Vomiting</li>
-                    <li>Skin Infections</li>
-                    <li>ENT Infections</li>
-                    <li>Growth & Development</li>
-                    <li>Seizures / Headache</li>
-                    <li>Urinary & Kidney Problems</li>
-                    <li>Bone & Joint Problems</li>
-                    <li>Paediatric Surgeries</li>
-                    <li>Laparoscopic Surgeries</li>
-                    <li>Tonsillectomy / Adenoidectomy</li>
-                    <li>Hernia / Hydrocele</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 2. ORTHOPAEDIC        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="orthopaedic.html" class="main-link">Orthopaedic</a>
-
-                <span class="toggle" onclick="toggleMenu('orthoMenu')">▸</span>
-
-                <ul id="orthoMenu" class="submenu">
-                    <li>Trauma Management</li>
-                    <li>Total Knee Replacement</li>
-                    <li>Total Hip Replacement</li>
-                    <li>Shoulder Replacement</li>
-                    <li>Revision Surgeries</li>
-                    <li>Fracture Care</li>
-                    <li>Arthritis Treatment</li>
-                    <li>Sports Injuries</li>
-                    <li>Joint Pain Evaluation</li>
-                    <li>Back & Neck Pain</li>
-                    <li>Disc Problems</li>
-                    <li>Spine Fractures</li>
-                    <li>Complex Fractures</li>
-                    <li>Shoulder Dislocation</li>
-                    <li>Wrist & Elbow Disorders</li>
-                    <li>Tendon Injuries</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 3. GYNAECOLOGY        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="gyn.html" class="main-link">Gynaecology</a>
-
-                <span class="toggle" onclick="toggleMenu('gynMenu')">▸</span>
-
-                <ul id="gynMenu" class="submenu">
-                    <li>Menstrual Disorders</li>
-                    <li>PCOS / PCOD</li>
-                    <li>Thyroid / BP Issues</li>
-                    <li>White Discharge</li>
-                    <li>Uterine Fibroids</li>
-                    <li>Ovarian Cysts</li>
-                    <li>Endometriosis</li>
-                    <li>Pelvic Pain</li>
-                    <li>Vaginal Infections</li>
-                    <li>Pregnancy Care</li>
-                    <li>Normal Delivery</li>
-                    <li>C-Section</li>
-                    <li>High-risk Pregnancy</li>
-                    <li>Laparoscopic Surgeries</li>
-                </ul>
-
-            </li>
-
-        </ul>
-
-    </div>
+  <div class="dropdown">
+    <ul>
+      <li><a href="paediatrics.html" class="service-item">Paediatrics & Neonatology</a></li>
+      <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
+      <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics</a></li>
+      <li><a href="general.html" class="service-item">General Medicine </a></li>
+    </ul>
+  </div>
 </li>
 
+     <li><a href="contact.html">Contact Us</a></li>
+      
+      <li><a href="contact.html" class="btn-appointment-nav"> Book Appointment</a></li>
+    </ul>
 
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-card">
+  
 
-      <div class="hero-text">
-        <h1>Welcome To <br>Yamini MultiSpeciality Hospital</h1>
-        <p>Caring for life today,<br>Protecting health for tomorrow,<br>Healing with compassion every day.</p>
-        <button class="btn-appointment">Book Appointment</button>
+<!-- Carousel Section -->
+<section class="hero">
+
+  <div id="hospitalCarousel" class="carousel slide carousel-fade"
+       data-bs-ride="carousel" data-bs-interval="3000">
+
+    <!-- QUOTE OVERLAY -->
+    <div class="hero-overlay">
+      <h1 id="quoteText">Your Health, Our Priority.</h1>
+      <a href="contact.html" class="btn-appointment-nav"> Book Appointment</a>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" data-quote="Your Health, Our Priority.">
+        <img src="https://media.istockphoto.com/id/593305966/photo/every-second-counts-here.jpg?s=612x612&w=0&k=20&c=5OBQ52ZL96nxnxs5kwMo_NvF3MMm0sNl7gPVmnXzUvM=" class="d-block w-100 carousel-img" />
+       
       </div>
 
-      <div id="heroCarousel" class="carousel slide hero-carousel" data-bs-ride="carousel">
-        <div class="carousel-inner">
+      <div class="carousel-item" data-quote="Compassionate Care, Advanced Medicine.">
+        <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2025-07/01/full/1751335922-4449.jpeg?im=FeatureCrop,size=(826,465)"
+             class="d-block w-100 hero-img">"
+             class="d-block w-100 hero-img">
+      </div>
 
-          <div class="carousel-item active">
-            <img src="https://www.sgvpholistichospital.org/wp-content/uploads/elementor/thumbs/What-Types-of-Neonatal-Facilities-Are-Offered-at-SGVP-Holistic-Hospital-rf0jknk4ylsuqymsxe4cifvpywadz0f4t57qczqsgk.jpg" class="d-block w-100 carousel-img" />
-          </div>
+      <div class="carousel-item" data-quote="Healing With Excellence, Every Day.">
+        <img src="https://jeewanmalahospital.com/img/hospital.jpg" 
+             class="d-block w-100 hero-img">
+      </div>
 
-          <div class="carousel-item">
-            <img src="https://drvivekbansal.in/wp-content/uploads/2025/09/best-orthopedic-in-chandigarh.jpeg" class="d-block w-100 carousel-img" />
-          </div>
-
-          <div class="carousel-item">
-            <img src="https://ssmhospital.in/wp-content/uploads/2024/02/gynecology-service-mob.jpg" class="d-block w-100 carousel-img" />
-          </div>
-
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
+      <div class="carousel-item" data-quote="Where Care Meets Compassion.">
+        <img src="https://ssmhospital.in/wp-content/uploads/2024/02/gynecology-service-mob.jpg"
+             class="d-block w-100 hero-img">
       </div>
 
     </div>
-  </section>
 
+    <button class="carousel-control-prev" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
 
-
-
-  <div class="container py-4">
-  <h2 class="text-center mb-4">Our Hospital Facilities</h2>
-  <div class="row g-4">
-
-    <!-- Emergency -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-hospital facility-icon"></i>
-        <h5>24/7 Emergency</h5>
-      </div>
-    </div>
-
-    <!-- Daily Vaccination -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-shield-plus facility-icon"></i>
-        <h5>Daily Vaccination</h5>
-      </div>
-    </div>
-
-    <!-- Phototherapy -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-brightness-high facility-icon"></i>
-        <h5>Phototherapy</h5>
-      </div>
-    </div>
-
-    <!-- Nebulization -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-wind facility-icon"></i>
-        <h5>Nebulization</h5>
-      </div>
-    </div>
-
-    <!-- NICU -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-heart-pulse facility-icon"></i>
-        <h5>NICU</h5>
-      </div>
-    </div>
-
-    <!-- PICU -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-bandaid-fill facility-icon"></i>
-        <h5>PICU</h5>
-      </div>
-    </div>
-
-    <!-- X-Ray -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-x-diamond-fill facility-icon"></i>
-        <h5>X-Ray</h5>
-      </div>
-    </div>
-
-    <!-- Operation Theatre -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-scissors facility-icon"></i>
-        <h5>Operation Theatre</h5>
-      </div>
-    </div>
-
-    <!-- Special Rooms -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-door-open facility-icon"></i>
-        <h5>Special Rooms</h5>
-      </div>
-    </div>
-
-    <!-- General Ward -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-people facility-icon"></i>
-        <h5>General Ward</h5>
-      </div>
-    </div>
-
-    <!-- ECG -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-activity facility-icon"></i>
-        <h5>ECG</h5>
-      </div>
-    </div>
-
-    
-    <!-- Pharmacy -->
-    <div class="col-md-3">
-      <div class="facility-card">
-        <i class="bi bi-capsule-pill facility-icon"></i>
-        <h5>Pharmacy</h5>
-      </div>
-    </div>
-
+    <button class="carousel-control-next" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-</div>
+
+</section>
+
+
+<script>
+  const myCarousel = document.getElementById('hospitalCarousel');
+  const quoteText = document.getElementById('quoteText');
+
+  myCarousel.addEventListener('slide.bs.carousel', function (event) {
+    const newSlide = event.relatedTarget;
+    const newQuote = newSlide.getAttribute("data-quote");
+    quoteText.textContent = newQuote;
+  });
+</script>
+
+
+
+
+
+
+ 
   
 
 
 
-<h2 class="gallery-title">About Us</h2>
+<div class="container py-4">
+    <h1 class="text-center fw-bold mb-4" style="color: #08254c;margin-top: 40px;">About Us</h1>
+
 <section class="about container py-5">
     <div class="row align-items-center">
 
@@ -316,12 +160,119 @@
     </div>
 </section>
 <a href="about.html" class="know-btn">Know More</a>
+</div>
+
+
+
+
+
+<section class="facility-section">
+  
+  <div class="facility-wrapper">
+
+    <h2 class="facility-title">Our Hospital Facilities</h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-hospital facility-icon"></i>
+          <h5>24/7 Emergency</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-shield-plus facility-icon"></i>
+          <h5>Daily Vaccination</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-brightness-high facility-icon"></i>
+          <h5>Phototherapy</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-wind facility-icon"></i>
+          <h5>Nebulization</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-heart-pulse facility-icon"></i>
+          <h5>NICU</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-bandaid-fill facility-icon"></i>
+          <h5>PICU</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-x-diamond-fill facility-icon"></i>
+          <h5>X-Ray</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-scissors facility-icon"></i>
+          <h5>Operation Theatre</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-door-open facility-icon"></i>
+          <h5>Special Rooms</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-people facility-icon"></i>
+          <h5>General Ward</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-activity facility-icon"></i>
+          <h5>ECG</h5>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-6">
+        <div class="facility-card">
+          <i class="bi bi-capsule-pill facility-icon"></i>
+          <h5>Pharmacy</h5>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 
 
 
 
 <section class="doctors-section">
-  <h1>Meet Our Doctors</h1>
+ <div class="container py-4">
+    <h1 class="text-center fw-bold mb-4" style="color: #08254c;">Meet Our Doctors</h1>
+
 
  
   <div class="doctor-card">
@@ -386,140 +337,815 @@
 
         <!-- OUR SERVICES SECTION -->
 <div class="container py-4">
-    <h1 class="text-center fw-bold mb-4">Our Services</h1>
+   h<h1 class="text-center fw-bold mb-4" style="color: #08254c;">Our Services</h1>
+
 
     <!-- ===================== -->
     <!-- PAEDIATRICS SECTION -->
     <!-- ===================== -->
-    <h3 class="section-title">Paediatrics & Neonatology Services</h3>
-    <div class="row g-4">
+    
 
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Neonatal Intensive <br>Care</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Advanced NICU care with 24/7 monitoring for premature and critically ill newborns.</p>
-            </div>
+  <h3 class="section-title mt-5">Paediatrics & Neonatology Services</h3>
+
+<div class="row g-4">
+
+    <!-- 1. NICU -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>NICU (Neonatal <br>Care)</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Advanced neonatal intensive care for premature and critically ill newborns.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
         </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Seizures – Headaches – Weakness</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Immediate evaluation for neurological symptoms like seizures, migraines, or weakness.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>New-born <br>Care</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Complete newborn examination, feeding guidance, sleep support, and vaccinations.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Preterm Baby<br> Care</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Specialized care for premature babies focusing on growth, feeding, and warmth.</p>
-            </div>
-        </div>
-
     </div>
 
-    <a href="paediatrics.html" class="know-btn">Know More</a>
-
-    <!-- ===================== -->
-    <!-- ORTHOPAEDIC SECTION -->
-    <!-- ===================== -->
-    <h3 class="section-title mt-5">Orthopaedic Services</h3>
-    <div class="row g-4">
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Trauma Management</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Immediate fracture care, stabilization, and rehabilitation for injuries.</p>
-            </div>
+    <!-- 2. PICU -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>PICU (Paediatric Intensive Care)</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>24/7 emergency care for critically ill children needing monitoring and treatment.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
         </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Total Knee Replacement</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Advanced knee replacement procedures ensuring mobility and pain relief.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Total Hip Replacement</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Restores hip movement and reduces chronic pain through modern techniques.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Shoulder Joint Replacement</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Helps regain arm movement and reduce pain caused by wear or injury.</p>
-            </div>
-        </div>
-
     </div>
 
-    <a href="orthopaedic.html" class="know-btn">Know More</a>
-
-    <!-- ===================== -->
-    <!-- GYNAECOLOGY SECTION -->
-    <!-- ===================== -->
-    <h3 class="section-title mt-5">Gynaecology & Obstetrics Services</h3>
-    <div class="row g-4">
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Thyroid & High BP</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Diagnosis and treatment for thyroid issues and high blood pressure in women.</p>
-            </div>
+    <!-- 3. Newborn Care -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>New-born <br>Care</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Complete care for newborns including feeding guidance and routine health monitoring.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
         </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Vaginal Infections</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Treatment for UTIs, discharge problems, itching, and recurrent vaginal infections.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Normal Delivery</h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Safe natural birthing process with continuous monitoring and expert care.</p>
-            </div>
-        </div>
-
-        <div class="col-md-3">
-            <div class="service-card">
-                <h5>Cesarean Section </h5>
-                <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-                <p>Safe surgical delivery with proper postoperative care for mother and baby.</p>
-            </div>
-        </div>
-
     </div>
 
-    <a href="gyn.html" class="know-btn">Know More</a>
+    <!-- 4. Jaundice Treatment -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Jaundice<br> Treatment</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Phototherapy and monitoring for newborn jaundice ensuring safe recovery.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 5. Preterm Baby Care -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Preterm Baby <br>Care</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Specialized care for premature babies needing extra support and monitoring.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 6. Vaccination -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Vaccination</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Routine  vaccinations for complete child protection.Vaccines introduce a harmless version of a virus or bacteria (antigens) to your body. </p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 7. Fever, Cold, Cough -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Fever / Cold /<br> Cough</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Treatment for common childhood infections with quick relief and monitoring.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 8. Asthma & Respiratory -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Asthma & Respiratory Problems</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Nebulization, inhaler support and long-term asthma management for children.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 9. Skin Allergy -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Skin<br> Allergy </h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Treatment for allergic rashes, eczema and skin infections.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 10. Stomach Problems -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Stomach Pain / Diarrhea / Vomiting</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Care for dehydration, infections and digestive issues in children.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 11. ENT Infections -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>ENT<br> Infections</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Tonsillitis, ear infections, throat pain and breathing issues.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 12. Growth & Development -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Growth &<br> Development</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Monitoring child height, weight, milestones and nutrition.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 13. Seizures / Headache -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Seizures, Headaches &<br> Weakness</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Evaluation for seizures, migraine, fainting and neurological issues.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 14. Urinary & Kidney Problems -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Urinary & <br>Kidney Problems</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Treatment for UTI, kidney swelling and urinary infections in children.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 15. Bone & Joint Problems -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Bone & <br>Joint Problems</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Fractures, limb pain, deformities and joint issues in children.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 16. General Paediatric Surgeries -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>General Paediatric Surgeries</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Hernia, appendicitis, and birth defect repairs.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 17. Laparoscopic Surgeries -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Laparoscopic Paediatric Surgeries</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Minimally invasive surgical procedures for children with quicker recovery.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 18. Tonsillectomy & Adenoidectomy -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Tonsillectomy / Adenoidectomy</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Treatment for chronic tonsil issues, frequent infections and breathing problems.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
+
+    <!-- 19. Hernia & Hydrocele -->
+    <div class="col-md-3">
+        <div class="service-card">
+            <h5>Hernia & Hydrocele Surgeries</h5>
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+            <p>Safe and effective surgical correction for hernia and hydrocele in children.</p>
+            <a href="paediatrics.html" class="know-btn">Know More</a>
+        </div>
+    </div>
 
 </div>
 
 
 
+    <!-- ===================== -->
+    <!-- Ortho SECTION -->
+    <!-- ===================== -->
+   <div class="container py-4">
+  <h3 class="section-title mt-5" style="color:#08254C;">Orthopaedic Services</h3>
 
-<h2 class="gallery-title">Gallery</h2>
+  <div class="row g-4">
+
+    <!-- 1 Trauma Management -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Trauma Management</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Trauma Management">
+        <p>Immediate fracture care, stabilization, and rehabilitation for injuries.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 2 Total Knee Replacement -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Total Knee Replacement (TKR)</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="TKR">
+        <p>Modern knee replacement surgery to relieve pain and restore mobility.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 3 Total Hip Replacement -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Total Hip Replacement (THR)</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="THR">
+        <p>Hip replacement for severe arthritis improving quality of life.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 4 Shoulder Joint Replacement -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Shoulder Joint Replacement</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Shoulder Replacement">
+        <p>Surgical replacement to reduce pain and restore shoulder function.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 5 Revision Joint Replacement -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Revision Joint Replacement</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Revision Replacement">
+        <p>Expert care for failed or worn implants, restoring joint stability and function.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 6 Fracture Care & Trauma Management -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Fracture Care &<br> Trauma</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Fracture Care">
+        <p>Comprehensive management from splints and casts to surgical fixation and rehab.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 7 Arthritis Diagnosis & Treatment -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Arthritis Diagnosis & Treatment</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Arthritis">
+        <p>Medication, injections and physiotherapy to reduce pain and improve mobility.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 8 Sports Injuries Management -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Sports Injuries Management</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Sports Injuries">
+        <p>Rehabilitation, minimally invasive repair and return-to-sport programs.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 9 Joint Pain Evaluation -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Joint Pain <br>Evaluation</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Joint Pain">
+        <p>Assessment for knee, hip, shoulder and ankle pain with targeted treatment plans.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 10 Back Pain & Neck Pain -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Back & Neck Pain Treatment</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Back Neck Pain">
+        <p>Non-surgical and surgical options for disc problems, spasms and chronic pain management.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 11 Disc Problems -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Disc <br>Problems</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Disc Problems">
+        <p>Conservative care and minimally invasive procedures for herniated or bulging discs.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 12 Spine Fracture Management -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Spine Fracture Management</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Spine Fracture">
+        <p>Stabilisation, surgical correction and rehabilitation to protect spinal cord function.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 13 Complex Fracture Treatment -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Complex Fracture Treatment</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Complex Fracture">
+        <p>Advanced fixation techniques for multi-fragment and joint-involving fractures.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 14 Ankle Ligament Injuries -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Ankle Ligament Injuries</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Ankle Injuries">
+        <p>Conservative care, bracing and reconstruction for unstable ankle ligaments.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 15 Shoulder Dislocations -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Shoulder Dislocations</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Shoulder Dislocation">
+        <p>Safe joint reduction, repair of stabilising structures and rehab to prevent recurrence.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 16 Wrist & Elbow Disorders -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Wrist & Elbow Disorders</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Wrist Elbow">
+        <p>Diagnosis and treatment for tendonitis, nerve compression and joint injuries.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 17 Tendon, Ligament & Muscle Injury Care -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Tendon, Ligament & Muscle Care</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Tendon Ligament">
+        <p>Conservative and surgical options for soft tissue injuries with guided rehab.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 18 Osteoporosis Screening & Treatment -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Osteoporosis Screening & Treatment</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=" alt="Osteoporosis">
+        <p>Bone density testing, supplements and therapies to reduce fracture risk and strengthen bones.</p>
+        <a href="orthopaedic.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+  </div> <!-- /.row -->
+</div> <!-- /.container -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="container py-4">
+  <h3 class="section-title mt-5" style="color:#08254C;">Gynaecology Services</h3>
+
+  <div class="row g-4">
+
+    <!-- 1 Menstrual Disorders -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Menstrual <br>Disorders</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for irregular periods, heavy bleeding and painful menstruation.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 2 PCOS / PCOD -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>PCOS / PCOD Management</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Hormonal evaluation & treatment to restore ovulation & cycle balance.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 3 Thyroid & High BP -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Thyroid & <br>High BP</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Evaluation and safe management of thyroid imbalance and blood pressure issues.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 4 White Discharge -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>White <br>Discharge</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for infections causing discharge, irritation and  the discomfort.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 5 Uterine Fibroids -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Uterine Fibroids</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Diagnosis and medical or surgical treatment for fibroids causing bleeding or pain.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 6 Ovarian Cyst -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Ovarian Cyst Treatment</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Ultrasound-based evaluation and removal of symptomatic ovarian cysts.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 7 Endometriosis -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Endometriosis Care</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Advanced treatment for severe pain, infertility and hormonal imbalance.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 8 Pelvic Pain -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Pelvic Pain Evaluation</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Comprehensive diagnosis for chronic pelvic pain from multiple causes.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 9 Pap Smear -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Cervical Screening (Pap Smear)</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Early detection of cervical cancer with quick and painless testing.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 10 Vaginal Infections -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Vaginal Infections / UTI</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for yeast infections, bacterial vaginosis and urinary infections.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 11 Family Planning -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Family Planning</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Expert guidance on contraception, spacing and reproductive health choices.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 12 Menopause Management -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Menopause Management</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Hormone balance, symptom relief and lifestyle support for menopause.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 13 High-Risk Pregnancy -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>High-Risk Pregnancy<br> Care</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Special monitoring and expert care for medical or pregnancy-related risks.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 14 Normal Delivery -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Normal<br> Delivery</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Safe, natural childbirth with continuous monitoring and personalized care.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 15 Painless Delivery -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Painless / Epidural Delivery</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Comfortable labor with epidural anesthesia under expert supervision.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 16 C-Section -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Cesarean Section<br> (C-Section)</h5>
+       <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Safe surgical delivery for  the mother and the  baby when required medically.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 17 Post-delivery Care -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Post-delivery <br>Recovery</h5>
+<img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Support and healing guidance after childbirth for smooth recovery.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 18 TLH -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Laparoscopic Hysterectomy (TLH)</h5>
+  <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Minimally invasive uterus removal with faster recovery and less pain.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 19 Myomectomy -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Laparoscopic Myomectomy</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Keyhole surgery to remove uterine fibroids while preserving fertility.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 20 Ovarian Cystectomy -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Laparoscopic Ovarian Cystectomy</h5>
+      <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Minimally invasive surgery removes ovarian cysts. </p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 21 Laparoscopic Endometriosis -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Laparoscopic Endometriosis Surgery</h5>
+       <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Keyhole surgery to remove endometriosis deposits and relieve pain.</p>
+        <a href="gyn.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+  </div> <!-- row end -->
+</div> <!-- container end -->
+
+
+<!-- ===================== -->
+    <!-- General SECTION -->
+    <!-- ===================== -->
+    <div class="container py-4">
+  <h3 class="section-title mt-5" style="color:#08254C;">General Medicine Services</h3>
+
+  <div class="row g-4">
+
+    <!-- 1 Fever -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>All Types of Fever</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Diagnosis and treatment of viral, bacterial and seasonal fevers.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 2 Diabetes -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Diabetes Management</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Blood sugar evaluation and long-term diabetes care and control.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 3 Hypertension -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Hypertension</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Safe and effective management of high blood pressure.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 4 Thyroid -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Thyroid Disorders</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Thyroid disorders impact hormone production, metabolism.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 5 Respiratory Infections -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Respiratory Infections</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for cough, cold, bronchitis, asthma and lung infections.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 6 Urinary Infection -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Urinary Infection (UTI)</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Diagnosis and care for UTI, burning urination and recurrent infections.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 7 Gastro Infections -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Gastro Infections</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Care for diarrhea, vomiting, stomach pain and digestive infections.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 8 Neuro Problems -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Neuro Problems</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for headaches, seizures, nerve issues and neurological conditions.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 9 Joint Pains -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Joint<br> Pains</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Management for arthritis, muscle stiffness and chronic joint pain.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 10 Migraine -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Migraine Treatment</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Specialized care for severe headaches and stress-related migraines.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 11 Kidney Diseases -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Kidney <br>Diseases</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Treatment for kidney infections, stones and renal disorders.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+    <!-- 12 Heart Diseases -->
+    <div class="col-md-3">
+      <div class="service-card">
+        <h5>Heart <br>Diseases</h5>
+        <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        <p>Evaluation of chest pain, BP issues,cardiac risk factors.</p>
+        <a href="general.html" class="know-btn">Know More</a>
+      </div>
+    </div>
+
+  </div> <!-- row end -->
+</div> <!-- container end -->
+
+
+   
+  </div>
+
+
+
+
+  <section class="stats-section py-5">
+    <div class="container text-center">
+<h1 class="text-center fw-bold mb-4" style="color:#08254C">Our Strength</h1>
+
+
+        <div class="row">
+
+            <div class="col-md-3 mb-3">
+                <div class="stat-card">
+                    <h2>1000+</h2>
+                    <p>Expert Doctors</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="stat-card">
+                    <h2>1,00,000+</h2>
+                    <p>Patients Treated</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="stat-card">
+                    <h2>10,000+</h2>
+                    <p>Successful Surgeries</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="stat-card">
+                    <h2>24/7</h2>
+                    <p>Emergency Care</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<div class="container py-4">
+    <h1 class="text-center fw-bold mb-4" style="color:#08254C">Gallery</h1>
 
 <div class="marquee-container">
   <div class="marquee-images">
@@ -538,15 +1164,7 @@
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-    </div>
+</div>
 </div>
 
 <!-- Bootstrap JS -->
@@ -554,12 +1172,171 @@
 
       
 
-  <footer class="footer">
+
+<!-- ⭐ GOOGLE REVIEWS SECTION -->
+<section class="google-review-section py-5">
+    <div class="container">
+
+        <h2 class="review-heading text-center mb-4">Our Happy Clients</h2>
+
+        <div class="google-review-wrapper">
+
+            <!-- REVIEW 1 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                  <img src="https://i.pravatar.cc/150?img=1" class="review-photo">
+                    <div>
+                        <h4 class="review-name">Kolusu Bhargavi</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Excellent care. Doctor explains every detail clearly and listens well.</p>
+            </div>
+
+            <!-- REVIEW 2 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                   <img src="https://i.pravatar.cc/150?img=2" class="review-photo">
+
+                    <div>
+                        <h4 class="review-name">Immadi Priya</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Friendly staff and quick service. Doctors make you feel comfortable.</p>
+            </div>
+
+            <!-- REVIEW 3 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                  <img src="https://i.pravatar.cc/150?img=3" class="review-photo">
+
+                    <div>
+                        <h4 class="review-name">Kalidindi DeviSri</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Smooth experience. Treatment is very good and explanations are clear.</p>
+            </div>
+
+            <!-- REVIEW 4 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                   <img src="https://i.pravatar.cc/150?img=4" class="review-photo">
+
+                    <div>
+                        <h4 class="review-name">Manu Naidu</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Staff are helpful and treatment is effective. Totally worth trusting.</p>
+            </div>
+
+            <!-- REVIEW 5 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                   <img src="https://i.pravatar.cc/150?img=5" class="review-photo">
+
+                    <div>
+                        <h4 class="review-name">Lakshmi</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Very good treatment. Doctor explains everything clearly.</p>
+            </div>
+
+            <!-- REVIEW 6 -->
+            <div class="google-review-box">
+                <div class="review-top">
+                  <img src="https://i.pravatar.cc/150?img=6" class="review-photo">
+
+                    <div>
+                        <h4 class="review-name">Tamiriya Priya</h4>
+                        <p class="review-stars">★★★★★</p>
+                    </div>
+                </div>
+                <p class="review-text">Most Trusted Multispeciality Hospital</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ⭐ APPOINTMENT SECTION BELOW REVIEWS -->
+<section class="appointment-section py-5">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- LEFT SIDE: CONTACT + MAP -->
+            <div class="col-md-5">
+                <div class="contact-details-box">
+                   <h3 class="appoint-title">Get In Touch</h3>
+
+<p><i class="fa-solid fa-phone-volume contact-icon"></i> +91 800742777</p>
+
+<p><i class="fa-solid fa-location-dot contact-icon"></i> Near Ganesh Temple, Kothagudem, Telangana</p>
+
+
+<p><i class="fa-solid fa-clock contact-icon"></i> Mon–Sun: 24/7 Emergency</p>
+
+                    <div class="map-box mt-3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30434.918487791958!2d80.59287672271589!3d17.537809507268868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s6-12-14%20%266-12-12%2C13%20Near%20Ganesh%20Temple%2C%20Kothagudem%2C%20Telangana!5e0!3m2!1sen!2sin!4v1765279402677!5m2!1sen!2sin"
+                            width="100%" height="300" style="border:0;" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE: APPOINTMENT FORM -->
+            <div class="col-md-7">
+                <div class="appointment-form">
+                    <h3 class="appoint-title text-white">Appointment</h3>
+
+                    <form>
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+                        <input type="text" class="form-control mb-3" placeholder="Your Contact Number">
+
+                        <select class="form-control mb-3">
+                            <option>Select Service</option>
+                            <option>Paediatrics & neonatology</option>
+                            <option>Orthopaedic </option>
+                            <option>Gynaecology & Obstetrics</option>
+                            <option>General Medicine</option>
+                        </select>
+
+                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
+
+                        <button class="btn submit-btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<footer class="footer">
   <div class="footer-container">
 
     <!-- LOGO -->
     <div class="footer-logo-box">
-      <img src="Yamini Logo.jpg" class="footer-logo">
+      <img src="x.jpg" class="footer-logo">
       <p>For All Healthcare Needs of Children, Women & Orthopaedic Patients.</p>
     </div>
 
@@ -580,6 +1357,7 @@
       <a href="paediatrics.html">Paediatrics & Neonatology</a>
       <a href="orthopaedic.html">Orthopaedic </a>
       <a href="gyn.html">Gynaecology & Obstetrics</a>
+      <a href="general.html">General Medicine</a>
       
     </div>
     <!-- CONTACT SECTION -->

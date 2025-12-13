@@ -1,7 +1,7 @@
 
     :root{
-      --primary:#00008B;   
-      --accent:#02b5b8;    
+      --primar:#08254c;   
+      --accent:#08254c;    
     }
 
     *{
@@ -21,6 +21,30 @@
       color:inherit;
     }
 
+    /* TOP BAR */
+.top-bar {
+    width: 100%;
+    background: #08254c;           /* hospital blue */
+    color: white;
+    padding: 4px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left i,
+.top-right i {
+    margin-right: 10px;
+    color:white;                /* accent color */
+}
+
+.top-left, .top-right {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
     
     header{
       background:#ffffff;
@@ -28,6 +52,7 @@
       position:sticky;
       top:0;
       z-index:1000;
+      
     }
 
     .nav-container{
@@ -43,13 +68,18 @@
     .logo{
       display:flex;
       align-items:center;
-      gap:5px;
+      gap:5px;  
+      
+
     }
 
     .logo img{
       height:110px;
       width:auto;
       border-radius:2px;
+      padding-left: 40px;
+      
+     
     }
     
 
@@ -60,6 +90,14 @@
       align-items:center;
       gap:18px;
       white-space:nowrap;
+    }
+.nav-links a{
+      font-size: 20px !important;
+      font-weight:600;
+      color:var(--header-dark);
+      text-decoration:none;
+      padding:6px 8px;
+       margin-left: 25px;
     }
 
     .nav-links > li{
@@ -78,38 +116,57 @@
     }
 
    
-    .dropdown{
-      display:none;
-      position:absolute;
-      top:100%;
-      left:0;
-      background:white;
-      min-width:260px;
-      border-radius:6px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.12);
-      padding:10px 0;
-      z-index:20;
-    }
+    /* SERVICES DROPDOWN PARENT */
+.services-dropdown {
+  position: relative;
+}
 
-    .nav-links li:hover .dropdown{
-      display:block;
-    }
+/* DROPDOWN BOX */
+.services-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #08252c;      /* blue background */
+  border-radius: 12px;      /* <<< rounded dropdown */
+  padding: 10px 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
+}
 
-    .dropdown ul{
-      list-style:none;
-      max-height:300px;
-      overflow-y:auto;
-    }
+/* SHOW WHEN HOVER */
+.services-dropdown:hover .dropdown {
+  display: block;
+}
 
-    .dropdown li{
-      padding:6px 16px;
-      font-size:14px;
-      color:#333;
-    }
+/* REMOVE BULLETS */
+.services-dropdown .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-    .dropdown li:hover{
-      background:#eef7ff;
-    }
+/* SERVICE MENU ITEMS */
+.service-item {
+  display: block;
+  padding: 10px 18px;
+  color: white;             /* default text color */
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-radius: 8px;       /* <<< rounded item edges */
+  margin: 3px 8px;          /* spacing inside box */
+}
+
+/* HOVER EFFECT */
+.service-item:hover {
+  background: #08254c;      /* hover blue */
+  color: white !important;
+  padding-left: 22px;       /* slight slide-in effect */
+}
+
      .contact-wrapper{
       max-width:1100px;
       margin:40px auto;
@@ -119,7 +176,7 @@
     h1{
       text-align:center;
       margin-bottom:10px;
-      color:#004f9f;
+      color:#08254c;
     }
     .subtitle{
       text-align:center;
@@ -138,7 +195,7 @@
     .contact-form{
       flex:3;
       background:#ffffff;
-      border-left:4px solid #00b9b5;
+      border-left:4px solid #08254c;
       padding:20px;
       box-shadow:0 2px 8px rgba(0,0,0,0.1);
     }
@@ -146,7 +203,7 @@
     .contact-form h2{
       margin-bottom:15px;
       font-size:20px;
-      color:#004f9f;
+      color:#08254c;
     }
 
     .form-group{
@@ -178,7 +235,7 @@
       padding:10px 22px;
       border:none;
       border-radius:4px;
-      background:#00b9b5;
+      background:#08254c;
       color:#fff;
       font-size:14px;
       cursor:pointer;
@@ -208,13 +265,13 @@
     .info-icon{
       font-size:24px;
       margin-top:3px;
-      color:#00b9b5;
+      color:#08254c;
     }
 
     .info-text h3{
       font-size:16px;
       margin-bottom:9px;
-      color:#004f9f;
+      color:#08254c;
     }
 
     .info-text p{
@@ -236,7 +293,7 @@
     }
 
     footer{
-      background:#00008B; 
+      background:#08254c; 
       color:white; 
       padding:40px 20px; 
       margin-top:40px;
@@ -311,10 +368,8 @@
 
 
 
-* FOOTER */
-/* FOOTER */
 .footer {
-  background: #00008B;
+  background: #08254c;
   color: white;
   padding: 60px 20px 40px;
 }
@@ -331,12 +386,20 @@
 /* Logo at top with spacing */
 .footer-logo-box {
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .footer-logo {
-  height: 160px;
-  margin-top: -40px; /* Moves logo up */
+   height: 70px;           /* logo stays same size */
+  margin-top: -40px;
+  background: white;
+  padding: 5px 10px;       /* decrease box size */
+  border-radius: 12px;
+  display: inline-block;   /* ALLOWS box to shrink */
+} /* Moves logo up */
+
+.footer-logo-box p {
+  margin-top: 15px;   /* Increase this number for more gap */
 }
 
 /* Box styling */
@@ -399,6 +462,9 @@
   margin-top: 15px;
   font-size: 14px;
 }
+.logopara{
+  margin-bottom: 50px;
+}
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -406,3 +472,34 @@
     height: 120px;
   }
 }
+
+
+/* Blue Appointment Button */
+.btn-appointment-nav {
+  background: #08254c;        /* dark blue */
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #08452c;
+  transition: 0.3s;
+}
+
+.btn-appointment-nav:hover {
+  background: white;
+  color: #08254c !important;
+  border-color: #08254c;
+  transform: scale(1.06);
+}
+.nav-links {
+  list-style: none !important;   /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-links li {
+  list-style: none !important;
+}
+

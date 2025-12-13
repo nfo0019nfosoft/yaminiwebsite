@@ -8,213 +8,379 @@
   <!-- BOOTSTRAP 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
  <link rel="stylesheet" href="css/paediatrics.css">
 </head>
 
 <body>
+   <div class="top-bar">
+    <div class="top-left">
+        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp; | &nbsp;
+        <i class="fa-solid fa-phone-volume top-icon"></i> +91 8008718777
+    </div>
+
+    <div class="top-right">
+        <i class="fa-solid fa-location-dot top-icon"></i> Kothagudem, Telangana
+    </div>
+</div>
+
 
   <header>
     <div class="nav-container">
-
-    
-    <div class="logo">
-      <img src="image.jpg" alt="Yamini Multi Speciality Hospital Logo">
+        <div class="logo">
+      <img src="x.jpg" alt="Yamini Multi Speciality Hospital Logo">
       </div>
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
+<li class="services-dropdown">
+  <a href="#" class="nav-link">Services ▾</a>
 
-        <li class="services-dropdown">
-    <a href="#" class="nav-link">Services ▾</a>
-
-    <div class="dropdown">
-
-        <ul>
-
-            <!-- ===================== -->
-            <!-- 1. PAEDIATRICS        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <!-- Clickable main link -->
-                <a href="paediatrics.html" class="main-link">Paediatrics</a>
-
-                <!-- Toggle Arrow -->
-                <span class="toggle" onclick="toggleMenu('paediatricsMenu')">▸</span>
-
-                <!-- Submenu -->
-                <ul id="paediatricsMenu" class="submenu">
-                    <li>NICU (Neonatal Intensive Care)</li>
-                    <li>PICU (Paediatric Intensive Care)</li>
-                    <li>New-born Care</li>
-                    <li>Jaundice Treatment</li>
-                    <li>Preterm Baby Care</li>
-                    <li>Vaccination</li>
-                    <li>Fever – Cold – Cough – Flu</li>
-                    <li>Asthma – Respiratory Problems</li>
-                    <li>Skin Allergy & Rashes</li>
-                    <li>Stomach Pain – Diarrhea – Vomiting</li>
-                    <li>Skin Infections</li>
-                    <li>ENT Infections</li>
-                    <li>Growth & Development</li>
-                    <li>Seizures / Headache</li>
-                    <li>Urinary & Kidney Problems</li>
-                    <li>Bone & Joint Problems</li>
-                    <li>Paediatric Surgeries</li>
-                    <li>Laparoscopic Surgeries</li>
-                    <li>Tonsillectomy / Adenoidectomy</li>
-                    <li>Hernia / Hydrocele</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 2. ORTHOPAEDIC        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="orthopaedic.html" class="main-link">Orthopaedic</a>
-
-                <span class="toggle" onclick="toggleMenu('orthoMenu')">▸</span>
-
-                <ul id="orthoMenu" class="submenu">
-                    <li>Trauma Management</li>
-                    <li>Total Knee Replacement</li>
-                    <li>Total Hip Replacement</li>
-                    <li>Shoulder Replacement</li>
-                    <li>Revision Surgeries</li>
-                    <li>Fracture Care</li>
-                    <li>Arthritis Treatment</li>
-                    <li>Sports Injuries</li>
-                    <li>Joint Pain Evaluation</li>
-                    <li>Back & Neck Pain</li>
-                    <li>Disc Problems</li>
-                    <li>Spine Fractures</li>
-                    <li>Complex Fractures</li>
-                    <li>Shoulder Dislocation</li>
-                    <li>Wrist & Elbow Disorders</li>
-                    <li>Tendon Injuries</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 3. GYNAECOLOGY        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="gyn.html" class="main-link">Gynaecology</a>
-
-                <span class="toggle" onclick="toggleMenu('gynMenu')">▸</span>
-
-                <ul id="gynMenu" class="submenu">
-                    <li>Menstrual Disorders</li>
-                    <li>PCOS / PCOD</li>
-                    <li>Thyroid / BP Issues</li>
-                    <li>White Discharge</li>
-                    <li>Uterine Fibroids</li>
-                    <li>Ovarian Cysts</li>
-                    <li>Endometriosis</li>
-                    <li>Pelvic Pain</li>
-                    <li>Vaginal Infections</li>
-                    <li>Pregnancy Care</li>
-                    <li>Normal Delivery</li>
-                    <li>C-Section</li>
-                    <li>High-risk Pregnancy</li>
-                    <li>Laparoscopic Surgeries</li>
-                </ul>
-
-            </li>
-
-        </ul>
-
-    </div>
+  <div class="dropdown">
+    <ul>
+      <li><a href="paediatrics.html" class="service-item">Paediatrics & Neonatology</a></li>
+      <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
+      <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics Services</a></li>
+      <li><a href="general.html" class="service-item">General Medicine </a></li>
+      
+    </ul>
+  </div>
 </li>
 
-        <li><a href="contact.html">Contact Us </a></li>
-      </ul>
+     <li><a href="contact.html">Contact Us</a></li>
+      
+      <li><a href="contact.html" class="btn-appointment-nav"> Book Appointment</a></li>
+    </ul>
+
     </div>
   </header>
+
+  
 <h2 class="title">Paediatrics & Neonatology Services</h2>
 
 <div class="ped-wrapper">
 
-    <!-- 1. Seizures -->
+  
+
+    <!-- 1. NICU -->
     <section class="ped-box">
         <div class="ped-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ped-content">
-            <h3>Seizures, Headaches & Weakness</h3>
+            <h3>NICU (Neonatal Intensive Care)</h3>
             <p>
-                Seizures, severe headaches, and sudden weakness can indicate neurological issues. 
-                Causes include fever, infection, migraines, or metabolic disturbances. 
-                Early evaluation, imaging and treatment prevent complications and protect development.
-                A headache is a common condition characterized by pain in the head, face, or neck region. They are one of the most common medical complaints and can range from a mild annoyance to a debilitating pain. 
+                Our NICU provides advanced medical support for premature and critically ill newborns who
+                need continuous monitoring and specialised care. The controlled environment maintains ideal
+                warmth and breathing support. Nutrition is supervised to promote healthy development. Expert
+                neonatologists monitor babies round-the-clock. This ensures a safe and stable beginning for
+                newborns during their most delicate phase.
             </p>
         </div>
     </section>
 
-    
-   
-
-    <!-- 4. Vaccination (reverse) -->
+    <!-- 2. PICU -->
     <section class="ped-box reverse">
         <div class="ped-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>PICU (Paediatric Intensive Care)</h3>
+            <p>
+                The PICU provides specialised care for critically ill infants and children requiring
+                emergency stabilisation and life-support. Advanced equipment supports respiratory, cardiac
+                and neurological conditions. A trained paediatric team monitors children continuously to
+                ensure timely interventions. The goal is to stabilise and support recovery. This intensive
+                care system greatly enhances the chances of safe healing.
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. Newborn Care -->
+    <section class="ped-box">
+        <div class="ped-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>New-born Care</h3>
+            <p>
+                Newborn care includes routine health checks, feeding assessment, jaundice screening and
+                monitoring of early growth patterns. Parents receive guidance on safe newborn handling and
+                breastfeeding. Early detection of problems ensures timely treatment. Our team supports a
+                smooth transition from birth to home. This ensures a strong foundation for lifelong health.
+            </p>
+        </div>
+    </section>
+
+    <!-- 4. Jaundice Treatment -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Jaundice Treatment</h3>
+            <p>
+                Jaundice is treated using safe, advanced phototherapy to gradually reduce bilirubin levels.
+                Babies are monitored closely to ensure steady improvement. Hydration and feeding support help
+                enhance recovery. Early care prevents long-term complications. The treatment environment is
+                calm, safe and designed for newborn comfort.
+            </p>
+        </div>
+    </section>
+
+    <!-- 5. Preterm Baby Care -->
+    <section class="ped-box">
+        <div class="ped-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Preterm Baby Care</h3>
+            <p>
+                Preterm babies need specialised support because their organs are still developing. We provide
+                respiratory assistance, feeding management and thermal protection. Infection prevention is a
+                major priority. Neonatologists adjust care plans based on each infant's needs. This approach
+                helps premature babies grow stronger and healthier each day.
+            </p>
+        </div>
+    </section>
+
+    <!-- 6. Vaccination -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ped-content">
             <h3>Vaccination</h3>
             <p>
-                Daily vaccinations following IAP schedules.  
-                Digital immunization records, guidance on vaccine timing, and safe administration.Vaccination is a safe and effective way to protect individuals and communities from serious, life-threatening diseases by building immunity against specific viruses and bacteria. Health authorities like the World Health Organization (WHO) and the Centers for Disease Control and Prevention (CDC) recommend specific vaccination schedules for all ages
+                Vaccination plays a vital role in protecting children from life-threatening diseases. We follow
+                national immunisation schedules and maintain proper records for parents. The procedures are
+                carried out safely in a hygienic environment. Timely reminders ensure no dose is missed.
+                Immunisation helps build strong, long-lasting immunity for every child.
             </p>
         </div>
     </section>
 
-    <!-- 5. Growth & Development -->
+    <!-- 7. Fever Cold Cough Flu -->
     <section class="ped-box">
         <div class="ped-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
-        </div>
-        <div class="ped-content">
-            <h3>Growth & Development</h3>
-            <p>
-                Monitoring height, weight, speech, motor and social milestones.  
-                Early identification of delays ensures timely therapy and healthy development.Growth and development are two interconnected processes that describe the continuous physical and functional changes an individual undergoes throughout their lifespan. While the terms are often used together, they refer to distinct aspects of maturation
-            </p>
-        </div>
-    </section>
-
-    <!-- 6. Fever Cold Cough Flu (reverse) -->
-    <section class="ped-box reverse">
-        <div class="ped-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ped-content">
             <h3>Fever, Cold, Cough & Flu</h3>
             <p>
-                Expert diagnosis of viral/bacterial infections, safe medication, hydration care, and prevention guidance.
-                Follow-up ensures quick recovery and reduces complications.Fever, cough, and cold are common symptoms that often occur together, typically indicating a respiratory infection caused by a virus. These are the body's natural defense mechanisms working to fight off the illness.
+                Common infections such as fever, cold and cough are evaluated to determine whether they are
+                viral or bacterial. Treatment focuses on comfort, hydration and safe medication. Early care
+                prevents severe complications. Parents receive guidance for home care. With proper monitoring,
+                children recover comfortably and quickly.
             </p>
         </div>
     </section>
 
-    <!-- 7. Asthma (normal) -->
-    <section class="ped-box">
+    <!-- 8. Asthma -->
+    <section class="ped-box reverse">
         <div class="ped-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ped-content">
             <h3>Asthma & Respiratory Problems</h3>
             <p>
-                Nebulization, inhaler training, allergy testing and long-term asthma plans.  
-                Acute attacks managed promptly; chronic care prevents recurrence.Asthma is a chronic respiratory condition in which the airways (bronchial tubes) narrow, swell, and produce extra mucus, making breathing difficult and triggering coughing, wheezing, and shortness of breath. It is a long-term condition that requires ongoing management
+                Respiratory issues like asthma and wheezing require structured long-term management. We provide
+                nebulisation, inhaler training and trigger identification. Regular follow-up helps reduce flare-
+                ups. Parents are taught preventive measures. Our aim is to help children breathe freely and stay
+                active with confidence.
+            </p>
+        </div>
+    </section>
+
+    <!-- 9. Skin Allergy -->
+    <section class="ped-box">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Skin Allergy & Rashes</h3>
+            <p>
+                Skin allergies and rashes often result from infections, food reactions or environmental
+                triggers. We identify the exact cause and provide soothing, effective treatment. Skin care
+                routines are recommended to prevent flare-ups. With proper guidance, children experience
+                long-term comfort. Healthy skin is restored safely.
+            </p>
+        </div>
+    </section>
+
+    <!-- 10. Stomach Problems -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Stomach Pain, Diarrhea & Vomiting</h3>
+            <p>
+                Digestive problems in children may occur due to infections, food intolerance or dehydration.
+                We assess hydration levels and provide appropriate fluid therapy. Early diagnosis ensures fast
+                relief. Parents receive guidance on diet and care. With timely treatment, children regain
+                strength quickly and safely.
+            </p>
+        </div>
+    </section>
+
+    <!-- 11. Skin Infections -->
+    <section class="ped-box">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Skin Infections & Rashes</h3>
+            <p>
+                Bacterial and fungal infections require timely treatment to prevent spreading and discomfort.
+                We provide accurate diagnosis and medications suited for children’s sensitive skin. Parents are
+                guided on hygiene practices. Healing is monitored until complete. Our care ensures smooth,
+                healthy skin recovery.
+            </p>
+        </div>
+    </section>
+
+    <!-- 12. ENT -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+          <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Ear, Nose & Throat Infections</h3>
+            <p>
+                ENT infections affect breathing, feeding and sleep in children. We diagnose problems like ear
+                pain, sinus congestion and tonsil inflammation. Treatment reduces discomfort quickly. Follow-up
+                care helps prevent recurrent infections. Our goal is healthier breathing and faster recovery.
+            </p>
+        </div>
+    </section>
+
+    <!-- 13. Growth -->
+    <section class="ped-box">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Growth & Development</h3>
+            <p>
+                Tracking a child’s milestones helps identify growth progress and potential delays early. We
+                monitor height, weight, learning skills and behaviour. Nutrition and lifestyle suggestions are
+                given to support healthy development. Early intervention ensures every child reaches their
+                potential. This holistic monitoring builds lifelong well-being.
+            </p>
+        </div>
+    </section>
+
+    <!-- 14. Seizures -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+          <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Seizures, Headaches & Weakness</h3>
+            <p>
+                Neurological symptoms such as seizures and severe headaches need immediate medical attention.
+                We conduct detailed neurological assessments and investigations when required. Early diagnosis
+                prevents serious complications. Treatment plans are tailored to each child’s condition.
+                Continuous monitoring ensures long-term brain health and stability.
+            </p>
+        </div>
+    </section>
+
+    <!-- 15. Urinary -->
+    <section class="ped-box">
+        <div class="ped-img">
+          <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Urinary & Kidney Problems</h3>
+            <p>
+                Urinary infections, kidney issues and bladder problems are evaluated carefully to avoid
+                long-term damage. Children receive gentle, effective treatment. Hygiene and hydration
+                guidance is given to parents. Follow-up ensures complete recovery. Our focus is on maintaining
+                healthy urinary system function.
+            </p>
+        </div>
+    </section>
+
+    <!-- 16. Bone & Joint -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+          <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Bone & Joint Problems</h3>
+            <p>
+                Children experience fractures, joint pain and limb deformities that require expert
+                evaluation. We offer treatment suited to growing bones. Physical activity guidance is
+                provided for safe mobility. Early correction prevents long-term issues. Our approach ensures
+                strong bones and healthy movement.
+            </p>
+        </div>
+    </section>
+
+    <!-- 17. General Surgeries -->
+    <section class="ped-box">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>General Paediatric Surgeries</h3>
+            <p>
+                Common childhood surgeries are performed by experienced paediatric surgeons in a safe,
+                child-friendly environment. Anaesthesia and postoperative care are managed carefully to
+                ensure comfort. Healing is monitored until complete recovery. Our focus is on safety,
+                precision and compassionate care for every child.
+            </p>
+        </div>
+    </section>
+
+    <!-- 18. Laparoscopic -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+         <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Laparoscopic Paediatric Surgeries</h3>
+            <p>
+                Laparoscopic surgery uses tiny incisions, offering faster healing and minimal discomfort.
+                Children benefit from shorter hospital stays and barely visible scars. These procedures are
+                safe and highly effective for abdominal conditions. Our surgeons ensure precision and care in
+                every step. Recovery is smooth and quick.
+            </p>
+        </div>
+    </section>
+
+    <!-- 19. Tonsils -->
+    <section class="ped-box">
+        <div class="ped-img">
+         <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Tonsillectomy & Adenoidectomy</h3>
+            <p>
+                Enlarged tonsils and adenoids can lead to breathing difficulty, snoring and repeated
+                infections. Surgical removal provides long-term relief and improves sleep quality. Children
+                recover quickly with proper care. The procedure enhances airway health and overall comfort.
+                Our team ensures a smooth and safe healing process.
+            </p>
+        </div>
+    </section>
+
+    <!-- 20. Hernia -->
+    <section class="ped-box reverse">
+        <div class="ped-img">
+           <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ped-content">
+            <h3>Hernia & Hydrocele Surgeries</h3>
+            <p>
+                Hernia and hydrocele surgeries in children are safe, simple and highly effective. These
+                procedures prevent future complications and discomfort. Recovery is quick, and children
+                return to normal activities soon. Our surgical team ensures gentle handling and expert care.
+                The goal is a safe and smooth healing experience.
             </p>
         </div>
     </section>
@@ -223,14 +389,14 @@
 
 
   </main>
-
+</body>
 
 <footer class="footer">
   <div class="footer-container">
 
     <!-- LOGO -->
     <div class="footer-logo-box">
-      <img src="Yamini Logo.jpg" class="footer-logo">
+      <img src="x.jpg" class="footer-logo">
       <p>For All Healthcare Needs of Children, Women & Orthopaedic Patients.</p>
     </div>
 
@@ -251,6 +417,8 @@
       <a href="paediatrics.html">Paediatrics & Neonatology</a>
       <a href="orthopaedic.html">Orthopaedic </a>
       <a href="gyn.html">Gynaecology & Obstetrics</a>
+      <a href="general.html">General Medicine</a>
+      
       
     </div>
     <!-- CONTACT SECTION -->
@@ -286,6 +454,6 @@
   <p class="footer-copy">©2025 | Yamini MultiSpeciality Hospital | All Rights Reserved</p>
 </footer>
 
-</body>
+
 </html>
 

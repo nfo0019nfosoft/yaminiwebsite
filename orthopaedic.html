@@ -8,138 +8,57 @@
   <!-- BOOTSTRAP 5 CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="stylesheet" href="css/orthopaedric.css">
   
 </head>
 
 <body>
+     <!-- TOP BAR -->
+<div class="top-bar">
+    <div class="top-left">
+        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp; | &nbsp;
+        <i class="fa-solid fa-phone-volume top-icon"></i> +91 8008718777
+    </div>
 
-  <header>
+    <div class="top-right">
+        <i class="fa-solid fa-location-dot top-icon"></i> Kothagudem, Telangana
+    </div>
+</div>
+
+
+ <header>
     <div class="nav-container">
-
-    
-    <div class="logo">
-      <img src="image.jpg" alt="Yamini Multi Speciality Hospital Logo">
+        <div class="logo">
+      <img src="x.jpg" alt="Yamini Multi Speciality Hospital Logo">
       </div>
 
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
+      <li class="services-dropdown">
+  <a href="#" class="nav-link">Services ▾</a>
 
-        <li class="services-dropdown">
-    <a href="#" class="nav-link">Services ▾</a>
-
-    <div class="dropdown">
-
-        <ul>
-
-           
-            <li class="submenu-item">
-
-                <!-- Clickable main link -->
-                <a href="paediatrics.html" class="main-link">Paediatrics</a>
-
-                <!-- Toggle Arrow -->
-                <span class="toggle" onclick="toggleMenu('paediatricsMenu')">▸</span>
-
-                <!-- Submenu -->
-                <ul id="paediatricsMenu" class="submenu">
-                    <li>NICU (Neonatal Intensive Care)</li>
-                    <li>PICU (Paediatric Intensive Care)</li>
-                    <li>New-born Care</li>
-                    <li>Jaundice Treatment</li>
-                    <li>Preterm Baby Care</li>
-                    <li>Vaccination</li>
-                    <li>Fever – Cold – Cough – Flu</li>
-                    <li>Asthma – Respiratory Problems</li>
-                    <li>Skin Allergy & Rashes</li>
-                    <li>Stomach Pain – Diarrhea – Vomiting</li>
-                    <li>Skin Infections</li>
-                    <li>ENT Infections</li>
-                    <li>Growth & Development</li>
-                    <li>Seizures / Headache</li>
-                    <li>Urinary & Kidney Problems</li>
-                    <li>Bone & Joint Problems</li>
-                    <li>Paediatric Surgeries</li>
-                    <li>Laparoscopic Surgeries</li>
-                    <li>Tonsillectomy / Adenoidectomy</li>
-                    <li>Hernia / Hydrocele</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 2. ORTHOPAEDIC        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="orthopaedic.html" class="main-link">Orthopaedic</a>
-
-                <span class="toggle" onclick="toggleMenu('orthoMenu')">▸</span>
-
-                <ul id="orthoMenu" class="submenu">
-                    <li>Trauma Management</li>
-                    <li>Total Knee Replacement</li>
-                    <li>Total Hip Replacement</li>
-                    <li>Shoulder Replacement</li>
-                    <li>Revision Surgeries</li>
-                    <li>Fracture Care</li>
-                    <li>Arthritis Treatment</li>
-                    <li>Sports Injuries</li>
-                    <li>Joint Pain Evaluation</li>
-                    <li>Back & Neck Pain</li>
-                    <li>Disc Problems</li>
-                    <li>Spine Fractures</li>
-                    <li>Complex Fractures</li>
-                    <li>Shoulder Dislocation</li>
-                    <li>Wrist & Elbow Disorders</li>
-                    <li>Tendon Injuries</li>
-                </ul>
-
-            </li>
-
-            <hr>
-
-            <!-- ===================== -->
-            <!-- 3. GYNAECOLOGY        -->
-            <!-- ===================== -->
-            <li class="submenu-item">
-
-                <a href="gyn.html" class="main-link">Gynaecology</a>
-
-                <span class="toggle" onclick="toggleMenu('gynMenu')">▸</span>
-
-                <ul id="gynMenu" class="submenu">
-                    <li>Menstrual Disorders</li>
-                    <li>PCOS / PCOD</li>
-                    <li>Thyroid / BP Issues</li>
-                    <li>White Discharge</li>
-                    <li>Uterine Fibroids</li>
-                    <li>Ovarian Cysts</li>
-                    <li>Endometriosis</li>
-                    <li>Pelvic Pain</li>
-                    <li>Vaginal Infections</li>
-                    <li>Pregnancy Care</li>
-                    <li>Normal Delivery</li>
-                    <li>C-Section</li>
-                    <li>High-risk Pregnancy</li>
-                    <li>Laparoscopic Surgeries</li>
-                </ul>
-
-            </li>
-
-        </ul>
-
-    </div>
+  <div class="dropdown">
+    <ul>
+      <li><a href="paediatrics.html" class="service-item"> Paediatrics & Neonatology</a></li>
+      <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
+      <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics</a></li>
+       <li><a href="general.html" class="service-item">General Medicine </a></li>
+    </ul>
+  </div>
 </li>
 
+     <li><a href="contact.html">Contact Us</a></li>
+      
+      <li><a href="contact.html" class="btn-appointment-nav"> Book Appointment</a></li>
+    </ul>
 
-        <li><a href="contact.html">Contact  Us</a></li>
-      </ul>
     </div>
   </header>
+
+  
   <h2 class="title">Orthopaedic Services</h2>
 
 <div class="ortho-wrapper">
@@ -147,87 +66,323 @@
     <!-- 1. Trauma Management -->
     <section class="ortho-box">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
             <h3>Trauma Management</h3>
             <p>
-                Immediate stabilization of fractures and soft-tissue injuries.Emergency wound care, splinting & casting.Trauma management refers to the critical, systematic approach to both physical injuries resulting from sudden, forceful events and the psychological impact of highly stressful experiences.Team approach with anaesthesia & physiotherapy.Early rehabilitation improves recovery and function.
+                Comprehensive care for road accidents, falls and severe injuries requiring immediate attention.
+                Includes fracture stabilisation, wound care, plastering and emergency pain control. Team approach
+                ensures safe and fast recovery. Early intervention reduces long-term complications. Treatment is
+                tailored to restore mobility quickly and safely.
+                Trauma care ensures immediate stabilisation, preventing long-term disability.
+                Specialised protocols help restore full function with minimal complications.
             </p>
         </div>
     </section>
 
-    <!-- 2. TKR (reverse row) -->
+    <!-- 2. Total Knee Replacement -->
     <section class="ortho-box reverse">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
             <h3>Total Knee Replacement (TKR)</h3>
             <p>
-                Advanced joint replacement for severe knee arthritis.Minimally invasive techniques for faster recovery.Early physiotherapy for mobility & stability.Long-term pain relief and improved walking ability.Total knee replacement (TKR), also called total knee arthroplasty, is a surgical procedure that resurfaces a severely damaged knee joint with artificial metal and plastic components to relieve chronic pain and restore mobility. It is one of the most successful and cost-effective procedures in orthopedics, offering significant improvements in quality of life for suitable candidates. 
+                TKR surgery restores knee function in patients with severe arthritis or joint damage. The worn-out
+                surfaces are replaced with artificial implants. This reduces pain, improves walking ability and
+                enhances daily movement. Modern techniques ensure faster recovery. Ideal for long-standing knee pain.
+                Most patients regain excellent walking ability within weeks of surgery.
+                Modern implants are highly durable and support active lifestyles.
             </p>
         </div>
     </section>
 
-    <!-- 3. THR -->
+    <!-- 3. Total Hip Replacement -->
     <section class="ortho-box">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
             <h3>Total Hip Replacement (THR)</h3>
             <p>
-                Restores hip function for arthritis or fracture complications.Precision surgical planning and safe anaesthesia.Enhanced recovery pathways reduce hospital stay.Physiotherapy supports strength and proper gait.Total hip replacement (THR), or total hip arthroplasty, is a major surgical procedure where the damaged ball-and-socket joint of the hip is removed and replaced with artificial prosthetic components made of metal, plastic, or ceramic. This operation is highly effective at relieving chronic pain, stiffness, and restoring normal movement in people whose hip joints are severely degraded.
+                THR surgery replaces the damaged hip joint with a smooth artificial implant. It relieves severe
+                hip pain caused by arthritis, fractures or wear-and-tear. Patients experience improved flexibility
+                and mobility. Modern hip implants last many years. Recovery allows patients to return to an active life.
+                Hip replacement reduces stiffness and restores smooth, pain-free movement.
+                Patients often experience major improvement in sitting, standing and mobility.
             </p>
         </div>
     </section>
 
-    <!-- 4. Shoulder Replacement (reverse) -->
+    <!-- 4. Shoulder Joint Replacement -->
     <section class="ortho-box reverse">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
             <h3>Shoulder Joint Replacement</h3>
             <p>
-                Treatment for severe arthritis & complex fractures.Includes both anatomic & reverse replacements.Surgery restores shoulder function & reduces pain.Structured rehabilitation improves motion & strength.Total shoulder replacement, or shoulder arthroplasty, is a surgical procedure to replace a damaged shoulder joint with artificial components to relieve severe pain and restore motion. The procedure has become highly successful in managing chronic pain and disability when non-surgical treatments fail. 
-
+                Shoulder replacement helps patients with severe arthritis, rotator cuff damage or joint injuries.
+                The damaged bone is replaced with a smooth artificial joint. This reduces pain and improves
+                arm movement. Ideal for patients who struggle with lifting or daily shoulder use. Offers long-term relief.
+                The procedure significantly improves shoulder rotation and strength.
+                Daily tasks like lifting, combing hair and reaching become easier.
+            </p>
         </div>
     </section>
 
-    <!-- 5. Joint Pain Evaluation -->
+    <!-- 5. Revision Joint Replacement -->
     <section class="ortho-box">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Revision Joint Replacement</h3>
+            <p>
+                Revision surgery is performed when a previous joint replacement becomes loose, infected or worn-out.
+                The old implant is removed and replaced with a new, stronger one. Requires specialised expertise for
+                best results. Helps restore joint function and reduce pain. Ensures long-term joint stability.
+                Revision surgery restores confidence in joint movement and mobility.
+                Modern implants provide better durability and comfort.
+            </p>
+        </div>
+    </section>
+
+    <!-- 6. Fracture Care & Trauma -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Fracture Care & Trauma Management</h3>
+            <p>
+                Complete treatment for all types of fractures, from simple cracks to complex multiple-bone injuries.
+                Includes plastering, splints, minimally invasive surgery and rehabilitation. Ensures proper bone
+                alignment and healing. Early mobilisation is encouraged for better recovery. Goal is to restore normal movement.
+                Precise alignment techniques ensure natural bone healing.
+                Rehabilitation support helps patients regain strength quickly.
+            </p>
+        </div>
+    </section>
+
+    <!-- 7. Arthritis Diagnosis & Treatment -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Arthritis Diagnosis & Treatment</h3>
+            <p>
+                Arthritis leads to joint pain, swelling and stiffness that can affect daily activities.
+                We offer medication, physiotherapy, injections and lifestyle guidance. Early diagnosis
+                helps slow disease progression. Personalized treatment reduces pain and improves mobility.
+                Long-term management enhances quality of life.
+                Regular monitoring prevents worsening of joint damage.
+                Guided exercise therapy improves long-term flexibility.
+            </p>
+        </div>
+    </section>
+
+    <!-- 8. Sports Injury Management -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Sports Injuries Management</h3>
+            <p>
+                Specialised care for ligament tears, muscle sprains, tendon injuries and joint trauma.
+                Treatment includes physiotherapy, bracing and minimally invasive procedures. Focus on
+                restoring full strength and movement. Preventive guidance avoids repeat injuries.
+                Helps athletes return to sports safely and confidently.
+                Rehabilitation programs are customised for each sport.
+                Strength training prevents future ligament damage.
+            </p>
+        </div>
+    </section>
+
+    <!-- 9. Joint Pain Evaluation -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
             <h3>Joint Pain Evaluation</h3>
             <p>
-                Joint pain replacement refers to a surgical solution for chronic and severe joint pain where the damaged joint is removed and replaced with an artificial implant (prosthesis). This procedure is considered when non-surgical treatments fail to provide reliefAssessment of knee, hip, shoulder & ankle pain.X-ray, MRI & ultrasound for accurate diagnosis.Non-surgical treatment options available.Goal is pain relief & restoring joint function.
+                Detailed assessment for knee, hip, shoulder and ankle pain. Evaluation includes X-rays,
+                gait analysis and clinical examination. Identifies arthritis, injuries or alignment issues.
+                Treatment improves movement and reduces pain. Helps prevent long-term joint deterioration.
+                Early detection reduces the risk of severe degeneration.
+                Personalized treatment plans ensure faster recovery.
             </p>
         </div>
     </section>
 
-    <!-- 6. Back & Neck Pain (reverse) -->
+    <!-- 10. Back & Neck Pain -->
     <section class="ortho-box reverse">
         <div class="ortho-img">
-            <img src="https://skala.or.id/wp-content/uploads/2024/01/dummy-post-square-1-1.jpg">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
         </div>
         <div class="ortho-content">
-            <h3>Back & Neck Pain Treatment</h3>
+            <h3>Back Pain & Neck Pain Treatment</h3>
             <p>
-                Back and neck pain are common conditions typically caused by muscle strain, poor posture, or age-related degeneration, although serious underlying issues are possible. Management often involves self-care, physical therapy, and medication, while urgent symptoms require immediate medical evaluation.Evidence-based treatment for spine pain & nerve compression.Physiotherapy, pain procedures & lifestyle modifications.Minimally invasive spine surgery for select cases.Rehab includes posture correction & core strengthening.
+                We treat muscle spasms, disc problems, posture issues and nerve compression causing back
+                or neck pain. Therapy includes medication, exercises and ergonomic guidance. Chronic pain
+                is managed with advanced techniques. Focus is on long-term comfort and spine health.
+                Lifestyle modifications improve spinal stability.
+                Strengthening therapies prevent repeated pain episodes.
             </p>
         </div>
     </section>
+
+    <!-- 11. Disc Problems -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Disc Problems</h3>
+            <p>
+                Disc bulges and herniations can cause nerve compression and radiating pain. Treatment includes
+                medication, physiotherapy and strengthening exercises. Minimally invasive procedures may be
+                recommended in severe cases. Early care prevents worsening symptoms. Goal is pain-free mobility.
+                Strengthening the core reduces disc pressure effectively.
+                Early treatment helps avoid the need for surgery.
+            </p>
+        </div>
+    </section>
+
+    <!-- 12. Spine Fracture -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Spine Fracture Management</h3>
+            <p>
+                Spine fractures require urgent stabilisation to prevent nerve damage. We evaluate the severity
+                using imaging studies and provide appropriate bracing or surgical correction. Rehabilitation
+                restores strength and mobility. Focus is on protecting spinal cord function. Ensures safe healing.
+                Advanced stabilisation techniques prevent deformity.
+                Careful monitoring improves long-term spinal health.
+            </p>
+        </div>
+    </section>
+
+    <!-- 13. Complex Fractures -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Complex Fracture Treatment</h3>
+            <p>
+                Multiple fractures, joint-involving fractures and deformity-producing injuries need specialist
+                surgical care. We use modern fixation techniques to ensure proper bone alignment. Early
+                physiotherapy improves movement. These injuries require careful follow-up. Our goal is complete,
+                functional recovery.
+                Specialised implants ensure strong and stable healing.
+                Rehabilitation restores coordination and full motion.
+            </p>
+        </div>
+    </section>
+
+    <!-- 14. Ankle Ligament Injuries -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Ankle Ligament Injuries</h3>
+            <p>
+                Sudden twists and sports activity commonly injure ankle ligaments. Treatment includes rest,
+                physiotherapy, bracing and strengthening exercises. Severe cases may require reconstruction.
+                Early care prevents chronic instability. Helps patients return to normal activities safely.
+                Proper rehab prevents long-term ankle weakness.
+                Balance training reduces chances of re-injury.
+            </p>
+        </div>
+    </section>
+
+    <!-- 15. Shoulder Dislocations -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Shoulder Dislocations</h3>
+            <p>
+                Shoulder dislocations cause severe pain and instability. We reposition the joint safely and
+                evaluate for ligament tears. Physiotherapy helps restore strength. Recurrent dislocations may
+                need minimally invasive surgery. Prompt care ensures proper healing and stable shoulder function.
+                Strengthening the rotator cuff prevents future dislocations.
+                Proper rehabilitation restores complete joint stability.
+            </p>
+        </div>
+    </section>
+
+    <!-- 16. Wrist & Elbow Disorders -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Wrist & Elbow Disorders</h3>
+            <p>
+                Pain, stiffness or swelling in the wrist and elbow can result from injuries, arthritis or nerve
+                compression. We diagnose the issue using imaging and functional tests. Treatment includes therapy,
+                medication and splinting. Proper care ensures restored joint movement. Helps prevent future problems.
+                Early diagnosis avoids long-term stiffness.
+                Strengthening exercises improve daily hand function.
+            </p>
+        </div>
+    </section>
+
+    <!-- 17. Tendon, Ligament & Muscle Injury Care -->
+    <section class="ortho-box">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Tendon, Ligament & Muscle Injury Care</h3>
+            <p>
+                Strains, tears and inflammation of tendons or muscles can affect movement and cause pain.
+                We offer rest protocols, physiotherapy, medication and advanced treatments when required.
+                Strengthening exercises help prevent recurrence. Recovery is monitored closely. Designed to
+                restore strength and flexibility.
+                Therapy improves flexibility and muscle coordination.
+                Follow-up ensures safe and complete healing.
+            </p>
+        </div>
+    </section>
+
+    <!-- 18. Osteoporosis Screening & Treatment -->
+    <section class="ortho-box reverse">
+        <div class="ortho-img">
+            <img src="https://media.istockphoto.com/id/482858629/photo/doctors-hospital-corridor-nurse-pushing-gurney-stretcher-bed.jpg?s=612x612&w=0&k=20&c=unfa1VMpYQGt3PyrkuvxN1JkX7FRk-w0knEFCqjTugg=">
+        </div>
+        <div class="ortho-content">
+            <h3>Osteoporosis Screening & Treatment</h3>
+            <p>
+                Osteoporosis weakens bones and increases fracture risk. We perform bone density testing to detect
+                early bone loss. Treatment includes supplements, medication and lifestyle guidance. Weight-bearing
+                exercises strengthen bones. Early screening ensures long-term bone health and fracture prevention.
+                Timely treatment reduces fracture chances drastically.
+                Lifestyle changes improve lifelong bone strength.
+            </p>
+        </div>
+    </section>
+
 </div>
+</body>
+      
 <footer class="footer">
   <div class="footer-container">
 
     <!-- LOGO -->
     <div class="footer-logo-box">
-      <img src="Yamini Logo.jpg" class="footer-logo">
+      <img src="x.jpg" class="footer-logo">
       <p>For All Healthcare Needs of Children, Women & Orthopaedic Patients.</p>
     </div>
 
@@ -248,6 +403,7 @@
       <a href="paediatrics.html">Paediatrics & Neonatology</a>
       <a href="orthopaedic.html">Orthopaedic </a>
       <a href="gyn.html">Gynaecology & Obstetrics</a>
+      <a href="general.html">General Medicine</a>
       
     </div>
     <!-- CONTACT SECTION -->
@@ -284,7 +440,7 @@
 </footer>
 
 
-</body>
+
 </html>
 
 
