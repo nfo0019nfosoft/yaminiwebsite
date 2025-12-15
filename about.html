@@ -19,7 +19,7 @@
 <body>
      <div class="top-bar">
     <div class="top-left">
-        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp; | &nbsp;
+        <i class="fa-solid fa-truck-medical top-icon"></i> 24/7 Emergency &nbsp;  &nbsp;
         <i class="fa-solid fa-phone-volume top-icon"></i> +91 8008718777
     </div>
 
@@ -30,35 +30,41 @@
 
 
     <header>
-    <div class="nav-container">
-        <div class="logo">
+  <div class="nav-container">
+
+    <div class="logo">
       <img src="x.jpg" alt="Yamini Multi Speciality Hospital Logo">
-      </div>
-
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-      <li class="services-dropdown">
-  <a href="#" class="nav-link">Services ▾</a>
-
-  <div class="dropdown">
-    <ul>
-      <li><a href="paediatrics.html" class="service-item">Paediatrics & neonatology</a></li>
-      <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
-      <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics</a></li>
-       <li><a href="general.html" class="service-item">General Medicine </a></li>
-    </ul>
-  </div>
-</li>
-
-    
-     <li><a href="contact.html">Contact Us</a></li>
-      
-      <li><a href="contact.html" class="btn-appointment-nav"> Book Appointment</a></li>
-    </ul>
-
     </div>
-  </header>
+
+    <!-- HAMBURGER ICON -->
+    <div class="menu-toggle">
+      <i class="bi bi-list"></i>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+
+      <li class="services-dropdown">
+        <a href="#" class="nav-link">Services ▾</a>
+
+        <div class="dropdown">
+          <ul>
+            <li><a href="paediatrics.html" class="service-item">Paediatrics & Neonatology</a></li>
+            <li><a href="orthopaedic.html" class="service-item">Orthopaedics</a></li>
+            <li><a href="gyn.html" class="service-item">Gynaecology & Obstetrics</a></li>
+            <li><a href="general.html" class="service-item">General Medicine</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li><a href="contact.html">Contact Us</a></li>
+
+      <li><a href="contact.html" class="btn-appointment-nav">Book Appointment</a></li>
+    </ul>
+
+  </div>
+</header>
 
   
 
@@ -258,5 +264,13 @@
 </footer>
 
     </body>
+
+
+    <script>
+document.querySelector(".menu-toggle").onclick = function () {
+  document.querySelector(".nav-links").classList.toggle("active");
+};
+</script>
+
 
 </html>
