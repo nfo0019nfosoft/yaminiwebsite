@@ -463,18 +463,7 @@
     
 
     
-    @media(max-width:768px){
-      .nav-container{
-        flex-direction:column;
-        align-items:flex-start;
-        gap:8px;
-      }
-      .nav-links{
-        flex-wrap:wrap;
-        white-space:normal;
-      }
-
-    }
+    
 
 
     /* ================= BANNER ================= */
