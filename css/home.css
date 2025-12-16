@@ -813,48 +813,6 @@
 
 
 
-.services-dropdown .dropdown {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 260px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-    border-radius: 6px;
-    padding: 10px;
-    z-index: 999;
-}
-
-.services-dropdown:hover .dropdown {
-    display: block;
-}
-
-.submenu-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-link {
-    flex: 1;
-    padding: 5px 0;
-}
-
-.toggle {
-    cursor: pointer;
-    padding: 5px;
-}
-
-.submenu {
-    display: none;
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.submenu li {
-    margin: 4px 0;
-    font-size: 14px;
-}
-
 
 
 
