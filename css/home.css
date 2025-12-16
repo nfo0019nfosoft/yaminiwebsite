@@ -215,66 +215,6 @@
     font-size: 18px;
   }
 }
-/* ==============================
-   ULTIMATE MOBILE MENU FIX
-============================== */
-
-@media (max-width: 850px) {
-
-  /* Ensure correct stacking */
-  .top-bar {
-    position: relative;
-    z-index: 9000;
-  }
-
-  header {
-    position: relative;
-    z-index: 8000;
-  }
-
-  .nav-container {
-    position: relative;
-  }
-
-  /* Hamburger */
-  .menu-toggle {
-    display: block;
-    position: relative;
-    z-index: 10000;
-    margin-left: auto;
-    padding-right: 15px;
-    font-size: 34px;
-    cursor: pointer;
-  }
-
-  /* MENU — PUSHES PAGE DOWN (NO OVERLAY) */
-  .nav-links {
-    position: relative;          /* 🔥 KEY CHANGE */
-    display: none;
-    width: 100%;
-    background: #ffffff;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0 20px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    width: 100%;
-    text-align: center;
-    padding: 14px 0;
-  }
-
-  .nav-links a {
-    margin-left: 0 !important;
-    font-size: 18px;
-  }
-}
-
 /* ===== FORCE MOBILE NAV OPEN ===== */
 @media (max-width: 850px) {
   .nav-links {
@@ -285,6 +225,7 @@
     display: flex !important;
   }
 }
+
 
 
     /* DROPDOWN */
