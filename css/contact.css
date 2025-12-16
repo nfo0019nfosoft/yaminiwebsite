@@ -231,7 +231,14 @@
   }
 }
 
-
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 2px;
+        padding: 6px 0;
+    }
+}
 
 
 
