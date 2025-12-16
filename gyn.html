@@ -28,7 +28,7 @@
     </div>
 </div>
 
-  <header>
+<header>
   <div class="nav-container">
 
     <div class="logo">
@@ -65,6 +65,7 @@
   </div>
 </header>
 
+  
 
 
     <h2 class="title">Gynaecology & Obstetrics Services</h2>
@@ -381,9 +382,9 @@
   <p class="footer-copy">©2025 | Yamini MultiSpeciality Hospital | All Rights Reserved</p>
 </footer>
 <script>
-document.querySelector(".menu-toggle").onclick = function () {
-  document.querySelector(".nav-links").classList.toggle("active");
-};
+  document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("active");
+  });
 </script>
 
 </body>

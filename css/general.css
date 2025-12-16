@@ -36,7 +36,7 @@
     font-weight: 500;
 }
 
-    /* HEADER */
+  
     header{
       background:#ffffff;
       box-shadow:0 2px 8px rgba(0,0,0,0.1);
@@ -48,12 +48,13 @@
     .nav-container{
       max-width:1200px;
       margin:auto;
+     
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      padding:5px 0;
+      justify-content:space-between; 
     }
 
+    
     .logo{
       display:flex;
       align-items:center;
@@ -67,14 +68,20 @@
       padding-left: 40px;
     }
 
-    .nav-links{
-      display:flex;
-      gap:18px;
-      list-style:none;
-    }
 
+
+    
+
+    
+    .nav-links{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      white-space:nowrap;
+    }
     .nav-links a{
-      font-size:20px;
+      font-size: 20px !important;
       font-weight:600;
       color:var(--header-dark);
       text-decoration:none;
@@ -83,68 +90,88 @@
     }
 
 
-    .nav-links a:hover{
+    .nav-links > li{
+      position:relative;
+    }
+
+    .nav-links > li > a{
+      font-size:15px;
+      font-weight:600;
+      color:var(--primary);
+      padding:6px 8px;
+    }
+
+    .nav-links > li > a:hover{
       color:var(--accent);
     }
 
-/* Hamburger hidden in desktop */
+
+    /* ===============================
+   MOBILE HEADER FIX (ONLY)
+================================*/
+
+/* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
-  font-size: 35px;
-  cursor: pointer;
-  color: #08254c;
 }
 
-/* -----------------------------
-   MOBILE RESPONSIVE CSS
---------------------------------*/
+/* MOBILE VIEW */
 @media (max-width: 850px) {
 
+  /* Show hamburger */
   .menu-toggle {
     display: block;
+    font-size: 34px;
+    cursor: pointer;
+    color: #08254c;
   }
 
-  .nav-container {
-    padding: 10px 20px;
+  /* Keep header height stable */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2000;
   }
 
-  /* NAV LINKS becomes dropdown panel */
+  /* NAV MENU PANEL */
   .nav-links {
     position: absolute;
-    top: 90px; /* BELOW HEADER — FIXES OVERLAY */
+    top: 100%;                 /* BELOW header (IMPORTANT) */
     left: 0;
     width: 100%;
     background: white;
-    display: none;
+    display: none;             /* hidden by default */
     flex-direction: column;
     padding: 15px 0;
-    border-top: 2px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
 
-  /* Show menu when active */
+  /* SHOW menu when active */
   .nav-links.active {
     display: flex;
   }
 
   .nav-links li {
-    margin: 12px 0;
     text-align: center;
+    margin: 12px 0;
   }
 
   .nav-links a {
-    margin-left: 0 !important;
     font-size: 18px;
+    margin-left: 0 !important;
   }
-
-  /* Dropdown fixes for mobile */
+  /* Fix services dropdown in mobile */
   .services-dropdown .dropdown {
     position: relative;
-    background: #08254c;
     width: 100%;
+    background: #08254c;
     border-radius: 0;
-    box-shadow: none;
+    display: none;
+  }
+
+  .services-dropdown:hover .dropdown {
+    display: block;
   }
 
   .service-item {
@@ -152,6 +179,61 @@
     padding: 10px 20px;
   }
 }
+
+  /* Dropdown fixes for mobile */
+  .services-dropdown {
+  position: relative;
+}
+
+/* DROPDOWN BOX */
+.services-dropdown .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #08254c;      /* blue background */
+  border-radius: 12px;      /* <<< rounded dropdown */
+  padding: 10px 0;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 999;
+}
+
+/* SHOW WHEN HOVER */
+.services-dropdown:hover .dropdown {
+  display: block;
+}
+
+/* REMOVE BULLETS */
+.services-dropdown .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* SERVICE MENU ITEMS */
+.service-item {
+  display: block;
+  padding: 10px 18px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  border-radius: 8px;
+  margin: 3px 8px;
+  white-space: nowrap;   /* <<< keeps all text in ONE line */
+}
+
+
+/* HOVER EFFECT */
+.service-item:hover {
+  background: #08254c;      /* hover blue */
+  color: white !important;
+  padding-left: 22px;       /* slight slide-in effect */
+}
+
+
 
 
 

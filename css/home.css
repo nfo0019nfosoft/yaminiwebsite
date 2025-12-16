@@ -17,7 +17,7 @@
 
   
 
-    /* HEADER */
+     
     header{
       background:#ffffff;
       box-shadow:0 2px 8px rgba(0,0,0,0.1);
@@ -29,12 +29,13 @@
     .nav-container{
       max-width:1200px;
       margin:auto;
+     
       display:flex;
       align-items:center;
-      justify-content:space-between;
-      padding:2px 0;
+      justify-content:space-between; 
     }
 
+    
     .logo{
       display:flex;
       align-items:center;
@@ -42,31 +43,26 @@
     }
 
     .logo img{
-  height:110px;
-  width:auto;
-  border-radius:2px;
-  padding-left: 40px;
-}
-
-
-    .nav-links{
-      display:flex;
-      gap:18px;
-      
-      
-   
-
-
-      
-      list-style:none;
-     
-      align-items:center;
-     
-      white-space:nowrap;
+      height:110px;
+      width:auto;
+      border-radius:2px;
+      padding-left: 40px;
     }
 
+
+
+    
+
+    
+    .nav-links{
+      list-style:none;
+      display:flex;
+      align-items:center;
+      gap:18px;
+      white-space:nowrap;
+    }
     .nav-links a{
-      font-size:20px;
+      font-size: 20px !important;
       font-weight:600;
       color:var(--header-dark);
       text-decoration:none;
@@ -74,119 +70,78 @@
        margin-left: 25px;
     }
 
-    .nav-links a:hover{
+
+    .nav-links > li{
+      position:relative;
+    }
+
+    .nav-links > li > a{
+      font-size:15px;
+      font-weight:600;
+      color:var(--primary);
+      padding:6px 8px;
+    }
+
+    .nav-links > li > a:hover{
       color:var(--accent);
     }
-  
-    /* DROPDOWN */
-    /* --------------------------------------------- */
-/* SERVICES DROPDOWN - FULL WORKING CSS          */
-/* --------------------------------------------- */
 
-/* Position Services menu item */
-.services-dropdown {
-  position: relative;
-}
 
-/* Dropdown box */
-.services-dropdown .dropdown {
-  position: absolute;
-  top: 100%;             /* appears directly below Services */
-  left: 0;
-  min-width: 220px;
-  background: #08254c;   /* BLUE dropdown background */
-  border-radius: 12px;
-  padding: 8px 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  display: none;         /* hidden by default */
-  z-index: 999;
-}
+    /* ===============================
+   MOBILE HEADER FIX (ONLY)
+================================*/
 
-/* Show dropdown on hover */
-.services-dropdown:hover .dropdown {
-  display: block;
-}
-
-/* Remove bullet points */
-.services-dropdown .dropdown ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Service items default style */
-.service-item {
-  display: block;
-  padding: 10px 15px;
-  color: white;                 /* default text white */
-  font-size: 10px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-/* Hover effect */
-.service-item:hover {
-  background: #08254c;          /* lighter blue hover */
-  color: white !important;      /* text stays white */
-  padding-left: 20px;           /* smooth slide effect (optional) */
-}
-
-/* Optional: Space between dropdown and menu */
-.services-dropdown .dropdown {
-  margin-top: 2px;
-}
-/* Hamburger hidden in desktop */
+/* Hide hamburger on desktop */
 .menu-toggle {
   display: none;
-  font-size: 35px;
-  cursor: pointer;
-  color: #08254c;
 }
 
-/* -----------------------------
-   MOBILE RESPONSIVE CSS
---------------------------------*/
+/* MOBILE VIEW */
 @media (max-width: 850px) {
 
+  /* Show hamburger */
   .menu-toggle {
     display: block;
+    font-size: 34px;
+    cursor: pointer;
+    color: #08254c;
   }
 
-  .nav-container {
-    padding: 10px 20px;
+  /* Keep header height stable */
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 2000;
   }
 
-  /* NAV LINKS becomes dropdown panel */
+  /* NAV MENU PANEL */
   .nav-links {
     position: absolute;
-    top: 90px; /* BELOW HEADER — FIXES OVERLAY */
+    top: 100%;                 /* BELOW header (IMPORTANT) */
     left: 0;
     width: 100%;
     background: white;
-    display: none;
+    display: none;             /* hidden by default */
     flex-direction: column;
     padding: 15px 0;
-    border-top: 2px solid #ddd;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
   }
 
-  /* Show menu when active */
+  /* SHOW menu when active */
   .nav-links.active {
     display: flex;
   }
 
   .nav-links li {
-    margin: 12px 0;
     text-align: center;
+    margin: 12px 0;
   }
 
   .nav-links a {
-    margin-left: 0 !important;
     font-size: 18px;
+    margin-left: 0 !important;
   }
-
   /* Dropdown fixes for mobile */
   .services-dropdown .dropdown {
     position: relative;

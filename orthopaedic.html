@@ -64,7 +64,9 @@
 
   </div>
 </header>
->
+
+  
+
 
   
   <h2 class="title">Orthopaedic Services</h2>
@@ -408,10 +410,11 @@
 
 
 <script>
-document.querySelector(".menu-toggle").onclick = function () {
-  document.querySelector(".nav-links").classList.toggle("active");
-};
+  document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("active");
+  });
 </script>
+
 </body>
 
 
