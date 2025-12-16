@@ -283,7 +283,7 @@
   .menu-toggle {
     display: block;
     margin-left: auto;  
-    margin-top: 10px;        /* ✅ pushes toggle to right of logo */
+    margin-top: 40px;        /* ✅ pushes toggle to right of logo */
   }
 }
 
