@@ -103,6 +103,26 @@
     color: #08254c;
      margin-right: 15px; 
   }
+/* FIX: make mobile menu open correctly under header */
+@media (max-width: 850px) {
+
+  .nav-container {
+    position: relative;   /* 🔥 THIS IS THE KEY FIX */
+  }
+
+  .menu-toggle {
+    position: relative;
+    z-index: 3000;
+  }
+
+  .nav-links {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    z-index: 2500;
+  }
+}
 
   /* Keep header height stable */
   header {
