@@ -21,10 +21,10 @@
       color:inherit;
     }
 
-    /* TOP BAR */
+   
 .top-bar {
     width: 100%;
-    background: #08254c;           /* hospital blue */
+    background: #08254c;       
     color: white;
     padding: 4px 20px;
     font-size: 14px;
@@ -36,7 +36,7 @@
 .top-left i,
 .top-right i {
     margin-right: 10px;
-    color:white;                /* accent color */
+    color:white;               
 }
 
 .top-left, .top-right {
@@ -115,68 +115,67 @@
     }
 
    
-    /* SERVICES DROPDOWN PARENT */
+    
 .services-dropdown {
   position: relative;
 }
 
-/* DROPDOWN BOX */
+
 .services-dropdown .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
   min-width: 220px;
-  background: #08252c;      /* blue background */
-  border-radius: 12px;      /* <<< rounded dropdown */
+  background: #08252c;   
+  border-radius: 12px;     
   padding: 10px 0;
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   display: none;
   z-index: 999;
 }
 
-/* SHOW WHEN HOVER */
+
 .services-dropdown:hover .dropdown {
   display: block;
 }
 
-/* REMOVE BULLETS */
+
 .services-dropdown .dropdown ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* SERVICE MENU ITEMS */
+
 .service-item {
   display: block;
   padding: 10px 18px;
-  color: white;             /* default text color */
+  color: white;            
   font-size: 18px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s ease;
-  border-radius: 8px;       /* <<< rounded item edges */
-  margin: 3px 8px;          /* spacing inside box */
+  border-radius: 8px;       
+  margin: 3px 8px;          
 }
 
-/* HOVER EFFECT */
+
 .service-item:hover {
-  background: #08254c;      /* hover blue */
+  background: #08254c;     
   color: white !important;
-  padding-left: 22px;       /* slight slide-in effect */
+  padding-left: 22px;      
 }
 
-/* ---------------- RESPONSIVE HAMBURGER FIX ---------------- */
+
 
 .menu-toggle {
   display: none;
    margin-right: 20px; 
 }
 
-/* MOBILE VIEW */
 @media (max-width: 850px) {
 
-  /* Show hamburger */
+  
   .menu-toggle {
     display: block;
     font-size: 34px;
@@ -187,7 +186,7 @@
 
   .nav-links {
     position: absolute;
-    top: 100px;          /* ensures NO OVERLAP */
+    top: 100px;          
     left: 0;
     width: 100%;
     background: white;
@@ -199,7 +198,7 @@
   }
 
   .nav-links.active {
-    display: flex !important ;/* show when hamburger clicked */
+    display: flex !important ;
   }
 
   .nav-links li {
@@ -207,7 +206,7 @@
     text-align: center;
   }
 
-  /* Mobile dropdown */
+  
   .services-dropdown .dropdown {
     position: relative;
     background: #08254c;
@@ -219,7 +218,7 @@
 @media (max-width: 850px) {
 
   .nav-container {
-    flex-direction: row;        /* ✅ keep logo & toggle in one line */
+    flex-direction: row;       
     align-items: center;
     justify-content: space-between;
   }
@@ -227,17 +226,23 @@
   .menu-toggle {
     display: block;
     margin-left: auto;    
-         /* ✅ pushes toggle to right of logo */
+         
   }
 }
 
+
 @media (max-width: 600px) {
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        gap: 2px;
-        padding: 6px 0;
-    }
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 4px;
+    padding: 6px 0;
+  }
+
+  .top-left,
+  .top-right {
+    justify-content: center;
+  }
 }
 
 
@@ -450,26 +455,26 @@
   gap: 40px;
 }
 
-/* Logo at top with spacing */
+
 .footer-logo-box {
   text-align: center;
   margin-top: 40px;
 }
 
 .footer-logo {
-   height: 70px;           /* logo stays same size */
+   height: 70px;           
   margin-top: -40px;
   background: white;
-  padding: 5px 10px;       /* decrease box size */
+  padding: 5px 10px;       
   border-radius: 12px;
-  display: inline-block;   /* ALLOWS box to shrink */
-} /* Moves logo up */
+  display: inline-block;   
+} 
 
 .footer-logo-box p {
-  margin-top: 15px;   /* Increase this number for more gap */
+  margin-top: 15px;  
 }
 
-/* Box styling */
+
 .footer-box h3 {
   margin-bottom: 12px;
   font-size: 20px;
@@ -485,7 +490,7 @@
   line-height: 1.6;
 }
 
-/* Links */
+
 .footer-box a, .footer-box p {
   color: white;
   text-decoration: none;
@@ -497,7 +502,7 @@
   text-decoration: underline;
 }
 
-/* Social icons */
+
 .social-icons {
   display: flex;
   gap: 12px;
@@ -533,7 +538,7 @@
   margin-bottom: 50px;
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   .footer-logo {
     height: 120px;
@@ -541,7 +546,7 @@
 }
 
 
-/* Tablet */
+
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -557,7 +562,7 @@
   }
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   .footer-container {
     grid-template-columns: 1fr;
@@ -581,9 +586,9 @@
 
 
 
-/* Blue Appointment Button */
+
 .btn-appointment-nav {
-  background: #08254c;        /* dark blue */
+  background: #08254c;       
   color: white !important;
   padding: 8px 18px;
   border-radius: 30px;
@@ -599,7 +604,7 @@
   transform: scale(1.06);
 }
 .nav-links {
-  list-style: none !important;   /* Removes bullets */
+  list-style: none !important;   
   padding: 0;
   margin: 0;
   display: flex;
