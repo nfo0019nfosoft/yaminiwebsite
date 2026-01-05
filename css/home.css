@@ -839,7 +839,8 @@
 }
 
 .footer-box a:hover {
-  color: #02b5b8;
+  color: rgb(225, 34, 66);
+  
 }
 
 .social-icons a {
@@ -1415,9 +1416,6 @@
   line-height: 1.6;
 }
 
-.footer-box a:hover {
-  text-decoration: underline;
-}
 
 /* SOCIAL */
 .social-icons {

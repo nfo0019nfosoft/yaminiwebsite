@@ -463,9 +463,11 @@ textarea{
       color:white;
       text-decoration:none;
     }
-    footer a:hover{
-      text-decoration:underline;
-    }
+    
+.footer-box a:hover {
+  color: rgb(225, 34, 66);
+  
+}
 
 
     

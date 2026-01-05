@@ -722,10 +722,11 @@
   display: block;
 }
 
-.footer-box a:hover {
-  text-decoration: underline;
-}
 
+.footer-box a:hover {
+  color: rgb(225, 34, 66);
+  
+}
 
 .social-icons {
   display: flex;

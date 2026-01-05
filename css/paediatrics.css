@@ -653,11 +653,13 @@
   display: block;
 }
 
+
+
+
 .footer-box a:hover {
-  text-decoration: underline;
+  color: rgb(225, 34, 66);
+  
 }
-
-
 .social-icons {
   display: flex;
   gap: 12px;
