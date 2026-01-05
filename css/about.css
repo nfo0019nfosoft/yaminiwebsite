@@ -23,29 +23,58 @@
       color:inherit;
     }
 
-   
 .top-bar {
-    width: 100%;
-    background: #08254c;       
-    color: white;
-    padding: 4px 20px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  background: #08254c;
+  color: white;
+  padding: 8px 30px;          /* 👈 controls side spacing */
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.top-left i,
-.top-right i {
-    margin-right: 10px;
-    color:white;               
+/* GROUP SPACING */
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;                 /* 👈 spacing between items */
+  font-weight: 500;
 }
 
-.top-left, .top-right {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
+/* ICON SPACING */
+.top-bar i {
+  margin-right: 6px;         /* 👈 space between icon & text */
+  color: white;
 }
+
+/* MOVE LEFT SIDE RIGHT */
+.top-left {
+  margin-left: 40px;         /* 👈 move ambulance + phone right */
+}
+
+/* MOVE RIGHT SIDE LEFT */
+.top-right {
+  margin-right: 20px;        /* 👈 move location left */
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .top-left,
+  .top-right {
+    margin: 0;
+    justify-content: center;
+  }
+}
+
 
     
     header{
@@ -113,7 +142,7 @@
     }
 
     .nav-links > li > a:hover{
-      color:var(--accent);
+      color:rgb(225,34,66);
     }
 
    
@@ -233,19 +262,6 @@
 }
 
 
-@media (max-width: 600px) {
-  .top-bar {
-    flex-direction: column;
-    text-align: center;
-    gap: 4px;
-    padding: 6px 0;
-  }
-
-  .top-left,
-  .top-right {
-    justify-content: center;
-  }
-}
 
 
 
@@ -467,6 +483,7 @@
 
 
 
+
 .btn-appointment-nav {
   background: #08254c;       
   color: white !important;
@@ -478,9 +495,9 @@
 }
 
 .btn-appointment-nav:hover {
-  background: white;
-  color: #08254c !important;
-  border-color: #08254c;
+  background: rgb(225,34,66);
+  color:white !important;
+  border-color: rgb(225,34,66);
   transform: scale(1.06);
 }
 .nav-links {
@@ -499,115 +516,137 @@
 
 
 
+/* SECTION */
+.doctors-section-new {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
 
-    .doctors-section{
-      max-width:1100px;
-      margin:0 auto;
-    }
+/* TITLE */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: rgb(225,34,66);
+}
 
-    .doctors-section h1{
-      text-align:center;
-      margin-bottom:30px;
-      font-size:32px;
-      color:var(--primary);
-      letter-spacing:1px;
-    }
+/* CARD */
+.doctor-card-new {
+  display: flex;
+  gap: 40px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  padding: 30px;
+  margin-bottom: 40px;
+  align-items: center;
+}
 
-    .doctor-card{
-      display:flex;
-      gap:24px;
-      background:#ffffff;
-      border-radius:14px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.08);
-      padding:20px;
-      margin-bottom:22px;
-      align-items:stretch;
-    }
+/* IMAGE */
+.doctor-image-new {
+  flex: 0 0 320px;           /* BIG IMAGE */
+  display: flex;
+  justify-content: center;
+}
 
-    .doctor-photo{
-      flex:0 0 180px;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-    }
+.doctor-image-new img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 18px;
+}
 
-    .doctor-photo img{
-      width:100%;
-      max-width:180px;
-      border-radius:14px;
-      object-fit:cover;
-    }
+/* CONTENT */
+.doctor-content-new {
+  flex: 1;
+}
 
-    .doctor-info{
-      flex:1;
-      border-left:4px solid var(--accent);
-      padding-left:18px;
-    }
+/* NAME */
+.doctor-name-new {
+  font-size: 26px;
+  font-weight: 700;
+  color: #08254c;
+  margin-bottom: 6px;
+}
 
-    .doctor-name{
-      font-size:22px;
-      font-weight:bold;
-      color:var(--primary);
-      margin-bottom:6px;
-    }
+/* DEGREE */
+.doctor-degree-new {
+  font-size: 15px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 14px;
+}
 
-    .doctor-degree{
-      font-size:15px;
-      font-weight:bold;
-      color:#555;
-      margin-bottom:12px;
-      text-transform:uppercase;
-    }
+/* TAGS */
+.doctor-tags-new {
+  margin-bottom: 16px;
+}
 
-    .doctor-tags{
-      margin-bottom:10px;
-      font-size:14px;
-      line-height:1.5;
-    }
+.doctor-tags-new span {
+  display: inline-block;
+  background: rgba(8, 37, 76, 0.08);
+  color: #08254c;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  margin: 4px 6px 4px 0;
+}
 
-    .doctor-tags span{
-      display:inline-block;
-      background:rgba(0,0,139,0.06);
-      border-radius:20px;
-      padding:5px 10px;
-      margin:3px 6px 3px 0;
-      font-size:13px;
-      color:#333;
-    }
+/* ABOUT */
+.doctor-about-new {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 16px;
+}
 
-    .doctor-about-title{
-      font-size:14px;
-      font-weight:bold;
-      margin:10px 0 4px;
-      color:#444;
-      letter-spacing:0.5px;
-      text-transform:uppercase;
-    }
+/* SPECIALIZATION */
+.doctor-special-title-new {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgb(225,34,66);
+  margin-bottom: 8px;
+}
 
-    .doctor-about-text{
-      font-size:14px;
-      line-height:1.6;
-      color:#444;
-    }
+/* BULLET LIST */
+.doctor-special-list-new {
+  padding-left: 20px;
+}
 
-   
-    @media(max-width:768px){
-      .doctor-card{
-        flex-direction:column;
-      }
-      .doctor-info{
-        border-left:none;
-        border-top:4px solid var(--accent);
-        padding-left:0;
-        padding-top:14px;
-      }
-      .doctor-photo{
-        flex:0 0 auto;
-      }
-      
-    }
+.doctor-special-list-new li {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 6px;
+}
 
-    
+.doctor-special-list-new li::marker {
+  color: #08254c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .doctor-card-new {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doctor-image-new {
+    width: 100%;
+  }
+
+  .doctor-image-new img {
+    height: 320px;
+  }
+
+  .doctor-special-list-new {
+    text-align: left;
+    display: inline-block;
+  }
+}
+
 
     footer{
       background:#00008B; 
@@ -663,16 +702,92 @@
 }
 
 /* ================= ABOUT SECTION ================= */
-.about h2 {
-    color:#08254c;
-    font-weight: bold;
-    margin-bottom: 15px;
+/* ABOUT SECTION */
+.about-section {
+  width: 100%;
+  padding: 80px 0;
+  background: #ffffff;
 }
 
-.about p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.7;
+/* CONTAINER */
+.about-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;       /* vertical center */
+  gap: 60px;
+  padding: 0 20px;
+}
+
+/* LEFT CONTENT */
+.about-content {
+  width: 50%;
+  max-width: 650px;
+  padding-left: 50px;   /* 👈 increase this value */
+}
+
+
+/* HEADING */
+.about-title {
+  font-size: 42px;
+  font-weight: 700;
+  color:rgb(225,34,66);             /* same red tone */
+  margin-bottom: 25px;
+}
+
+/* TEXT */
+.about-text {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #000;
+  margin-bottom: 35px;
+  text-align: justify;
+}
+
+/* BUTTON */
+.about-btn {
+  display: inline-block;
+  padding: 14px 38px;
+  background: rgb(225,34,66);        /* same red */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  background: #08254c;
+}
+
+/* RIGHT IMAGE */
+.about-image {
+  flex: 1;                   /* 50% */
+}
+
+.about-image img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-image img {
+    height: 320px;
+  }
 }
 
 /* ================= MISSION / VISION ================= */
@@ -688,7 +803,7 @@
 }
 
 .mv-box h3 {
-    color:#08254c;
+    color:rgb(225,34,66);
     font-weight: bold;
 }
 
@@ -775,14 +890,4 @@
 }
 
 
-
-
-@media (max-width: 600px) {
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        gap: 2px;
-        padding: 6px 0;
-    }
-}
 

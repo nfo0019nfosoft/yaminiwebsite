@@ -78,7 +78,7 @@
     }
 
     .nav-links > li > a:hover{
-      color:var(--accent);
+      color:rgb(225, 34, 66);
     }
 
 
@@ -193,30 +193,89 @@
 
 
 
-
-
 .top-bar {
-    width: 100%;
-    background: #08254c;           
-    color: white;
-    padding: 4px 20px;
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  background: #08254c;
+  color: white;
+  padding: 8px 30px;          /* 👈 controls side spacing */
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.top-left i,
-.top-right i {
-    margin-right: 10px;
-    color:white;               
+/* GROUP SPACING */
+.top-left,
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;                 /* 👈 spacing between items */
+  font-weight: 500;
 }
 
-.top-left, .top-right {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
+/* ICON SPACING */
+.top-bar i {
+  margin-right: 6px;         /* 👈 space between icon & text */
+  color: white;
 }
+
+/* MOVE LEFT SIDE RIGHT */
+.top-left {
+  margin-left: 40px;         /* 👈 move ambulance + phone right */
+}
+
+/* MOVE RIGHT SIDE LEFT */
+.top-right {
+  margin-right: 20px;        /* 👈 move location left */
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+    padding: 6px 0;
+  }
+
+  .top-left,
+  .top-right {
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+.btn-appointment-nav {
+  background: #08254c;       
+  color: white !important;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: 2px solid #08452c;
+  transition: 0.3s;
+}
+
+.btn-appointment-nav:hover {
+  background: rgb(225,34,66);
+  color:white !important;
+  border-color: rgb(225,34,66);
+  transform: scale(1.06);
+}
+
+
+
+
+
+
+
+
+
+
 
 
     footer{
