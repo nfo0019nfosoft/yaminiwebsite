@@ -278,10 +278,7 @@
       color:white;
       text-decoration:none;
     }
-    footer a:hover{
-      text-decoration:underline;
-    }
-
+   
 
     
 
@@ -349,8 +346,10 @@
 }
 
 
+
+
 .footer-logo-box {
-  text-align: center;
+  
   margin-top: 40px;
 }
 
@@ -731,7 +730,7 @@
 
 /* HEADING */
 .about-title {
-  font-size: 42px;
+  font-size: 35px;
   font-weight: 700;
   color:rgb(225,34,66);             /* same red tone */
   margin-bottom: 25px;

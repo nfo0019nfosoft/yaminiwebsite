@@ -511,7 +511,7 @@
 
 
 .footer-logo-box {
-  text-align: center;
+ 
   margin-top: 40px;
 }
 
@@ -550,10 +550,6 @@
   text-decoration: none;
   margin-bottom: 8px;
   display: block;
-}
-
-.footer-box a:hover {
-  text-decoration: underline;
 }
 
 

@@ -461,10 +461,7 @@
       color:white;
       text-decoration:none;
     }
-    footer a:hover{
-      text-decoration:underline;
-    }
-   
+    
 
 
 
@@ -681,7 +678,7 @@
   gap: 40px;
  } 
 .footer-logo-box {
-  text-align: center;
+ 
   margin-top: 40px;
 }
 
