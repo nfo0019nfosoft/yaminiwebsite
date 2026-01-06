@@ -140,7 +140,7 @@
     }
 
     .nav-links > li > a:hover{
-      color:rgb(225,34,66)
+      color:#DF125D;
     }
 
    
@@ -283,16 +283,16 @@
   max-width:1200px;
   margin:70px auto;
   padding:50px 40px;
-  background:#fff;
+ 
   border-radius:28px;
-  border:2px solid rgb(255,205,210); /* light pink */
+ /* light pink */
 }
 
 /* TITLE */
 .contact-wrapper h1{
   text-align:center;
   margin-bottom:10px;
-  color:rgb(225,34,66);
+  color:#DF125D;
   font-size:34px;
   font-weight:800;
 }
@@ -304,164 +304,164 @@
   color:#000;
 }
 
-/* ================= MAIN LAYOUT ================= */
-.contact-container{
-  display:flex;
-  gap:35px;
-  align-items:flex-start;
+/* RESET */
+* {
+  box-sizing: border-box;
 }
 
-/* ================= LEFT FORM ================= */
-.contact-form{
-  flex:3;
-  background:#fff;
-  border-radius:24px;
-  padding:36px;
-  border:2px solid rgb(255,205,210);
-  box-shadow:0 14px 35px rgba(0,0,0,0.08);
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
-.contact-form h2{
-  margin-bottom:22px;
-  font-size:22px;
-  color:rgb(225,34,66);
-  font-weight:700;
+/* FULL WIDTH SECTION */
+.contact-section {
+  width: 100vw;
+  background: #eef5ff;
+  padding: 70px 0;
 }
 
-.form-group{ margin-bottom:18px; }
-
-label{
-  display:block;
-  margin-bottom:6px;
-  font-size:14px;
-  font-weight:600;
-  color:#000;
+/* CENTER CONTENT */
+.contact-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
-input, textarea{
-  width:100%;
-  padding:13px 15px;
-  border:1.5px solid #e3e3e3;
-  border-radius:10px;
-  font-size:14px;
+/* FLEX LAYOUT */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
-input:focus,
-textarea:focus{
-  outline:none;
-  border-color:rgb(255,170,180);
-  box-shadow:0 0 0 3px rgba(255,170,180,0.25);
+/* ================= LEFT FORM (IMAGE STYLE) ================= */
+.appointment-form {
+  flex: 1.1;
+  background: #08254c;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
-textarea{
-  min-height:140px;
-  resize:vertical;
+.form-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
 }
 
-/* ================= SEND BUTTON ================= */
-.btn-submit{
-  margin-top:14px;
-  padding:14px 40px;
-  border-radius:40px;
-  border:none;
-  background:rgb(225,34,66);
-  color:#fff;
-  font-size:15px;
-  font-weight:700;
-  cursor:pointer;
-  transition:0.3s;
+/* INPUTS */
+.appointment-form input,
+.appointment-form textarea,
+.appointment-form select {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  margin-bottom: 18px;
 }
 
-.btn-submit:hover{
-  background:#08254c;
-  transform:translateY(-2px);
+.appointment-form textarea {
+  min-height: 130px;
+  resize: none;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  display: block;
+  margin: 10px auto 0;
+  padding: 14px 44px;
+  background: #DF125D;
+  color: #ffffff;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #DF125D;
+  transform: translateY(-2px);
 }
 
 /* ================= RIGHT INFO ================= */
-.contact-info{
-  flex:2;
-  display:flex;
-  flex-direction:column;
-  gap:26px;
+.contact-info {
+  flex: 0.9;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
-/* INFO CARD */
-.info-card{
-  background:#fff;
-  border-radius:24px;
-  padding:30px;
-  display:flex;
-  gap:22px;
-  align-items:flex-start;
-  border:2px solid rgb(255,205,210);
-  box-shadow:0 14px 35px rgba(0,0,0,0.08);
+.info-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 28px;
+  display: flex;
+  gap: 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.info-icon{
-  font-size:30px;
-  color:rgb(225,34,66);
+.info-icon {
+  font-size: 30px;
+  color: #DF125D;
 }
 
-.info-text h3{
-  font-size:18px;
-  margin-bottom:6px;
-  color:rgb(225,34,66);
-  font-weight:700;
+.info-text h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  color: #DF125D;
 }
 
-.info-text p{
-  font-size:14px;
-  line-height:1.6;
-  color:#555;
+.info-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
 }
 
-/* ================= MAP (BELOW ADDRESS) ================= */
-.map-box{
-  margin-top:10px;          /* just below address */
-  background:#fff;
-  border-radius:24px;
-  overflow:hidden;
-  border:none;              /* NO BORDER */
-  box-shadow:0 14px 35px rgba(0,0,0,0.08);
+/* MAP */
+.map-box {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.map-box iframe{
-  width:100%;
-  height:320px;
-  border:0;
+.map-box iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
 }
 
-/* ================= RESPONSIVE ================= */
-@media(max-width:992px){
-  .contact-container{
-    flex-direction:column;
+/* ================= MOBILE ================= */
+@media (max-width: 992px) {
+  .contact-container {
+    flex-direction: column;
   }
 
-  .contact-wrapper{
-    padding:35px 22px;
-  }
-
-  .contact-wrapper h1{
-    font-size:28px;
+  .appointment-form {
+    padding: 32px;
   }
 }
 
-@media(max-width:600px){
-  .contact-wrapper{
-    padding:28px 16px;
+@media (max-width: 576px) {
+  .appointment-form {
+    padding: 26px;
   }
 
-  .contact-form,
-  .info-card{
-    padding:24px 20px;
+  .form-title {
+    font-size: 24px;
   }
 
-  .btn-submit{
-    width:100%;
+  .submit-btn {
+    width: 100%;
   }
 
-  .map-box iframe{
-    height:260px;
+  .map-box iframe {
+    height: 240px;
   }
 }
 
@@ -551,9 +551,9 @@ textarea{
 }
 
 .btn-appointment-nav:hover {
-  background: rgb(225,34,66);
+  background:#DF125D;
   color:white !important;
-  border-color: rgb(225,34,66);
+  border-color:#DF125D;
   transform: scale(1.06);
 }
 .nav-links {
@@ -607,7 +607,7 @@ textarea{
     }
     
 .footer-box a:hover {
-  color: rgb(225, 34, 66);
+  color: #DF125D;
   
 }
 .footer {
@@ -753,5 +753,9 @@ textarea{
     line-height: 1.3;
   }
 }
+
+
+
+
 
 

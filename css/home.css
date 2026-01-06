@@ -262,9 +262,11 @@ html, body {
 }
 
 .btn-appointment-nav:hover {
-  background: rgb(225,34,66);
+  background: #DF125D;
+ 
   color:white !important;
-  border-color: rgb(225,34,66);
+  border-color: #DF125D;
+ 
   transform: scale(1.06);
 }
 
@@ -335,7 +337,8 @@ html, body {
 
 /* 🔥 HOVER COLOR (ONLY OPTION) */
 .select-options li:hover {
-  background: rgb(225, 34, 66);
+  background: #DF125D
+ ;
   color: #ffffff;
 }
 
@@ -431,59 +434,53 @@ html, body {
     
 
 
-
+/* ===== TOP BAR ===== */
 .top-bar {
   width: 100%;
   background: #08254c;
-  color: white;
-  padding: 8px 30px;          /* 👈 controls side spacing */
+  color: #fff;
   font-size: 14px;
+}
+
+/* ✅ FIX: CENTER CONTAINER */
+.top-bar-container {
+  max-width: 1200px;      /* same as header */
+  margin: auto;
+  padding: 8px 20px;      /* space from screen edges */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* GROUP SPACING */
+/* LEFT & RIGHT GROUPS */
 .top-left,
 .top-right {
   display: flex;
   align-items: center;
-  gap: 25px;                 /* 👈 spacing between items */
-  font-weight: 500;
+  gap: 25px;
 }
 
-/* ICON SPACING */
+/* ICON STYLE */
 .top-bar i {
-  margin-right: 6px;         /* 👈 space between icon & text */
-  color: white;
+  margin-right: 6px;
+  font-size: 14px;
 }
 
-/* MOVE LEFT SIDE RIGHT */
-.top-left {
-  margin-left: 60px;         /* 👈 move ambulance + phone right */
-}
-
-/* MOVE RIGHT SIDE LEFT */
-.top-right {
-  margin-right: 50px;        /* 👈 move location left */
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .top-bar {
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .top-bar-container {
     flex-direction: column;
-    text-align: center;
     gap: 6px;
-    padding: 6px 0;
+    padding: 6px 15px;
   }
 
   .top-left,
   .top-right {
-    margin: 0;
     justify-content: center;
+    gap: 15px;
+    font-size: 13px;
   }
 }
-
 
 
 
@@ -519,7 +516,8 @@ html, body {
 .about-title {
   font-size: 35px;
   font-weight: 700;
-  color: rgb(225,34,66);
+  color:#DF125D;
+ 
   margin-bottom: 25px;
   text-align: left;   /* 👈 important */
 }
@@ -539,7 +537,8 @@ html, body {
 .about-btn {
   display: inline-block;
   padding: 14px 38px;
-  background: rgb(225,34,66);
+  background: #DF125D;
+ 
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
@@ -555,16 +554,16 @@ html, body {
 
 /* RIGHT IMAGE */
 .about-image {
-  flex: 1;                   /* 50% */
+  flex: 2;                   /* 50% */
 }
 
 .about-image img {
   width: 100%;
-  height: 420px;
-  object-fit: cover;
+  height: auto;          /* 🔥 IMPORTANT */
+  object-fit: contain;  /* show full image */
   border-radius: 16px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
+
 
 
 /* RESPONSIVE */
@@ -690,7 +689,8 @@ html, body {
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 40px;
-  color: rgb(225,34,66);
+  color:#DF125D
+ 
 }
 
 /* CARD */
@@ -728,7 +728,8 @@ html, body {
 .doctor-name-new {
   font-size: 26px;
   font-weight: 700;
-  color: #08254c;
+  color: #DF125D
+ ;
   margin-bottom: 6px;
 }
 
@@ -768,7 +769,7 @@ html, body {
 .doctor-special-title-new {
   font-size: 15px;
   font-weight: 700;
-  color: rgb(225,34,66);
+  color:#DF125D ;
   margin-bottom: 8px;
 }
 
@@ -1349,7 +1350,8 @@ html, body {
 .know-btn {
   display: inline-block;
   padding: 10px 22px;
-  background: rgb(225, 34, 66);
+  background: #DF125D
+ ;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -1390,7 +1392,8 @@ html, body {
     margin: 20px auto 40px;
     width: fit-content;
     padding: 10px 18px;
-    background: #E40066;
+    background:#DF125D
+ ;
 
     color: white;
     text-decoration: none;
@@ -1427,7 +1430,8 @@ html, body {
   text-align: center;
   font-size: 32px;
   font-weight: 900;
-  color: rgb(225,34,66); /* Teal color from image */
+  color: #DF125D
+ ; /* Teal color from image */
   text-transform: uppercase;
  
   margin-bottom: 40px;
@@ -1511,7 +1515,8 @@ html, body {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: rgb(225,34,66); /* Vibrant orange */
+  background:#DF125D
+ ; /* Vibrant orange */
   color: #fff;
   border-radius: 30px;
   font-size: 15px;
@@ -1596,141 +1601,159 @@ html, body {
   100% { transform: translateX(-50%); }
 }
 
-
-/* ================= APPOINTMENT SECTION ================= */
-.appointment-section {
-    background: #eef5ff;
-    width: 100%;
-    padding: 60px 0;
+/* ================= RESET (IMPORTANT) ================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-/* ================= LEFT TITLE ================= */
+/* ================= FULL WIDTH APPOINTMENT SECTION ================= */
+.appointment-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  background: #eef5ff;          /* FULL WIDTH BG */
+  padding: 70px 0;
+}
+
+/* ================= INNER CONTAINER ================= */
+.appointment-section .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* ================= TITLES ================= */
 .appoint-title {
-    font-size: 24px;
-    font-weight: 700;
-    color: rgb(225, 34, 66);
-    margin-bottom: 18px;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(225, 34, 66);
+  margin-bottom: 18px;
 }
 
 /* ================= CONTACT DETAILS BOX ================= */
 .contact-details-box {
-    background: #ffffff;
-    
-    padding: 26px;
-    border-radius: 14px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  background: #ffffff;
+  padding: 26px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 /* ICON + TEXT LEFT ALIGNED */
 .contact-details-box p {
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 16px;
-    line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
-/* 🔴 RED ICONS */
+/* ICON COLOR */
 .contact-details-box i {
-    font-size: 20px;
-    color: rgb(225, 34, 66);
-    margin-top: 2px;
+  font-size: 20px;
+  color: #DF125D;
+  margin-top: 3px;
 }
 
 /* ================= MAP ================= */
 .map-box {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 .map-box iframe {
-    width: 100%;
-    height: 300px;
-    border-radius: 14px;
-    border: none;
+  width: 100%;
+  height: 300px;
+  border-radius: 16px;
+  border: none;
 }
 
-/* ================= RIGHT FORM ================= */
+/* ================= APPOINTMENT FORM ================= */
 .appointment-form {
-    background: #08254c;
-    padding: 30px;
-    border-radius: 14px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  background: #08254c;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
 }
 
-/* FORM TITLE */
+/* FORM TITLE WHITE */
 .appointment-form .appoint-title {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* INPUTS */
 .appointment-form input,
 .appointment-form textarea,
 .appointment-form select {
-    width: 100%;
-    padding: 12px 14px;
-    border-radius: 6px;
-    border: none;
-    margin-bottom: 14px;
-    font-size: 14px;
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 14px;
+  font-size: 14px;
 }
 
 /* ================= SUBMIT BUTTON ================= */
 .submit-btn {
-    background: rgb(225, 34, 66);
-    color: #ffffff;
-    padding: 12px 28px;
-    border-radius: 6px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
+  background: #DF125D;
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-/* BUTTON HOVER */
 .submit-btn:hover {
-    background: #b80052;
-    transform: translateY(-2px);
+  background: #b10f4b;
+  transform: translateY(-2px);
 }
 
-/* ================= MOBILE RESPONSIVE ================= */
+/* ================= MOBILE VIEW ================= */
 @media (max-width: 768px) {
 
-    .appointment-section {
-        padding: 40px 0;
-    }
+  .appointment-section {
+    padding: 45px 0;
+  }
 
-    .appoint-title {
-        font-size: 20px;
-        text-align: center;
-    }
+  .appoint-title {
+    font-size: 20px;
+    text-align: center;
+  }
 
-    .contact-details-box {
-        padding: 22px;
-    }
+  .contact-details-box {
+    padding: 22px;
+    margin-bottom: 20px;
+  }
 
-    .contact-details-box p {
-        font-size: 15px;
-    }
+  .contact-details-box p {
+    font-size: 15px;
+  }
 
-    .contact-details-box i {
-        font-size: 18px;
-    }
+  .contact-details-box i {
+    font-size: 18px;
+  }
 
-    .map-box iframe {
-        height: 240px;
-    }
+  .map-box iframe {
+    height: 240px;
+  }
 
-    .appointment-form {
-        padding: 24px;
-        margin-top: 20px;
-    }
+  .appointment-form {
+    padding: 24px;
+  }
 
-    .submit-btn {
-        width: 100%;
-        text-align: center;
-    }
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 
@@ -1791,39 +1814,49 @@ html, body {
 }
 
 
+/* ================= FACILITY SECTION (FULL WIDTH) ================= */
 
-/* Section */
-.facility-section {
+/* Reset (important for full width) */
+html, body {
+  margin: 0;
+  padding: 0;
   width: 100%;
-  background: linear-gradient(180deg, #08254c, #061c36);
-  padding: 60px 0;
+  overflow-x: hidden;
 }
 
-/* Wrapper */
+/* FULL WIDTH BLUE BACKGROUND */
+.facility-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(180deg, #08254c, #061c36);
+  padding: 70px 0;
+}
+
+/* INNER CONTENT CENTER */
 .facility-wrapper {
   max-width: 1200px;
   margin: auto;
-  padding: 0 15px;
+  padding: 0 20px;
 }
 
-/* Title */
+/* TITLE */
 .facility-title {
   color: #ffffff;
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
   text-align: center;
 }
 
-/* Card */
+/* CARD */
 .facility-card {
   background: #ffffff;
   border-radius: 16px;
-  padding: 28px 15px;
+  padding: 28px 16px;
   text-align: center;
   height: 100%;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  transition: 0.3s ease;
 }
 
 .facility-card:hover {
@@ -1831,7 +1864,7 @@ html, body {
   background: #eef6ff;
 }
 
-/* Image Icon */
+/* ICON */
 .facility-icon {
   width: 60px;
   height: 60px;
@@ -1839,7 +1872,7 @@ html, body {
   margin-bottom: 14px;
 }
 
-/* Text */
+/* TEXT */
 .facility-card h5 {
   font-size: 17px;
   font-weight: 700;
@@ -1847,14 +1880,24 @@ html, body {
   margin: 0;
 }
 
-/* Mobile */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
+
+  .facility-section {
+    padding: 55px 0;
+  }
+
   .facility-title {
     font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .facility-wrapper {
+    padding: 0 16px;
   }
 
   .facility-card {
-    padding: 22px 12px;
+    padding: 22px 14px;
   }
 
   .facility-icon {
@@ -1868,19 +1911,27 @@ html, body {
 }
 
 
-
+/* IMPORTANT RESET (one time only) */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* ================= FULL WIDTH SECTION ================= */
 .why-choose-us {
-  width: 100%;
-  padding: 80px 20px;
+  width: 100vw;                           /* 🔑 FORCE FULL SCREEN */
+  margin-left: calc(-50vw + 50%);         /* 🔑 BREAK OUT OF CONTAINER */
+  padding: 80px 0;
   background: linear-gradient(135deg, #f6f9fc, #eef4f8);
 }
 
-/* ================= INNER WRAPPER ================= */
+/* ================= INNER CONTENT ================= */
 .why-choose-us .container {
   max-width: 1200px;
   margin: auto;
+  padding: 0 20px;
   text-align: center;
 }
 
@@ -1888,24 +1939,43 @@ html, body {
 .why-choose-us h2 {
   font-size: 36px;
   font-weight: 800;
-  color: rgb(225, 34, 66);
-  margin-bottom: 10px;
+  color: #DF125D;
+  margin-bottom: 12px;
 }
 
 /* ================= TAGLINE ================= */
-/* CENTER TAGLINE */
 .why-choose-us .tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #08254c;
+  margin-bottom: 14px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* CENTER DESCRIPTION TEXT */
+/* ================= DESCRIPTION ================= */
 .why-choose-us .desc {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
   max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+  .why-choose-us {
+    padding: 60px 0;
+  }
+
+  .why-choose-us h2 {
+    font-size: 28px;
+  }
+
+  .why-choose-us .desc {
+    font-size: 15px;
+  }
 }
 
 
@@ -1940,7 +2010,8 @@ html, body {
 /* ================= ICON ================= */
 .feature-box i {
   font-size: 34px;
-  color: rgb(225, 34, 66);
+  color: #DF125D
+ ;
   flex-shrink: 0;
 }
 
@@ -2002,26 +2073,46 @@ html, body {
   .feature-box p {
     font-size: 13px;
   }
+
+
 }
 
 
 
 
-  
-/* ================= SECTION ================= */
-.ortho-wrapper {
+
+
+
+
+
+/* 🔥 IMPORTANT RESET */
+html, body {
   width: 100%;
-  padding: 50px 20px;
-  background: rgb(245, 170, 180);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* ================= FULL WIDTH SECTION ================= */
+.srvv-section {
+  width: 100vw;                 /* FULL SCREEN WIDTH */
+  margin-left: calc(-50vw + 50%); /* FORCE FULL WIDTH */
+  background: rgb(255, 225, 230); /* LIGHT PINK */
+  padding: 70px 0;
+}
+
+/* ================= CENTER CONTENT ================= */
+.ortho-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
 }
 
 /* ================= GRID ================= */
 .ortho-grid {
-  max-width: 1200px;
-  margin: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+  gap: 35px;
 }
 
 /* ================= CARD ================= */
@@ -2029,13 +2120,10 @@ html, body {
   background: #ffffff;
   border-radius: 16px;
   overflow: hidden;
-
-  /* 🔑 FLEX FIX */
   display: flex;
   flex-direction: column;
   height: 100%;
-
-  box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
   transition: 0.3s ease;
 }
 
@@ -2052,23 +2140,21 @@ html, body {
 
 /* ================= TITLE ================= */
 .ortho-card h5 {
+  background: #08254c;
+  color: #fff;
   font-size: 17px;
   font-weight: 600;
-  color: #08254c;
-  margin: 16px 16px 10px;
   text-align: center;
+  padding: 14px;
+  margin: 0;
 }
 
 /* ================= TEXT ================= */
 .ortho-card p {
   font-size: 14px;
   color: #555;
-  line-height: 1.5;
   text-align: center;
-
-  margin: 0 16px 18px;
-
-  /* 🔑 PUSH BUTTON DOWN */
+  padding: 16px;
   flex-grow: 1;
 }
 
@@ -2076,53 +2162,34 @@ html, body {
 .ortho-btn {
   align-self: center;
   margin-bottom: 18px;
-
   padding: 10px 28px;
-  background: rgb(225, 34, 66);
-  color: #ffffff;
-  text-decoration: none;
+  background: #DF125D;
+  color: white;
   border-radius: 30px;
-  font-size: 14px;
+  text-decoration: none;
   font-weight: 600;
-
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .ortho-btn:hover {
   background: #08254c;
 }
 
-/* ================= TABLET ================= */
-@media (max-width: 992px) {
-  .ortho-card img {
-    height: 190px;
-  }
-}
-
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .ortho-wrapper {
-    padding: 40px 15px;
+  .srvv-section {
+    padding: 50px 0;
   }
 
   .ortho-grid {
-    gap: 20px;
+    gap: 22px;
   }
 
   .ortho-card img {
     height: 180px;
   }
-
-  .ortho-card h5 {
-    font-size: 16px;
-  }
-
-  .ortho-card p {
-    font-size: 13px;
-  }
 }
 
-/* ================= SMALL MOBILE ================= */
 @media (max-width: 480px) {
   .ortho-card img {
     height: 160px;
@@ -2130,7 +2197,7 @@ html, body {
 
   .ortho-btn {
     font-size: 13px;
-    padding: 8px 24px;
+    padding: 8px 22px;
   }
 }
 
@@ -2138,9 +2205,44 @@ html, body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* TITLE */
 .main-title {
-  color: rgb(225, 34, 66);
+  color:#DF125D
+ ;
   letter-spacing: 1px;
 
     
@@ -2246,7 +2348,7 @@ html, body {
 
 
 .srv-content button {
-  background: rgb(225, 34, 66);
+  background: #DF125D;
   border: none;
   color: #fff;
   font-size: 12px;
@@ -2278,7 +2380,7 @@ html, body {
 
 .srv-center span {
   font-size: 12px;
-  color: rgb(225, 34, 66);
+  color: #DF125D;
   font-weight: bold;
 }
 
@@ -2490,7 +2592,7 @@ html, body {
 .about-title {
   font-size: 35px;
   font-weight: 700;
-  color:rgb(225,34,66);             /* same red tone */
+  color:#DF125D;             /* same red tone */
   margin-bottom: 25px;
 }
 
@@ -2506,7 +2608,7 @@ html, body {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 24px;
-  background-color: rgb(225, 34, 66);
+  background-color: #DF125D;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
@@ -2515,7 +2617,7 @@ html, body {
 }
 
 .knw-btn:hover {
-  background-color: rgb(190, 28, 55);
+  background-color: #DF125D;
 }
 
 
@@ -2813,7 +2915,7 @@ html, body {
 }
 
 .footer-box a:hover {
-  color: rgb(225, 34, 66);
+  color:#DF125D;
   
 }
 

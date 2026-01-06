@@ -77,7 +77,7 @@
     }
 
     .nav-links > li > a:hover{
-      color:rgb(225,34,66);
+      color:#DF125D;
     }
 
 
@@ -260,9 +260,9 @@
 }
 
 .btn-appointment-nav:hover {
-  background: rgb(225,34,66);
+  background:#DF125D;
   color:white !important;
-  border-color: rgb(225,34,66);
+  border-color: #DF125D;
   transform: scale(1.06);
 }
 
@@ -573,7 +573,7 @@
 
 .ped-content h3 {
     font-size: 22px;
-    color: #0b3a60;
+    color: #DF125D;;
     margin-bottom: 10px;
 }
 
@@ -657,7 +657,7 @@
 
 
 .footer-box a:hover {
-  color: rgb(225, 34, 66);
+  color:#DF125D;
   
 }
 .social-icons {
