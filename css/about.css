@@ -51,12 +51,12 @@
 
 /* MOVE LEFT SIDE RIGHT */
 .top-left {
-  margin-left: 40px;         /* 👈 move ambulance + phone right */
+  margin-left: 60px;         /* 👈 move ambulance + phone right */
 }
 
 /* MOVE RIGHT SIDE LEFT */
 .top-right {
-  margin-right: 20px;        /* 👈 move location left */
+  margin-right: 50px;        /* 👈 move location left */
 }
 
 /* MOBILE */
