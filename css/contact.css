@@ -21,58 +21,54 @@
       color:inherit;
     }
 
+
+/* ===== TOP BAR ===== */
 .top-bar {
   width: 100%;
   background: #08254c;
-  color: white;
-  padding: 8px 30px;          /* 👈 controls side spacing */
+  color: #fff;
   font-size: 14px;
+}
+
+/* ✅ FIX: CENTER CONTAINER */
+.top-bar-container {
+  max-width: 1200px;      /* same as header */
+  margin: auto;
+  padding: 8px 20px;      /* space from screen edges */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* GROUP SPACING */
+/* LEFT & RIGHT GROUPS */
 .top-left,
 .top-right {
   display: flex;
   align-items: center;
-  gap: 25px;                 /* 👈 spacing between items */
-  font-weight: 500;
+  gap: 25px;
 }
 
-/* ICON SPACING */
+/* ICON STYLE */
 .top-bar i {
-  margin-right: 6px;         /* 👈 space between icon & text */
-  color: white;
+  margin-right: 6px;
+  font-size: 14px;
 }
 
-/* MOVE LEFT SIDE RIGHT */
-.top-left {
-  margin-left: 60px;         /* 👈 move ambulance + phone right */
-}
-
-/* MOVE RIGHT SIDE LEFT */
-.top-right {
-  margin-right: 50px;        /* 👈 move location left */
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .top-bar {
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .top-bar-container {
     flex-direction: column;
-    text-align: center;
     gap: 6px;
-    padding: 6px 0;
+    padding: 6px 15px;
   }
 
   .top-left,
   .top-right {
-    margin: 0;
     justify-content: center;
+    gap: 15px;
+    font-size: 13px;
   }
 }
-
 
     
     header{
@@ -277,34 +273,7 @@
 
 
 
-
-/* ================= OUTER WRAPPER ================= */
-.contact-wrapper{
-  max-width:1200px;
-  margin:70px auto;
-  padding:50px 40px;
- 
-  border-radius:28px;
- /* light pink */
-}
-
-/* TITLE */
-.contact-wrapper h1{
-  text-align:center;
-  margin-bottom:10px;
-  color:#DF125D;
-  font-size:34px;
-  font-weight:800;
-}
-
-.subtitle{
-  text-align:center;
-  margin-bottom:45px;
-  font-size:15px;
-  color:#000;
-}
-
-/* RESET */
+/* ================= RESET ================= */
 * {
   box-sizing: border-box;
 }
@@ -312,30 +281,31 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* FULL WIDTH SECTION */
+/* ================= FULL WIDTH SECTION ================= */
 .contact-section {
   width: 100vw;
   background: #eef5ff;
   padding: 70px 0;
 }
 
-/* CENTER CONTENT */
+/* ================= CENTER WRAPPER ================= */
 .contact-wrapper {
   max-width: 1200px;
   margin: auto;
   padding: 0 20px;
 }
 
-/* FLEX LAYOUT */
+/* ================= FLEX LAYOUT ================= */
 .contact-container {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
 
-/* ================= LEFT FORM (IMAGE STYLE) ================= */
+/* ================= LEFT FORM ================= */
 .appointment-form {
   flex: 1.1;
   background: #08254c;
@@ -344,6 +314,7 @@ body {
   box-shadow: 0 15px 40px rgba(0,0,0,0.15);
 }
 
+/* FORM TITLE */
 .form-title {
   text-align: center;
   color: #ffffff;
@@ -352,7 +323,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* INPUTS */
+/* ================= INPUTS ================= */
 .appointment-form input,
 .appointment-form textarea,
 .appointment-form select {
@@ -364,12 +335,43 @@ body {
   margin-bottom: 18px;
 }
 
+/* TEXTAREA */
 .appointment-form textarea {
   min-height: 130px;
   resize: none;
 }
 
-/* SUBMIT BUTTON */
+/* ================= SELECT STYLING ================= */
+.appointment-form select {
+  appearance: none;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* SELECT HOVER */
+.appointment-form select:hover {
+  border: 2px solid #DF125D;
+}
+
+/* SELECT FOCUS (CLICK OPEN) */
+.appointment-form select:focus {
+  outline: none;
+  border: 2px solid #DF125D;
+  box-shadow: 0 0 0 3px rgba(223,18,93,0.25);
+}
+
+/* SELECTED OPTION */
+.appointment-form select option:checked {
+  background-color: #DF125D;
+  color: #ffffff;
+}
+
+/* PLACEHOLDER OPTION */
+.appointment-form select option:first-child {
+  color: #999;
+}
+
+/* ================= SUBMIT BUTTON ================= */
 .submit-btn {
   display: block;
   margin: 10px auto 0;
@@ -381,11 +383,11 @@ body {
   font-weight: 700;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.3s ease;
 }
 
 .submit-btn:hover {
-  background: #DF125D;
+  background: #c40f54;
   transform: translateY(-2px);
 }
 
@@ -397,6 +399,7 @@ body {
   gap: 24px;
 }
 
+/* INFO CARD */
 .info-card {
   background: #ffffff;
   border-radius: 22px;
@@ -406,11 +409,13 @@ body {
   box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
+/* ICON */
 .info-icon {
   font-size: 30px;
   color: #DF125D;
 }
 
+/* TEXT */
 .info-text h3 {
   margin: 0 0 6px;
   font-size: 18px;
@@ -423,7 +428,7 @@ body {
   color: #444;
 }
 
-/* MAP */
+/* ================= MAP ================= */
 .map-box {
   border-radius: 22px;
   overflow: hidden;
@@ -436,7 +441,7 @@ body {
   border: 0;
 }
 
-/* ================= MOBILE ================= */
+/* ================= RESPONSIVE ================= */
 @media (max-width: 992px) {
   .contact-container {
     flex-direction: column;
@@ -464,20 +469,6 @@ body {
     height: 240px;
   }
 }
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

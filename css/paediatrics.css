@@ -193,55 +193,52 @@
 
 
 
+
+/* ===== TOP BAR ===== */
 .top-bar {
   width: 100%;
   background: #08254c;
-  color: white;
-  padding: 8px 30px;          /* 👈 controls side spacing */
+  color: #fff;
   font-size: 14px;
+}
+
+/* ✅ FIX: CENTER CONTAINER */
+.top-bar-container {
+  max-width: 1200px;      /* same as header */
+  margin: auto;
+  padding: 8px 20px;      /* space from screen edges */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* GROUP SPACING */
+/* LEFT & RIGHT GROUPS */
 .top-left,
 .top-right {
   display: flex;
   align-items: center;
-  gap: 25px;                 /* 👈 spacing between items */
-  font-weight: 500;
+  gap: 25px;
 }
 
-/* ICON SPACING */
+/* ICON STYLE */
 .top-bar i {
-  margin-right: 6px;         /* 👈 space between icon & text */
-  color: white;
+  margin-right: 6px;
+  font-size: 14px;
 }
 
-/* MOVE LEFT SIDE RIGHT */
-.top-left {
-  margin-left: 60px;         /* 👈 move ambulance + phone right */
-}
-
-/* MOVE RIGHT SIDE LEFT */
-.top-right {
-  margin-right: 50px;        /* 👈 move location left */
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  .top-bar {
+/* ===== MOBILE FIX ===== */
+@media (max-width: 768px) {
+  .top-bar-container {
     flex-direction: column;
-    text-align: center;
     gap: 6px;
-    padding: 6px 0;
+    padding: 6px 15px;
   }
 
   .top-left,
   .top-right {
-    margin: 0;
     justify-content: center;
+    gap: 15px;
+    font-size: 13px;
   }
 }
 
