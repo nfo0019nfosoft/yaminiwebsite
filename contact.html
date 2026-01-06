@@ -78,13 +78,12 @@
 
   </div>
 </header>
-
 <section class="contact-section">
   <div class="contact-wrapper">
 
     <div class="contact-container">
 
-      <!-- LEFT FORM (LIKE IMAGE) -->
+      <!-- LEFT FORM -->
       <div class="appointment-form">
         <h2 class="form-title">Appointment</h2>
 
@@ -93,13 +92,16 @@
           <input type="email" placeholder="Your Email">
           <input type="tel" placeholder="Your Contact Number" required>
 
-          <select>
-            <option>Select Service</option>
-            <option>Orthopaedics</option>
-            <option>Paediatrics</option>
-            <option>Gynaecology</option>
-            <option>General Medicine</option>
-          </select>
+          <!-- CUSTOM SELECT -->
+          <div class="custom-select">
+            <div class="select-box">Select Service</div>
+            <ul class="select-options">
+              <li>Paediatrics & Neonatology</li>
+              <li>Orthopaedic</li>
+              <li>Gynaecology & Obstetrics</li>
+              <li>General Medicine</li>
+            </ul>
+          </div>
 
           <textarea placeholder="Your Message"></textarea>
 
@@ -107,7 +109,7 @@
         </form>
       </div>
 
-      <!-- RIGHT INFO (KEEP SAME STYLE) -->
+      <!-- RIGHT INFO -->
       <div class="contact-info">
 
         <div class="info-card">
@@ -133,13 +135,37 @@
         <div class="map-box">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.978548048844!2d80.617108!3d17.556207999999994"
-            loading="lazy"></iframe>
+            loading="lazy">
+          </iframe>
         </div>
 
       </div>
     </div>
   </div>
 </section>
+<script>
+const selectBox = document.querySelector('.select-box');
+const options = document.querySelector('.select-options');
+const optionItems = document.querySelectorAll('.select-options li');
+
+selectBox.addEventListener('click', () => {
+  options.style.display = options.style.display === 'block' ? 'none' : 'block';
+});
+
+optionItems.forEach(item => {
+  item.addEventListener('click', () => {
+    selectBox.innerText = item.innerText;
+    options.style.display = 'none';
+  });
+});
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.custom-select')) {
+    options.style.display = 'none';
+  }
+});
+</script>
+
 
 
   <footer class="footer">

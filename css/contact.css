@@ -750,3 +750,96 @@ body {
 
 
 
+
+
+
+
+
+
+/* ============================= */
+/* CUSTOM SELECT WRAPPER */
+/* ============================= */
+.custom-select {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ============================= */
+/* SELECT BOX (SAME AS INPUT) */
+/* ============================= */
+.select-box {
+  width: 100%;
+  height: 46px;                 /* SAME HEIGHT AS INPUT */
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* HOVER / FOCUS */
+
+
+/* ============================= */
+/* DROPDOWN LIST */
+/* ============================= */
+.select-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 6px 0;
+  margin: 0;
+
+  list-style: none;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  display: none;
+  z-index: 9999;
+}
+
+/* ============================= */
+/* OPTION ITEM */
+/* ============================= */
+.select-options li {
+  padding: 10px 14px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* 🔥 HOVER COLOR (ONLY OPTION) */
+.select-options li:hover {
+  background: #DF125D
+ ;
+  color: #ffffff;
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+@media (max-width: 768px) {
+  .select-box {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .select-options li {
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+}
+
+
+
