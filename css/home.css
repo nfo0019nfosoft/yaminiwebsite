@@ -3471,23 +3471,25 @@ html, body {
 
 
 
-/* ================= SECTION ================= */
+
+/* SECTION */
 .doctors-section-new {
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-/* ================= TITLE ================= */
+/* TITLE */
 .section-tiitle {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 40px;
-  color: #DF125D;
+  color:#DF125D
+ 
 }
 
-/* ================= CARD ================= */
+/* CARD */
 .doctor-card-new {
   display: flex;
   gap: 40px;
@@ -3499,9 +3501,9 @@ html, body {
   align-items: center;
 }
 
-/* ================= IMAGE ================= */
+/* IMAGE */
 .doctor-image-new {
-  flex: 0 0 320px;
+  flex: 0 0 320px;           /* BIG IMAGE */
   display: flex;
   justify-content: center;
 }
@@ -3513,20 +3515,21 @@ html, body {
   border-radius: 18px;
 }
 
-/* ================= CONTENT ================= */
+/* CONTENT */
 .doctor-content-new {
   flex: 1;
 }
 
-/* ================= NAME ================= */
+/* NAME */
 .doctor-name-new {
   font-size: 26px;
   font-weight: 700;
-  color: #DF125D;
+  color: #DF125D
+ ;
   margin-bottom: 6px;
 }
 
-/* ================= DEGREE ================= */
+/* DEGREE */
 .doctor-degree-new {
   font-size: 15px;
   font-weight: 600;
@@ -3534,9 +3537,9 @@ html, body {
   margin-bottom: 14px;
 }
 
-/* ================= TAGS ================= */
+/* TAGS */
 .doctor-tags-new {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .doctor-tags-new span {
@@ -3548,10 +3551,9 @@ html, body {
   font-size: 13px;
   font-weight: 500;
   margin: 4px 6px 4px 0;
-  white-space: nowrap;
 }
 
-/* ================= ABOUT ================= */
+/* ABOUT */
 .doctor-about-new {
   font-size: 15px;
   line-height: 1.7;
@@ -3559,15 +3561,15 @@ html, body {
   margin-bottom: 16px;
 }
 
-/* ================= SPECIALIZATION ================= */
+/* SPECIALIZATION */
 .doctor-special-title-new {
   font-size: 15px;
   font-weight: 700;
-  color: #DF125D;
+  color:#DF125D ;
   margin-bottom: 8px;
 }
 
-/* ================= LIST ================= */
+/* BULLET LIST */
 .doctor-special-list-new {
   padding-left: 20px;
 }
@@ -3582,15 +3584,11 @@ html, body {
   color: #08254c;
 }
 
-/* ================================================= */
-/* ================= MOBILE RESPONSIVE ============= */
-/* ================================================= */
+/* RESPONSIVE */
 @media (max-width: 900px) {
-
   .doctor-card-new {
     flex-direction: column;
     text-align: center;
-    padding: 24px;
   }
 
   .doctor-image-new {
@@ -3598,61 +3596,16 @@ html, body {
   }
 
   .doctor-image-new img {
-    height: 300px;
-  }
-
-  .doctor-name-new {
-    font-size: 24px;
-  }
-
-  .doctor-degree-new {
-    font-size: 14px;
-  }
-
-  /* 🔥 PERFECT TAG ALIGNMENT (LIKE YOUR 2ND IMAGE) */
-  .doctor-tags-new {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;   /* 🔑 center tags */
-    gap: 8px;
-    margin-bottom: 20px;
-  }
-
-  .doctor-tags-new span {
-    margin: 0;
-    padding: 7px 16px;
-    font-size: 13px;
-  }
-
-  .doctor-about-new {
-    text-align: center;
-    font-size: 14.5px;
+    height: 320px;
   }
 
   .doctor-special-list-new {
     text-align: left;
     display: inline-block;
-    margin: 0 auto;
   }
 }
 
-/* ================= SMALL MOBILE ================= */
-@media (max-width: 480px) {
-
-  .doctor-image-new img {
-    height: 260px;
-  }
-
-  .doctor-name-new {
-    font-size: 22px;
-  }
-
-  .doctor-tags-new span {
-    font-size: 12.5px;
-    padding: 6px 14px;
-  }
-}
-   
+                
 
 
     .know-btn {
@@ -5770,21 +5723,20 @@ html, body {
 
 
 
-/* ================= FULL WIDTH FOOTER ================= */
+/* ================= FOOTER FULL WIDTH ================= */
 .footer {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-
   width: 100vw;
-  background-color: #08254c;
+  margin-left: calc(-50vw + 50%);
+  background: linear-gradient(180deg, #0a2a4f, #072040);
   color: #ffffff;
-
+  padding: 70px 0 30px;
+  margin-top: 30px;
+   background: #08254c;
+  color: white;
   padding: 60px 20px 40px;
-  overflow-x: hidden;
 }
+
+
 
 /* ================= INNER CONTAINER ================= */
 .footer-container {
@@ -5795,70 +5747,69 @@ html, body {
   gap: 40px;
 }
 
-/* ================= LOGO SECTION ================= */
+
+
 .footer-logo-box {
-  text-align: left;
+  margin-top: 40px;
+  text-align: left;          /* 👈 important */
 }
 
+/* LOGO */
 .footer-logo {
   height: 70px;
   background: #ffffff;
   padding: 6px 12px;
   border-radius: 12px;
   display: inline-block;
- 
-
-  /* 🔥 MOVE LOGO UP */
-  margin-top: -40px;
 }
 
+/* PARAGRAPH – STARTS SAME LINE AS LOGO */
 .footer-logo-box p {
   margin-top: 16px;
-  max-width: 280px;
+  max-width: 280px;          /* keeps nice line breaks */
   line-height: 1.6;
 }
 
-/* ================= FOOTER BOX ================= */
-.footer-box {
-  margin-left: 20px;
+.footer-box{
+  margin-left: 30px;
 }
-
 .footer-box h3 {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+ 
 }
 
 .footer-box h4 {
   margin: 12px 0 5px;
 }
 
-.footer-box a,
-.footer-box p {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 8px;
-  display: block;
-  text-align: left;
-}
-
-.footer-box a:hover {
-  color: #DF125D;
-}
-
-/* ================= ADDRESS ================= */
-.footer-address,
-.footer-branch {
+.footer-address, .footer-branch {
   margin-bottom: 18px;
   line-height: 1.6;
 }
 
-/* ================= SOCIAL ICONS ================= */
+
+.footer-box a, .footer-box p {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
+}
+
+.footer-box a:hover {
+  color:#DF125D;
+  
+}
+
+
+
 .social-icons {
   display: flex;
-  gap: 14px;
-  margin-top: 10px;
+  gap: 12px;
+  margin-top: 8px;
 }
 
 .social {
@@ -5876,60 +5827,30 @@ html, body {
   transform: scale(1.2);
 }
 
-/* ================= FOOTER BOTTOM ================= */
 .footer hr {
   margin-top: 30px;
-  border-color: rgba(255,255,255,0.25);
+  border-color: rgba(255,255,255,0.3);
 }
 
 .footer-copy {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 20px;   /* small space */
+  margin-bottom: 0; /* no extra space */
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.3;
+}
+.logopara{
+  margin-bottom: 50px;
 }
 
-/* ================= TABLET ================= */
-@media (max-width: 992px) {
-
-  .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-  }
-
-  .footer-logo-box {
-    grid-column: span 2;
-    text-align: center;
-  }
-
-  .footer-logo-box p {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .footer-box {
-    margin-left: 0;
-  }
-
-  .footer-box h3,
-  .footer-box h4,
-  .footer-box a,
-  .footer-box p {
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-}
 
 @media (max-width: 600px) {
-  .footer-container {
-    grid-template-columns: 1fr;
+  .footer-logo {
+    height: 120px;
   }
-
-  
 }
+
+
 
 @media (max-width: 992px) {
   .footer-container {
@@ -5962,14 +5883,11 @@ html, body {
     justify-content: center;
   }
 
- 
-  .footer-copy {
+   .footer-copy {
     font-size: 13px;
     padding: 2px 10px;
     margin: 0;
     line-height: 1.3;
   }
 }
-
-
 
