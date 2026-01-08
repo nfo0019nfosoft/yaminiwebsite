@@ -304,65 +304,6 @@
     
 
 
-    .gyn-wrapper {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.gyn-box {
-    display: flex;
-    background: #ffffff;
-    margin-bottom: 40px;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-}
-
-.gyn-box.reverse {
-    flex-direction: row-reverse;
-}
-
-.gyn-img {
-    flex: 50%;
-    max-height: 350px;
-}
-
-.gyn-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.gyn-content {
-    flex: 50%;
-    padding: 25px;
-}
-
-.gyn-content h3 {
-    font-size: 22px;
-    color: #DF125D;
-    margin-bottom: 10px;
-}
-
-.gyn-content p {
-    font-size: 16px;
-    color: #444;
-    line-height: 1.5;
-}
-
-
-@media (max-width: 768px) {
-    .gyn-box,
-    .gyn-box.reverse {
-        flex-direction: column;
-    }
-
-    .gyn-img {
-        height: 240px;
-    }
-}
-
     
 .services-dropdown {
   position: relative;
@@ -462,72 +403,82 @@
     
 
 
-
+/* ================= TITLE ================= */
 .title {
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    margin: 40px 0;
-    color: #08254c;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 40px 0;
+  color: #08254c;
 }
-.medwrapper {
+
+
+
+.ped-wrapper {
     width: 90%;
     max-width: 1100px;
     margin: auto;
 }
 
-.med-box {
+
+.ped-box {
     display: flex;
-    background: #ffffff;
+    background: #fff;
     margin-bottom: 40px;
     border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
 }
 
-.med-box.reverse {
+.ped-box.reverse {
     flex-direction: row-reverse;
 }
 
-.med-img {
+
+.ped-img {
     flex: 50%;
-    max-height: 350px;
+    max-height: 340px;
 }
 
-.med-img img {
+.ped-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.med-content {
+
+.ped-content {
     flex: 50%;
     padding: 25px;
 }
 
-.med-content h3 {
+.ped-content h3 {
     font-size: 22px;
-    color: #08254c;
+    color: #DF125D;;
     margin-bottom: 10px;
 }
 
-.med-content p {
-    font-size: 16px;
+.ped-content p {
     color: #444;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.55;
 }
 
 
 @media (max-width: 768px) {
-    .gyn-box,
-    .gyn-box.reverse {
+    .ped-box,
+    .ped-box.reverse {
         flex-direction: column;
     }
-
-    .gyn-img {
+    .ped-img {
         height: 240px;
     }
-}
+} 
+
+
+
+
+
 
 
 
