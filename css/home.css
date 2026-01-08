@@ -970,17 +970,14 @@ html, body {
 
 
 
-
-
 /* ================= ABOUT SECTION ================= */
-
 .about-section {
   width: 100%;
   padding: 80px 0;
   background: #ffffff;
 }
 
-/* CONTAINER */
+/* ================= CONTAINER ================= */
 .about-container {
   max-width: 1300px;
   margin: auto;
@@ -990,7 +987,7 @@ html, body {
   padding: 0 20px;
 }
 
-/* LEFT CONTENT */
+/* ================= LEFT CONTENT ================= */
 .about-content {
   width: 50%;
   max-width: 650px;
@@ -998,31 +995,31 @@ html, body {
   text-align: left;
 }
 
-/* HEADING */
+/* ================= HEADING (SINGLE LINE) ================= */
 .about-title {
   font-size: 35px;
   font-weight: 700;
   color: #DF125D;
   margin-bottom: 25px;
 
-  white-space: nowrap;      /* 🔥 prevents line break */
+  white-space: nowrap;          /* 🔑 force single line */
 }
 
-
-/* TEXT */
+/* ================= TEXT (JUSTIFIED CLEAN) ================= */
 .about-text {
   font-size: 18px;
   line-height: 1.8;
   color: #000;
   margin-bottom: 35px;
 
-  text-align: left;
-  letter-spacing: normal;
-  word-spacing: normal;
+  text-align: justify;          /* 🔑 proper justify */
+  text-justify: inter-word;
   word-break: normal;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 .about-btn {
   display: inline-block;
   padding: 14px 38px;
@@ -1039,30 +1036,27 @@ html, body {
   background: #08254c;
 }
 
-/* RIGHT IMAGE */
+/* ================= RIGHT IMAGE ================= */
 .about-image {
   width: 50%;
 }
 
 .about-image img {
   width: 100%;
-  height: auto;              /* 🔥 IMPORTANT */
-  object-fit: contain;
+  height: auto;
   border-radius: 16px;
+  object-fit: cover;
 }
 
 /* ================= TABLET ================= */
 @media (max-width: 992px) {
+
   .about-container {
     gap: 40px;
   }
 
-  .about-content {
-    padding-left: 20px;
-  }
-
   .about-title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .about-text {
@@ -1090,27 +1084,34 @@ html, body {
     padding: 0 20px;
   }
 
+  /* 🔥 SINGLE-LINE HEADING (AUTO SCALE) */
   .about-title {
-    font-size: 26px;
-    margin-bottom: 18px;
+    font-size: clamp(20px, 5vw, 26px);
+    white-space: nowrap;
     text-align: center;
   }
 
+  /* 🔥 PERFECT JUSTIFIED TEXT */
   .about-text {
     font-size: 16px;
     line-height: 1.7;
-    text-align: center;
+
+    text-align: justify;
+    text-justify: inter-word;
+    word-break: normal;
+    overflow-wrap: normal;
+    hyphens: none;
+
     max-width: 380px;
     margin: 0 auto 25px;
   }
 
   /* 🔥 CENTER BUTTON */
   .about-btn {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 12px 34px;
     font-size: 16px;
-    padding: 12px 30px;
-
-    display: block;       /* 🔑 */
-    margin: 0 auto;       /* 🔑 */
   }
 
   .about-image img {
@@ -1122,7 +1123,7 @@ html, body {
 @media (max-width: 480px) {
 
   .about-title {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .about-text {
@@ -1135,8 +1136,6 @@ html, body {
     padding: 10px 26px;
   }
 }
-
-
 
 
 
@@ -3472,25 +3471,23 @@ html, body {
 
 
 
-
-/* SECTION */
+/* ================= SECTION ================= */
 .doctors-section-new {
   max-width: 1200px;
   margin: 60px auto;
   padding: 0 20px;
 }
 
-/* TITLE */
+/* ================= TITLE ================= */
 .section-tiitle {
   text-align: center;
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 40px;
-  color:#DF125D
- 
+  color: #DF125D;
 }
 
-/* CARD */
+/* ================= CARD ================= */
 .doctor-card-new {
   display: flex;
   gap: 40px;
@@ -3502,9 +3499,9 @@ html, body {
   align-items: center;
 }
 
-/* IMAGE */
+/* ================= IMAGE ================= */
 .doctor-image-new {
-  flex: 0 0 320px;           /* BIG IMAGE */
+  flex: 0 0 320px;
   display: flex;
   justify-content: center;
 }
@@ -3516,21 +3513,20 @@ html, body {
   border-radius: 18px;
 }
 
-/* CONTENT */
+/* ================= CONTENT ================= */
 .doctor-content-new {
   flex: 1;
 }
 
-/* NAME */
+/* ================= NAME ================= */
 .doctor-name-new {
   font-size: 26px;
   font-weight: 700;
-  color: #DF125D
- ;
+  color: #DF125D;
   margin-bottom: 6px;
 }
 
-/* DEGREE */
+/* ================= DEGREE ================= */
 .doctor-degree-new {
   font-size: 15px;
   font-weight: 600;
@@ -3538,9 +3534,9 @@ html, body {
   margin-bottom: 14px;
 }
 
-/* TAGS */
+/* ================= TAGS ================= */
 .doctor-tags-new {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .doctor-tags-new span {
@@ -3552,9 +3548,10 @@ html, body {
   font-size: 13px;
   font-weight: 500;
   margin: 4px 6px 4px 0;
+  white-space: nowrap;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 .doctor-about-new {
   font-size: 15px;
   line-height: 1.7;
@@ -3562,15 +3559,15 @@ html, body {
   margin-bottom: 16px;
 }
 
-/* SPECIALIZATION */
+/* ================= SPECIALIZATION ================= */
 .doctor-special-title-new {
   font-size: 15px;
   font-weight: 700;
-  color:#DF125D ;
+  color: #DF125D;
   margin-bottom: 8px;
 }
 
-/* BULLET LIST */
+/* ================= LIST ================= */
 .doctor-special-list-new {
   padding-left: 20px;
 }
@@ -3585,11 +3582,15 @@ html, body {
   color: #08254c;
 }
 
-/* RESPONSIVE */
+/* ================================================= */
+/* ================= MOBILE RESPONSIVE ============= */
+/* ================================================= */
 @media (max-width: 900px) {
+
   .doctor-card-new {
     flex-direction: column;
     text-align: center;
+    padding: 24px;
   }
 
   .doctor-image-new {
@@ -3597,16 +3598,61 @@ html, body {
   }
 
   .doctor-image-new img {
-    height: 320px;
+    height: 300px;
+  }
+
+  .doctor-name-new {
+    font-size: 24px;
+  }
+
+  .doctor-degree-new {
+    font-size: 14px;
+  }
+
+  /* 🔥 PERFECT TAG ALIGNMENT (LIKE YOUR 2ND IMAGE) */
+  .doctor-tags-new {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   /* 🔑 center tags */
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .doctor-tags-new span {
+    margin: 0;
+    padding: 7px 16px;
+    font-size: 13px;
+  }
+
+  .doctor-about-new {
+    text-align: center;
+    font-size: 14.5px;
   }
 
   .doctor-special-list-new {
     text-align: left;
     display: inline-block;
+    margin: 0 auto;
   }
 }
 
-                
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .doctor-image-new img {
+    height: 260px;
+  }
+
+  .doctor-name-new {
+    font-size: 22px;
+  }
+
+  .doctor-tags-new span {
+    font-size: 12.5px;
+    padding: 6px 14px;
+  }
+}
+   
 
 
     .know-btn {
