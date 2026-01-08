@@ -5721,3 +5721,40 @@ html, body {
     padding: 5px 10px;
   }
 }
+/* ================= FOOTER MOBILE FINAL FIX ================= */
+@media (max-width: 600px) {
+
+  /* Stack footer sections */
+  .footer-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Remove left spacing */
+  .footer-box {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  /* FORCE LINKS ONE-BY-ONE (VERTICAL) */
+  .footer-box a {
+    display: block !important;      /* 🔥 KEY FIX */
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+
+  /* Headings centered */
+  .footer-box h3 {
+    text-align: center;
+  }
+
+  /* Paragraphs centered */
+  .footer-box p {
+    text-align: center;
+  }
+
+  /* Social icons centered */
+  .social-icons {
+    justify-content: center;
+  }
+}
