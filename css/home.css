@@ -1912,6 +1912,17 @@ html, body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* IMPORTANT RESET (one time only) */
 html, body {
   margin: 0;
@@ -2083,28 +2094,47 @@ html, body {
 
 
 
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+}
 
-
-
-/* 🔥 IMPORTANT RESET */
 html, body {
-  width: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* ================= FULL WIDTH SECTION ================= */
+/* ================= SECTION ================= */
 .srvv-section {
-  width: 100vw;                 /* FULL SCREEN WIDTH */
-  margin-left: calc(-50vw + 50%); /* FORCE FULL WIDTH */
-  background: rgb(255, 225, 230); /* LIGHT PINK */
-  padding: 70px 0;
+  width: 100%;
+  padding: 80px 0;
 }
 
-/* ================= CENTER CONTENT ================= */
+/* ================= HEADING WITH BG ================= */
+.section-heading {
+  display: inline-block;
+  margin: 0 auto 55px;
+  padding: 14px 38px;
+  background: #08254c;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+/* CENTER HEADING */
+.section-heading-wrap {
+  text-align: center;
+}
+
+/* ================= WRAPPER ================= */
 .ortho-wrapper {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
   padding: 0 20px;
 }
@@ -2112,88 +2142,135 @@ html, body {
 /* ================= GRID ================= */
 .ortho-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 35px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px;
 }
 
 /* ================= CARD ================= */
 .ortho-card {
-  background: #ffffff;
-  border-radius: 16px;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   height: 100%;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-  transition: 0.3s ease;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 2px solid rgb(255,205,210);
+
+  /* ✅ PROFESSIONAL SHADOW */
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    0 4px 8px rgba(0, 0, 0, 0.04);
+
+  transition: all 0.35s ease;
+  position: relative;
 }
 
+/* TOP ACCENT LINE (KEEP BRAND IDENTITY) */
+.ortho-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #DF125D;
+  width: 100%;
+  height: 4px;
+ 
+}
+
+/* HOVER */
 .ortho-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow:
+    0 18px 42px rgba(0, 0, 0, 0.14),
+    0 6px 14px rgba(0, 0, 0, 0.08);
 }
 
 /* ================= IMAGE ================= */
 .ortho-card img {
   width: 100%;
-  height: 200px;
+  height: 185px;
   object-fit: cover;
 }
 
-/* ================= TITLE ================= */
+/* ================= CONTENT ================= */
 .ortho-card h5 {
-  background: #08254c;
-  color: #fff;
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #08254c;
   text-align: center;
-  padding: 14px;
+  padding: 18px 14px 10px;
   margin: 0;
 }
 
-/* ================= TEXT ================= */
 .ortho-card p {
   font-size: 14px;
   color: #555;
   text-align: center;
-  padding: 16px;
+  padding: 0 18px 18px;
+  line-height: 1.6;
   flex-grow: 1;
 }
 
 /* ================= BUTTON ================= */
 .ortho-btn {
   align-self: center;
-  margin-bottom: 18px;
-  padding: 10px 28px;
-  background: #DF125D;
-  color: white;
+  margin-bottom: 22px;
+  padding: 10px 30px;
   border-radius: 30px;
-  text-decoration: none;
+  font-size: 14px;
   font-weight: 600;
-  transition: 0.3s;
+  text-decoration: none;
+
+  background: #DF125D;
+  color: #ffffff;
+  border: none;
+
+  transition: all 0.3s ease;
 }
 
 .ortho-btn:hover {
   background: #08254c;
+  transform: scale(1.05);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .ortho-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-heading {
+    font-size: 28px;
+    padding: 12px 30px;
+  }
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .srvv-section {
-    padding: 50px 0;
+  .section-heading {
+    font-size: 24px;
+    padding: 10px 26px;
   }
 
   .ortho-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 22px;
   }
 
   .ortho-card img {
-    height: 180px;
+    height: 165px;
   }
 }
 
+/* ================= SMALL MOBILE ================= */
 @media (max-width: 480px) {
+  .ortho-grid {
+    grid-template-columns: 1fr;
+  }
+
   .ortho-card img {
-    height: 160px;
+    height: 155px;
   }
 
   .ortho-btn {
@@ -2201,33 +2278,6 @@ html, body {
     padding: 8px 22px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
