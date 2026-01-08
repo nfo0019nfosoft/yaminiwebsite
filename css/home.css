@@ -5554,30 +5554,16 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================= FOOTER FULL WIDTH ================= */
 .footer {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   background: #08254c;
-  color: white;
+  color: #ffffff;
   padding: 60px 20px 40px;
 }
 
-/* ================= INNER CONTAINER ================= */
+/* ================= FOOTER CONTAINER ================= */
 .footer-container {
   max-width: 1200px;
   margin: auto;
@@ -5586,7 +5572,7 @@ html, body {
   gap: 40px;
 }
 
-/* ================= LOGO ================= */
+/* ================= LOGO BOX ================= */
 .footer-logo-box {
   margin-top: 40px;
   text-align: left;
@@ -5631,11 +5617,11 @@ html, body {
   color: #DF125D;
 }
 
-/* ================= SOCIAL ================= */
+/* ================= SOCIAL ICONS ================= */
 .social-icons {
   display: flex;
   gap: 12px;
-  margin-top: 8px;
+  margin-top: 10px;
 }
 
 .social {
@@ -5662,11 +5648,10 @@ html, body {
 .footer-copy {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 0;
   font-size: 14px;
 }
 
-/* ================= TABLET (UNCHANGED) ================= */
+/* ================= TABLET ================= */
 @media (max-width: 992px) {
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
@@ -5675,6 +5660,11 @@ html, body {
 
   .footer-logo-box {
     grid-column: span 2;
+    text-align: center;
+  }
+
+  .footer-box {
+    margin-left: 0;
   }
 
   .social-icons {
@@ -5682,79 +5672,57 @@ html, body {
   }
 }
 
-/* ================= MOBILE FIX (IMPORTANT PART) ================= */
+/* ================= MOBILE (FINAL FIX) ================= */
 @media (max-width: 600px) {
 
+  /* FORCE STACK */
   .footer-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px;
   }
 
-  /* REMOVE DESKTOP LEFT GAP */
-  .footer-box {
-    margin-left: 0;
-    text-align: center;
-  }
-
-  /* CENTER ALL TEXT & LINKS */
-  .footer-box h3,
-  .footer-box a,
-  .footer-box p,
+  /* FULL WIDTH SECTIONS */
   .footer-logo-box,
-  .footer-logo-box p {
-    text-align: center;
+  .footer-box {
+    width: 100%;
+    margin: 0 !important;
+    text-align: center !important;
   }
 
-  /* CENTER SOCIAL ICONS */
+  /* HEADINGS CENTER */
+  .footer-box h3 {
+    text-align: center !important;
+  }
+
+  /* LINKS DOWN BY DOWN */
+  .footer-box a {
+    display: block !important;
+    width: 100%;
+    text-align: center !important;
+    margin: 8px 0;
+  }
+
+  /* TEXT CENTER */
+  .footer-box p {
+    text-align: center !important;
+  }
+
+  /* SOCIAL CENTER */
   .social-icons {
-    justify-content: center;
+    justify-content: center !important;
   }
 
-  /* BIGGER LOGO ON MOBILE */
+  /* BIG LOGO */
   .footer-logo {
     height: 120px;
   }
 
+  /* COPYRIGHT */
   .footer-copy {
     font-size: 13px;
-    margin: 0;
     padding: 5px 10px;
-  }
-}
-/* ================= FOOTER MOBILE FINAL FIX ================= */
-@media (max-width: 600px) {
-
-  /* Stack footer sections */
-  .footer-container {
-    grid-template-columns: 1fr !important;
-  }
-
-  /* Remove left spacing */
-  .footer-box {
-    margin-left: 0 !important;
-    width: 100%;
-  }
-
-  /* FORCE LINKS ONE-BY-ONE (VERTICAL) */
-  .footer-box a {
-    display: block !important;      /* 🔥 KEY FIX */
-    width: 100%;
-    text-align: center;
-    margin: 6px 0;
-  }
-
-  /* Headings centered */
-  .footer-box h3 {
-    text-align: center;
-  }
-
-  /* Paragraphs centered */
-  .footer-box p {
-    text-align: center;
-  }
-
-  /* Social icons centered */
-  .social-icons {
-    justify-content: center;
+    margin: 0;
   }
 }
