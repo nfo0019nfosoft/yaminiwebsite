@@ -184,6 +184,63 @@ html, body {
     margin-left: auto;    
     padding-right: 15px;
   }
+/* MENU ICON */
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #08254c;
+}
+
+/* ================= MOBILE NAV ================= */
+@media (max-width: 850px) {
+
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;   /* 🔑 ALWAYS RIGHT */
+    padding-right: 16px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    display: none;
+    flex-direction: column;
+    padding: 15px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 12px 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    margin-left: 0;
+  }
+}
 
   
   .nav-links {
@@ -5774,16 +5831,10 @@ html, body {
 .footer {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
-  background: linear-gradient(180deg, #0a2a4f, #072040);
+  background: #08254c;
   color: #ffffff;
-  padding: 70px 0 30px;
-  margin-top: 30px;
-   background: #08254c;
-  color: white;
   padding: 60px 20px 40px;
 }
-
-
 
 /* ================= INNER CONTAINER ================= */
 .footer-container {
@@ -5794,65 +5845,67 @@ html, body {
   gap: 40px;
 }
 
-
-
+/* ================= LOGO SECTION ================= */
 .footer-logo-box {
   margin-top: 40px;
-  text-align: left;          /* 👈 important */
+  text-align: left;
 }
 
-/* LOGO */
 .footer-logo {
   height: 70px;
   background: #ffffff;
   padding: 6px 12px;
   border-radius: 12px;
   display: inline-block;
+  
+  margin-top: -30px;   /* was 40px */
+
+
 }
 
-/* PARAGRAPH – STARTS SAME LINE AS LOGO */
 .footer-logo-box p {
   margin-top: 16px;
-  max-width: 280px;          /* keeps nice line breaks */
+  max-width: 280px;
   line-height: 1.6;
 }
 
-.footer-box{
+/* ================= FOOTER BOX ================= */
+.footer-box {
   margin-left: 30px;
 }
+
 .footer-box h3 {
   margin-bottom: 12px;
   font-size: 20px;
   font-weight: bold;
   text-align: left;
- 
 }
 
 .footer-box h4 {
   margin: 12px 0 5px;
 }
 
-.footer-address, .footer-branch {
+.footer-box a,
+.footer-box p {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+.footer-box a:hover {
+  color: #DF125D;
+}
+
+/* ================= ADDRESS ================= */
+.footer-address,
+.footer-branch {
   margin-bottom: 18px;
   line-height: 1.6;
 }
 
-
-.footer-box a, .footer-box p {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 8px;
-  text-align: left;
-  display: block;
-}
-
-.footer-box a:hover {
-  color:#DF125D;
-  
-}
-
-
-
+/* ================= SOCIAL ICONS ================= */
 .social-icons {
   display: flex;
   gap: 12px;
@@ -5874,6 +5927,7 @@ html, body {
   transform: scale(1.2);
 }
 
+/* ================= FOOTER BOTTOM ================= */
 .footer hr {
   margin-top: 30px;
   border-color: rgba(255,255,255,0.3);
@@ -5881,25 +5935,14 @@ html, body {
 
 .footer-copy {
   text-align: center;
-  margin-top: 20px;   /* small space */
-  margin-bottom: 0; /* no extra space */
+  margin-top: 20px;
   font-size: 14px;
   line-height: 1.3;
 }
-.logopara{
-  margin-bottom: 50px;
-}
 
-
-@media (max-width: 600px) {
-  .footer-logo {
-    height: 120px;
-  }
-}
-
-
-
+/* ================= TABLET ================= */
 @media (max-width: 992px) {
+
   .footer-container {
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
@@ -5907,6 +5950,23 @@ html, body {
 
   .footer-logo-box {
     grid-column: span 2;
+    text-align: center;
+  }
+
+  .footer-logo-box p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-box {
+    margin-left: 0;
+  }
+
+  .footer-box h3,
+  .footer-box h4,
+  .footer-box a,
+  .footer-box p {
+    text-align: center;
   }
 
   .social-icons {
@@ -5914,27 +5974,48 @@ html, body {
   }
 }
 
-
+/* ================= MOBILE ================= */
 @media (max-width: 600px) {
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
 
+  .footer-logo {
+    height: 120px;
+  }
+
   .footer-logo-box {
-    grid-column: span 1;
     margin-top: 0;
+    text-align: center;
+  }
+
+  .footer-logo-box p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer-box {
+    margin-left: 0;
+  }
+
+  .footer-box h3,
+  .footer-box h4,
+  .footer-box a,
+  .footer-box p {
+    text-align: center;
   }
 
   .social-icons {
     justify-content: center;
   }
 
-   .footer-copy {
+  .footer-copy {
     font-size: 13px;
     padding: 2px 10px;
     margin: 0;
-    line-height: 1.3;
   }
 }
+
 
