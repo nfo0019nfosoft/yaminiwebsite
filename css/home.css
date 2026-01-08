@@ -968,6 +968,10 @@ html, body {
 }
 
 
+
+
+
+
 /* ================= ABOUT SECTION ================= */
 
 .about-section {
@@ -994,6 +998,7 @@ html, body {
   text-align: left;
 }
 
+/* HEADING */
 .about-title {
   font-size: 35px;
   font-weight: 700;
@@ -1003,12 +1008,18 @@ html, body {
   white-space: nowrap;      /* 🔥 prevents line break */
 }
 
+
 /* TEXT */
 .about-text {
   font-size: 18px;
   line-height: 1.8;
   color: #000;
   margin-bottom: 35px;
+
+  text-align: left;
+  letter-spacing: normal;
+  word-spacing: normal;
+  word-break: normal;
 }
 
 /* BUTTON */
@@ -1035,9 +1046,9 @@ html, body {
 
 .about-image img {
   width: 100%;
-  height: auto;           /* 🔥 NEVER CHANGE */
-  border-radius: 16px;
+  height: auto;              /* 🔥 IMPORTANT */
   object-fit: contain;
+  border-radius: 16px;
 }
 
 /* ================= TABLET ================= */
@@ -1075,20 +1086,26 @@ html, body {
   .about-image {
     width: 100%;
     max-width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
   }
 
   .about-title {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 18px;
     text-align: center;
   }
 
   .about-text {
     font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    margin-bottom: 25px;
+    line-height: 1.7;
+
+    text-align: center;        /* 🔥 FIX */
+    max-width: 380px;          /* 🔥 KEY FIX */
+    margin: 0 auto 25px;
+
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-break: normal;
   }
 
   .about-btn {
@@ -1109,6 +1126,7 @@ html, body {
 
   .about-text {
     font-size: 15px;
+    max-width: 340px;
   }
 
   .about-btn {
