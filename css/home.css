@@ -4219,20 +4219,19 @@ html, body {
 
 
 /* ================= SECTION ================= */
+/* ================= SECTION ================= */
 .happy-clients {
   padding: 60px 0;
   background: #ffffff;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 .clients-title {
   text-align: center;
   font-size: 32px;
   font-weight: 900;
-  color: #DF125D
- ; /* Teal color from image */
+  color: #DF125D;
   text-transform: uppercase;
- 
   margin-bottom: 40px;
 }
 
@@ -4246,50 +4245,31 @@ html, body {
   padding: 0 20px;
 }
 
-/* ================= LEFT SUMMARY CARD (TEAL) ================= */
+/* ================= LEFT GOOGLE CARD ================= */
 .google-summary {
   flex: 0 0 280px;
 }
 
 .google-card {
-  background: #d1eded; /* Light teal background from image */
+  background: #d1eded;
   border-radius: 20px;
   padding: 30px 20px;
-  text-align: left; /* Left aligned content */
+  text-align: center;
   box-shadow: 0 10px 20px rgba(0,0,0,0.05);
 }
 
-.hospital-header {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  margin-bottom: 10px;
-}
-
-.hospital-icon {
-  width: 40px;
-  height: 40px;
-}
-
-
 .hospital-icon-centered {
-  width: 50px;
-  height: auto;
-  display: block;      /* Makes it a block to allow margin centering */
-  margin: 0 auto 15px; /* 0 top/bottom, auto left/right, 15px bottom spacing */
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+  display: block;
 }
+
 .google-card h3 {
-  margin: 0;
   font-size: 18px;
   font-weight: 800;
   color: #08254c;
-}
-
-.rating-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 10px 0;
+  margin-bottom: 8px;
 }
 
 .rating-score {
@@ -4303,28 +4283,25 @@ html, body {
   font-size: 16px;
 }
 
-.review-info, .powered {
+.review-info,
+.powered {
   font-size: 14px;
   color: #444;
-  margin: 5px 0;
 }
 
-/* ORANGE BUTTON FROM IMAGE */
 .google-btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background:#DF125D
- ; /* Vibrant orange */
+  background: #DF125D;
   color: #fff;
   border-radius: 30px;
   font-size: 15px;
   font-weight: 600;
   text-decoration: none;
-  box-shadow: 0 4px 10px rgba(255, 140, 66, 0.3);
 }
 
-/* ================= RIGHT CARDS (WHITE) ================= */
+/* ================= REVIEWS SCROLL ================= */
 .reviews-scroll {
   flex: 1;
   overflow: hidden;
@@ -4348,15 +4325,8 @@ html, body {
 
 .review-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
   gap: 10px;
+  align-items: center;
 }
 
 .avatar {
@@ -4369,21 +4339,14 @@ html, body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  font-size: 18px;
-}
-
-.small-google-logo {
-  width: 18px;
 }
 
 .review-card h4 {
-  margin: 0;
   font-size: 16px;
-  color: #333;
+  margin: 0;
 }
 
 .time {
-  display: block;
   font-size: 12px;
   color: #777;
 }
@@ -4396,8 +4359,64 @@ html, body {
 }
 
 @keyframes scrollReviews {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ================= MOBILE VIEW ================= */
+@media (max-width: 768px) {
+
+  .happy-clients {
+    padding: 50px 0;
+  }
+
+  .clients-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .clients-layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .google-summary {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .reviews-scroll {
+    width: 100%;
+  }
+
+  .reviews-track {
+    animation-duration: 60s; /* slower for mobile */
+  }
+
+  .review-card {
+    width: 260px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .clients-title {
+    font-size: 22px;
+  }
+
+  .google-card h3 {
+    font-size: 16px;
+  }
+
+  .review-card {
+    width: 240px;
+    padding: 16px;
+  }
+
+  .review-card p {
+    font-size: 13px;
+  }
 }
 
 /* ================= RESET (IMPORTANT) ================= */
@@ -5293,46 +5312,46 @@ html, body {
 
 
 
-
-/* SECTION BACKGROUND */
+/* ================= SECTION BACKGROUND ================= */
 .specialised-section {
   width: 100%;
   padding: 100px 20px;
   text-align: center;
+  background: #ffffff;
 }
 
-/* TITLE */
+/* ================= TITLE ================= */
 .spec-title {
-  font-size: 38px;            /* BIGGER */
+  font-size: 38px;
   font-weight: 800;
- 
   margin-bottom: 15px;
+  color: #08254c;
 }
 
-/* SUB TITLE */
+/* ================= SUB TITLE ================= */
 .spec-sub {
   max-width: 820px;
   margin: 0 auto 80px;
-  font-size: 18px;            /* BIGGER */
+  font-size: 18px;
   line-height: 1.8;
   color: #333;
 }
 
-/* CIRCLE WRAPPER */
+/* ================= CIRCLE WRAPPER ================= */
 .spec-circles {
   display: flex;
   justify-content: center;
-  gap: 100px;                 /* MORE GAP */
+  gap: 100px;
   flex-wrap: wrap;
 }
 
-/* MAIN CIRCLE */
+/* ================= DESKTOP CIRCLE ================= */
 .spec-circle {
-  width: 480px;               /* BIGGER CIRCLE */
-  height: 480px;              /* BIGGER CIRCLE */
+  width: 480px;
+  height: 480px;
   border-radius: 50%;
   background: #08254c;
-  color: #fff;
+  color: #ffffff;
   padding: 55px 50px;
 
   display: flex;
@@ -5340,7 +5359,7 @@ html, body {
   align-items: center;
   justify-content: center;
 
-  box-shadow: 
+  box-shadow:
     0 0 0 14px #e0e0e0,
     0 26px 55px rgba(0,0,0,0.35);
 
@@ -5351,15 +5370,15 @@ html, body {
   transform: translateY(-10px);
 }
 
-/* CIRCLE HEADING */
+/* ================= CIRCLE HEADING ================= */
 .spec-circle h3 {
-  font-size: 30px;            /* BIGGER */
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 2px;
   margin-bottom: 22px;
 }
 
-/* LIST */
+/* ================= LIST ================= */
 .spec-circle ul {
   list-style: none;
   padding: 0;
@@ -5367,9 +5386,9 @@ html, body {
   width: 100%;
 }
 
-/* LIST ITEMS */
+/* ================= LIST ITEMS ================= */
 .spec-circle ul li {
-  font-size: 17px;            /* BIGGER */
+  font-size: 17px;
   padding: 8px 0;
   color: #f1c84b;
   border-bottom: 1px dashed rgba(255,255,255,0.4);
@@ -5379,100 +5398,93 @@ html, body {
   border-bottom: none;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-
+/* ================= TABLET ================= */
+@media (max-width: 992px) {
   .spec-circles {
-    gap: 50px;
+    gap: 60px;
   }
 
   .spec-circle {
-    width: 340px;
-    height: 340px;
-    padding: 35px 28px;
+    width: 400px;
+    height: 400px;
+    padding: 45px 40px;
   }
 
   .spec-circle h3 {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .spec-circle ul li {
-    font-size: 14px;
-  }
-
-  .spec-title {
-    font-size: 28px;
-  }
-
-  .spec-sub {
     font-size: 15px;
   }
 }
 
+/* ================= MOBILE (PERFECT FIX) ================= */
+@media (max-width: 768px) {
 
+  .specialised-section {
+    padding: 70px 15px;
+  }
 
+  .spec-title {
+    font-size: 26px;
+  }
 
+  .spec-sub {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
 
+  .spec-circles {
+    gap: 40px;
+  }
 
+  /* 🔥 CHANGE SHAPE ON MOBILE */
+  .spec-circle {
+    width: 100%;
+    max-width: 360px;
+    height: auto;              /* 🔥 KEY FIX */
+    border-radius: 28px;       /* 🔥 NOT CIRCLE */
+    padding: 30px 22px;
 
+    box-shadow:
+      0 0 0 8px #e0e0e0,
+      0 18px 35px rgba(0,0,0,0.25);
+  }
 
+  .spec-circle h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
 
-
-.about-section {
-  width: 100%;
-  padding: 80px 0;
-  background: #ffffff;
+  .spec-circle ul li {
+    font-size: 14px;
+    padding: 6px 0;
+  }
 }
 
-/* CONTAINER */
-.about-container {
-  max-width: 1300px;
-  margin: auto;
-  display: flex;
-  align-items: center;       /* vertical center */
-  gap: 60px;
-  padding: 0 20px;
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+
+  .spec-circle {
+    max-width: 320px;
+    padding: 26px 18px;
+  }
+
+  .spec-circle h3 {
+    font-size: 20px;
+  }
+
+  .spec-circle ul li {
+    font-size: 13px;
+  }
 }
 
-/* LEFT CONTENT */
-.about-content {
-  width: 50%;
-  max-width: 650px;
-  padding-left: 50px;   /* 👈 increase this value */
-}
 
 
-/* HEADING */
-.about-title {
-  font-size: 35px;
-  font-weight: 700;
-  color:#DF125D;             /* same red tone */
-  margin-bottom: 25px;
-}
 
-/* TEXT */
-.about-text {
-  font-size: 18px;
-  line-height: 1.8;
-  color: #000;
-  margin-bottom: 35px;
-  text-align: justify;
-}
-.knw-btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 24px;
-  background-color: #DF125D;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  margin-left: 10px;     /* ensures left alignment */
-}
 
-.knw-btn:hover {
-  background-color: #DF125D;
-}
 
 
 
