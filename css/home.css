@@ -976,7 +976,7 @@ html, body {
   width: 100%;
   padding: 80px 0;
   background: #ffffff;
-  margin-top: -200px;
+ 
 }
 
 /* ================= CONTAINER ================= */
@@ -5787,88 +5787,66 @@ html, body {
 
 
 
-/* ================= RESET (IMPORTANT) ================= */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
+/* ================= FIX HERO IMAGE (FINAL OVERRIDE) ================= */
 
-/* ================= HERO SECTION ================= */
 .hero {
   width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* SLIDER */
-.hero-slider {
-  position: relative;
-  width: 100%;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
   overflow: hidden;
 }
 
-/* HERO IMAGES */
-.hero-img {
+/* Slider wrapper */
+.hero-slider {
   width: 100%;
-  height: auto;
-  display: none;
-  object-fit: contain; /* FULL IMAGE */
+  height: auto !important;
+  position: relative;
 }
 
+/* Hero images */
+.hero-img {
+  width: 100% !important;
+  height: auto !important;
+  display: none;
+  object-fit: contain !important;   /* 🔥 show full image */
+  background: none !important;      /* 🔥 no color */
+}
+
+/* Active image */
 .hero-img.active {
   display: block;
-  animation: fadeIn 0.6s ease-in-out;
 }
 
-/* FADE */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-/* ARROWS */
+/* Arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 34px;
   height: 34px;
-  font-size: 16px;
-  background: rgba(255,255,255,0.7);
-  border: none;
+  background: rgba(255,255,255,0.8);
   border-radius: 50%;
+  border: none;
+  font-size: 16px;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
 }
 
-.arrow.left { left: 12px; }
-.arrow.right { right: 12px; }
+.arrow.left { left: 10px; }
+.arrow.right { right: 10px; }
 
 /* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
 
-  /* 🔥 FORCE HERO TO END PROPERLY */
   .hero {
-    display: block;
-    clear: both;
-    margin-bottom: 28px;   /* ✅ SPACE BELOW HERO */
-  }
-
-  .hero-slider {
-    height: auto;
+    margin-bottom: 30px !important;   /* ✅ space after hero */
   }
 
   .hero-img {
-    width: 100vw;
-    height: auto;
-    object-fit: contain;
-  }
-
-  /* 🔥 FORCE NEXT SECTION DOWN */
-  .hero + section,
-  .hero + div {
-    margin-top: 24px !important;
+    width: 100vw !important;
+    height: auto !important;
+    max-width: 100%;
+    object-fit: contain !important;
   }
 }
