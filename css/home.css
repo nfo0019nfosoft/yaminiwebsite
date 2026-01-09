@@ -5789,41 +5789,58 @@ html, body {
 
 
 
-/* Container adapts to the image height */
+/* --- Hero Section Container --- */
+.hero {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  /* Removes any tiny white gaps at the bottom of the image */
+  line-height: 0; 
+}
+
 .hero-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color: #f8f9fa; /* Optional: adds a light background if image is small */
-    display: flex;
-    align-items: center;
+  width: 100%;
+  position: relative;
+  display: block;
 }
 
+/* --- Hero Images --- */
 .hero-img {
-    width: 100%;
-    height: auto; /* This ensures the full height is shown */
-    display: none; /* Hide by default */
-    object-fit: contain; /* Ensures the whole image is visible without cropping */
+  width: 100%;
+  /* CRITICAL: height auto ensures the full image scales without cutting */
+  height: auto; 
+  display: none; /* Hidden by default */
+  /* Ensures the image stays within bounds but fully visible */
+  object-fit: contain; 
 }
 
+/* --- Active Slide State --- */
 .hero-img.active {
-    display: block; /* Only show the active one */
-    animation: fadeIn 0.8s ease-in-out;
+  display: block;
+  /* Optional: Smooth fade when images switch */
+  animation: fadeVisibility 0.8s ease-in-out;
 }
 
-/* Smooth transition between slides */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes fadeVisibility {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
 }
 
-/* Mobile Specific Adjustments */
+/* --- Mobile Specific Optimization --- */
 @media (max-width: 768px) {
-    .hero-slider {
-        min-height: auto; /* Prevents forced height on small screens */
-    }
-    .hero-img {
-        width: 100%; /* Forces image to fit screen width */
-        height: auto;
-    }
+  .hero {
+    /* Ensures no fixed heights are inherited from other styles */
+    height: auto !important; 
+  }
+
+  .hero-slider {
+    height: auto !important;
+  }
+
+  .hero-img {
+    /* Forces the image to be 100% wide and adjust height automatically */
+    width: 100% !important;
+    height: auto !important;
+  }
 }
