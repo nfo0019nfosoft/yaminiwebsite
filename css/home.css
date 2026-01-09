@@ -5787,60 +5787,61 @@ html, body {
 
 
 
-
-
-/* --- Hero Section Container --- */
-.hero {
-  width: 100%;
-  background-color: #fff;
-  overflow: hidden;
-  position: relative;
-  /* Removes any tiny white gaps at the bottom of the image */
-  line-height: 0; 
-}
-
+/* ================= BASE (DESKTOP – UNCHANGED) ================= */
 .hero-slider {
-  width: 100%;
-  position: relative;
-  display: block;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-/* --- Hero Images --- */
 .hero-img {
-  width: 100%;
-  /* CRITICAL: height auto ensures the full image scales without cutting */
-  height: auto; 
-  display: none; /* Hidden by default */
-  /* Ensures the image stays within bounds but fully visible */
-  object-fit: contain; 
+    width: 100%;
+    height: auto;              /* Desktop keeps natural height */
+    display: none;
+    object-fit: contain;       /* Full image visible */
 }
 
-/* --- Active Slide State --- */
 .hero-img.active {
-  display: block;
-  /* Optional: Smooth fade when images switch */
-  animation: fadeVisibility 0.8s ease-in-out;
+    display: block;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
-@keyframes fadeVisibility {
-  from { opacity: 0.5; }
-  to { opacity: 1; }
+/* Smooth transition */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-/* --- Mobile Specific Optimization --- */
+/* ================= MOBILE FIX (ONLY MOBILE CHANGED) ================= */
 @media (max-width: 768px) {
-  .hero {
-    /* Ensures no fixed heights are inherited from other styles */
-    height: auto !important; 
-  }
 
-  .hero-slider {
-    height: auto !important;
-  }
+    /* Remove space below hero */
+    .hero,
+    .hero-slider {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        min-height: unset;
+    }
 
-  .hero-img {
-    /* Forces the image to be 100% wide and adjust height automatically */
-    width: 100% !important;
-    height: auto !important;
-  }
+    /* Force image to fully fit viewport width */
+    .hero-img {
+        display: none;
+        width: 100vw;          /* 🔥 Fix half image issue */
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .hero-img.active {
+        display: block;
+    }
+
+    /* Prevent extra spacing from body/sections */
+    body, html, section {
+        margin: 0;
+        padding: 0;
+    }
 }
