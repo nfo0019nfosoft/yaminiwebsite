@@ -976,6 +976,8 @@ html, body {
   width: 100%;
   padding: 80px 0;
   background: #ffffff;
+   margin-top: -120px;   
+  
  
 }
 
@@ -1071,6 +1073,7 @@ html, body {
 
   .about-section {
     padding: 60px 0;
+   
   }
 
   .about-container {
