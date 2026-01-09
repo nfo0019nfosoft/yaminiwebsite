@@ -82,53 +82,41 @@
     </div>
   </header>
 
-
 <section class="hero">
   <div class="hero-slider">
-    <img src="img/banner1.png" class="hero-img active">
-    <img src="img/banner2.png" class="hero-img">
-
-    <button class="arrow left" onclick="prevSlide()">❮</button>
-    <button class="arrow right" onclick="nextSlide()">❯</button>
+    <img src="img/banner1.png" class="hero-img active" alt="Hospital Banner 1">
+    <img src="img/banner2.png" class="hero-img" alt="Hospital Banner 2">
   </div>
 </section>
 
+
+
+
+
 <script>
-
-
-
-
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.hero-img');
 
-function showSlide(index) {
-    // Hide all images
+function autoShowSlides() {
+    // Hide all slides
     slides.forEach(img => img.classList.remove('active'));
-
-    // Loop logic
-    if (index >= slides.length) {
+    
+    // Increment index
+    currentSlide++;
+    if (currentSlide >= slides.length) {
         currentSlide = 0;
-    } else if (index < 0) {
-        currentSlide = slides.length - 1;
-    } else {
-        currentSlide = index;
     }
-
-    // Show the active image
+    
+    // Show current slide
     slides[currentSlide].classList.add('active');
+    
+    // Repeat every 4 seconds
+    setTimeout(autoShowSlides, 4000);
 }
 
-function nextSlide() {
-    showSlide(currentSlide + 1);
-}
-
-function prevSlide() {
-    showSlide(currentSlide - 1);
-}
-
-
-
+// Start the slider
+document.addEventListener('DOMContentLoaded', autoShowSlides);
 
 
 
