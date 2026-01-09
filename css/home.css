@@ -5784,58 +5784,65 @@ html, body {
 
 
 
-
-
-
-/* ================= FIX HERO IMAGE (FINAL OVERRIDE) ================= */
-
+/* --- HERO SECTION TOTAL FIX --- */
 .hero {
   width: 100%;
-  height: auto !important;
+  overflow: hidden;
   margin: 0 !important;
   padding: 0 !important;
-  overflow: hidden;
+  display: block;
+  /* Match this to the background color of your banners */
+  background-color: #ffffff; 
 }
 
-/* Slider wrapper */
 .hero-slider {
   width: 100%;
-  height: auto !important;
-  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-/* Hero images */
-.hero-img {
-  width: 100% !important;
-  height: auto !important;
-  display: none;
-  object-fit: contain !important;   /* 🔥 show full image */
-  background: none !important;      /* 🔥 no color */
+.hero-track {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-/* Active image */
-.hero-img.active {
+.hero-track img {
+  width: 100%;
+  height: auto; /* Perfect for mobile */
   display: block;
-}
-
-/* Arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 50%;
+  /* Forces the image to the absolute bottom of its container */
+  vertical-align: bottom; 
+  margin: 0;
+  padding: 0;
   border: none;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 10;
 }
 
-.arrow.left { left: 10px; }
-.arrow.right { right: 10px; }
+/* --- TARGET THE NEXT SECTION --- */
+/* This forces the section after the hero to have NO top margin */
+.hero + section, 
+.about-section,
+.hero + div {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  /* Pulls it up by 1px to cover any remaining browser sub-pixel lines */
+  transform: translateY(-1px);
+}
 
+/* --- MOBILE SPECIFIC --- */
+@media (max-width: 768px) {
+  .hero-track img {
+    width: 100vw !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+}
+
+
+.hero-track {
+  display: flex;
+  align-items: stretch;
+}
 /* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
 
