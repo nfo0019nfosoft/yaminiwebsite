@@ -5788,6 +5788,11 @@ html, body {
 
 
 /* ================= BASE (DESKTOP – UNCHANGED) ================= */
+.hero {
+    margin: 0;
+    padding: 0;
+}
+
 .hero-slider {
     position: relative;
     width: 100%;
@@ -5798,7 +5803,7 @@ html, body {
 
 .hero-img {
     width: 100%;
-    height: auto;              /* Desktop keeps natural height */
+    height: auto;              /* Natural height */
     display: none;
     object-fit: contain;       /* Full image visible */
 }
@@ -5808,17 +5813,20 @@ html, body {
     animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Smooth transition */
+/* Smooth fade animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
 
-/* ================= MOBILE FIX (ONLY MOBILE CHANGED) ================= */
+/* ================= MOBILE VIEW FIX ================= */
 @media (max-width: 768px) {
 
-    /* Remove space below hero */
-    .hero,
+    /* Add space BELOW hero section */
+    .hero {
+        margin-bottom: 24px;   /* ✅ SPACE BELOW HERO */
+    }
+
     .hero-slider {
         margin: 0;
         padding: 0;
@@ -5826,20 +5834,14 @@ html, body {
         min-height: unset;
     }
 
-    /* Force image to fully fit viewport width */
+    /* Fix half-image issue */
     .hero-img {
-        display: none;
-        width: 100vw;          /* 🔥 Fix half image issue */
+        width: 100vw;
         height: auto;
-        max-height: none;
         object-fit: contain;
     }
 
-    .hero-img.active {
-        display: block;
-    }
-
-    /* Prevent extra spacing from body/sections */
+    /* Safety reset */
     body, html, section {
         margin: 0;
         padding: 0;
