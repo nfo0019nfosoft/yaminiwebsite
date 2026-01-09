@@ -83,26 +83,60 @@
   </header>
 
 
+<section class="hero">
+  <div class="hero-slider">
+    <img src="img/banner1.png" class="hero-img active">
+    <img src="img/banner2.png" class="hero-img">
 
-<section class="hero-services">
-  <!-- <img src="img/Yamini Hospital Building (1) copy.jpg" class="hero-bg"> -->
-
-  <div class="hero-content">
-    <h1>Yamini Multispeciality Hospital</h1>
-    
-    <div class="service-buttons">
-      <a href="paediatrics.html">Paediatrics</a>
-      
-      <a href="orthopaedic.html">Orthopaedic</a>
-      <a href="gyn.html">Gynecology</a>
-      <a href="general.html">General Medicine</a>
-    </div>
-
-    <a href="contact.html" class="appointment-btn">
-      Book Appointment
-    </a>
+    <button class="arrow left" onclick="prevSlide()">❮</button>
+    <button class="arrow right" onclick="nextSlide()">❯</button>
   </div>
 </section>
+
+<script>
+
+
+
+
+
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-img');
+
+function showSlide(index) {
+    // Hide all images
+    slides.forEach(img => img.classList.remove('active'));
+
+    // Loop logic
+    if (index >= slides.length) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    // Show the active image
+    slides[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+
+
+
+
+
+</script>
+
+
+
+
   <!-- <section class="hero">
 
     <div id="hospitalCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">

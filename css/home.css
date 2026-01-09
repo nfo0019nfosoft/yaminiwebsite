@@ -976,6 +976,7 @@ html, body {
   width: 100%;
   padding: 80px 0;
   background: #ffffff;
+  margin-top: -200px;
 }
 
 /* ================= CONTAINER ================= */
@@ -5773,4 +5774,102 @@ html, body {
     padding-bottom: 0 !important;
     margin-bottom: 0 !important;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Global Reset to kill all default white space */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* 2. Hero Section - The Gap Fix */
+.hero {
+    width: 100%;
+    display: block;
+    line-height: 0;      /* FIX: Removes the gap below the image */
+    font-size: 0;       /* FIX: Secondary gap killer */
+}
+
+.hero-slider {
+    position: relative;
+    width: 100vw;       /* Forces full viewport width */
+    height: 60vh;       /* Adjustable height */
+    overflow: hidden;
+    background: #000;
+}
+
+/* 3. Image Styling */
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;        /* Total width */
+    height: 100%;       /* Total height */
+    object-fit: cover;  /* Prevents stretching, fills the box */
+    display: none;      
+    vertical-align: bottom; /* FIX: Another way to kill the bottom gap */
+}
+
+.hero-img.active {
+    display: block;
+}
+
+/* 4. Small Small Arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    width: 35px;  /* Small stylish size */
+    height: 35px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.left { left: 10px; }
+.right { right: 10px; }
+
+/* 5. Mobile Adjustments */
+@media (max-width: 768px) {
+    .hero-slider {
+        height: 40vh; /* Shorter for mobile */
+    }
+    .arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
 }
