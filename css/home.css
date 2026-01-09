@@ -5723,27 +5723,54 @@ html, body {
     margin: 0;
   }
 }
+
+
+
+/* ================= SOCIAL ICONS MOBILE FIX ================= */
 @media (max-width: 600px) {
 
-  /* SOCIAL ICONS FIX ONLY */
-  .social-icons {
+  /* SOCIAL ICONS ROW */
+  .footer .social-icons {
     display: flex !important;
+    flex-direction: row !important;
     justify-content: center !important;
     align-items: center !important;
-    gap: 14px !important;          /* 👈 GAP CONTROL */
-    margin-top: 10px !important;
+    gap: 12px !important;   /* 👈 spacing like 1st image */
+    margin-top: 10px;
   }
 
-  .social-icons a {
+  /* REMOVE BLOCK + FULL WIDTH FROM A TAGS */
+  .footer .social-icons a {
+    display: inline-flex !important;
+    width: auto !important;
     margin: 0 !important;
     padding: 0 !important;
-    width: auto !important;
   }
 
-  .social-icons a i,
-  .social-icons a img {
-    font-size: 22px;               /* icon size */
-    width: 22px;
-    height: 22px;
+  /* ICON SIZE */
+  .footer .social-icons i {
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.stats-section {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 768px) {
+  .stats-section {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
