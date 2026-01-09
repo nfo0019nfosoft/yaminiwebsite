@@ -5787,63 +5787,88 @@ html, body {
 
 
 
-/* ================= BASE (DESKTOP – UNCHANGED) ================= */
+/* ================= RESET (IMPORTANT) ================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ================= HERO SECTION ================= */
 .hero {
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* SLIDER */
 .hero-slider {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
+/* HERO IMAGES */
 .hero-img {
-    width: 100%;
-    height: auto;              /* Natural height */
-    display: none;
-    object-fit: contain;       /* Full image visible */
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: contain; /* FULL IMAGE */
 }
 
 .hero-img.active {
-    display: block;
-    animation: fadeIn 0.8s ease-in-out;
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
 }
 
-/* Smooth fade animation */
+/* FADE */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* ================= MOBILE VIEW FIX ================= */
+/* ARROWS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  background: rgba(255,255,255,0.7);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.arrow.left { left: 12px; }
+.arrow.right { right: 12px; }
+
+/* ================= MOBILE FIX ================= */
 @media (max-width: 768px) {
 
-    /* Add space BELOW hero section */
-    .hero {
-        margin-bottom: 24px;   /* ✅ SPACE BELOW HERO */
-    }
+  /* 🔥 FORCE HERO TO END PROPERLY */
+  .hero {
+    display: block;
+    clear: both;
+    margin-bottom: 28px;   /* ✅ SPACE BELOW HERO */
+  }
 
-    .hero-slider {
-        margin: 0;
-        padding: 0;
-        height: auto;
-        min-height: unset;
-    }
+  .hero-slider {
+    height: auto;
+  }
 
-    /* Fix half-image issue */
-    .hero-img {
-        width: 100vw;
-        height: auto;
-        object-fit: contain;
-    }
+  .hero-img {
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+  }
 
-    /* Safety reset */
-    body, html, section {
-        margin: 0;
-        padding: 0;
-    }
+  /* 🔥 FORCE NEXT SECTION DOWN */
+  .hero + section,
+  .hero + div {
+    margin-top: 24px !important;
+  }
 }
