@@ -5709,10 +5709,7 @@ html, body {
     text-align: center !important;
   }
 
-  /* SOCIAL CENTER */
-  .social-icons {
-    justify-content: center !important;
-  }
+  
 
   /* BIG LOGO */
   .footer-logo {
@@ -5724,5 +5721,29 @@ html, body {
     font-size: 13px;
     padding: 5px 10px;
     margin: 0;
+  }
+}
+@media (max-width: 600px) {
+
+  /* SOCIAL ICONS FIX ONLY */
+  .social-icons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 14px !important;          /* 👈 GAP CONTROL */
+    margin-top: 10px !important;
+  }
+
+  .social-icons a {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: auto !important;
+  }
+
+  .social-icons a i,
+  .social-icons a img {
+    font-size: 22px;               /* icon size */
+    width: 22px;
+    height: 22px;
   }
 }
