@@ -5258,84 +5258,50 @@ html, body {
 
 
 
-
-
-
-/* --- HERO SECTION TOTAL FIX --- */
-.hero {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
-  display: block;
-  /* Match this to the background color of your banners */
-  background-color: #ffffff; 
+/* ================= HERO WRAPPER ================= */
+.hero{
+  width:100%;
+  background:#fff;
+  overflow:hidden;
 }
 
-.hero-slider {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+/* BOXED WIDTH like other sections */
+.hero-box{
+  max-width:1300px;          /* same as site */
+  margin:0 auto;
+  padding:0 30px;           /* left & right spacing */
+  box-sizing:border-box;
 }
 
-.hero-track {
-  display: flex;
-  margin: 0;
-  padding: 0;
+/* Slider */
+.hero-slider{
+  width:100%;
+  overflow:hidden;
 }
 
-.hero-track img {
-  width: 100%;
-  height: auto; /* Perfect for mobile */
-  display: block;
-  /* Forces the image to the absolute bottom of its container */
-  vertical-align: bottom; 
-  margin: 0;
-  padding: 0;
-  border: none;
+/* Track */
+.hero-track{
+  display:flex;
+  transition:transform 0.7s ease-in-out;
 }
 
-/* --- TARGET THE NEXT SECTION --- */
-/* This forces the section after the hero to have NO top margin */
-.hero + section, 
-.about-section,
-.hero + div {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  /* Pulls it up by 1px to cover any remaining browser sub-pixel lines */
-  transform: translateY(-1px);
+/* Images */
+.hero-track img{
+  width:100%;
+  flex-shrink:0;
+  display:block;
 }
 
-/* --- MOBILE SPECIFIC --- */
-@media (max-width: 768px) {
-  .hero-track img {
-    width: 100vw !important;
-    height: auto !important;
-    object-fit: contain;
-  }
-}
-
-
-.hero-track {
-  display: flex;
-  align-items: stretch;
-}
-/* ================= MOBILE FIX ================= */
-@media (max-width: 768px) {
-
-  .hero {
-    margin-bottom: 30px !important;   /* ✅ space after hero */
+/* ============ MOBILE ============ */
+@media(max-width:768px){
+  .hero-box{
+    padding:0 15px;   /* mobile side spacing */
   }
 
-  .hero-img {
-    width: 100vw !important;
-    height: auto !important;
-    max-width: 100%;
-    object-fit: contain !important;
+  .hero-track img{
+    height:auto;
   }
 }
-
-
 
 
 

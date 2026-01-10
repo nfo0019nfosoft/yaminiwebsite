@@ -89,16 +89,19 @@
 
   
 <section class="hero">
-  <div class="hero-slider">
-    <div class="hero-track">
-      <img src="img/banner1.png" alt="Banner 1">
-      <img src="img/banner2.png" alt="Banner 2">
-      <!-- clone for smooth loop -->
-      <img src="img/banner1.png" alt="">
+  <div class="hero-box">
+
+    <div class="hero-slider">
+      <div class="hero-track">
+        <img src="img/banner1.png" alt="Banner 1">
+        <img src="img/banner2.png" alt="Banner 2">
+        <!-- clone -->
+        <img src="img/banner1.png" alt="">
+      </div>
     </div>
+
   </div>
 </section>
-
 
 
 <script>
@@ -111,7 +114,6 @@ function slideHero() {
   track.style.transition = "transform 0.7s ease-in-out";
   track.style.transform = `translateX(-${index * 100}%)`;
 
-  // when last (clone) reached, jump back to first
   if (index === slides.length - 1) {
     setTimeout(() => {
       track.style.transition = "none";
@@ -123,6 +125,7 @@ function slideHero() {
 
 setInterval(slideHero, 3500);
 </script>
+
 
 
 
