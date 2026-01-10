@@ -5258,50 +5258,7 @@ html, body {
 
 
 
-/* ================= HERO WRAPPER ================= */
-.hero{
-  width:100%;
-  background:#fff;
-  overflow:hidden;
-}
 
-/* BOXED WIDTH like other sections */
-.hero-box{
-  max-width:1300px;          /* same as site */
-  margin:0 auto;
-  padding:0 30px;           /* left & right spacing */
-  box-sizing:border-box;
-}
-
-/* Slider */
-.hero-slider{
-  width:100%;
-  overflow:hidden;
-}
-
-/* Track */
-.hero-track{
-  display:flex;
-  transition:transform 0.7s ease-in-out;
-}
-
-/* Images */
-.hero-track img{
-  width:100%;
-  flex-shrink:0;
-  display:block;
-}
-
-/* ============ MOBILE ============ */
-@media(max-width:768px){
-  .hero-box{
-    padding:0 15px;   /* mobile side spacing */
-  }
-
-  .hero-track img{
-    height:auto;
-  }
-}
 
 
 
@@ -5479,5 +5436,73 @@ html, body {
   .about-btn {
     font-size: 15px;
     padding: 10px 26px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+  width:100%;
+  overflow:hidden;
+  background:#fff;
+}
+
+/* slider window */
+.hero-slider{
+  width:100%;
+  overflow:hidden;
+}
+
+/* moving strip */
+.hero-track{
+  display:flex;
+  width:300vw;     /* 3 slides */
+  transition:transform 0.7s ease-in-out;
+}
+
+/* each slide MUST be 100% screen */
+.hero-slide{
+  min-width:100vw;
+  height:auto;
+}
+
+/* images */
+.hero-slide img{
+  width:100vw;
+  height:auto;
+  display:block;
+  object-fit:cover;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero-slide img{
+    width:100vw;
+    height:auto;
+    object-fit:contain;
   }
 }

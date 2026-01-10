@@ -85,46 +85,53 @@
 
 
 
-
-
-  
 <section class="hero">
-  <div class="hero-box">
-
-    <div class="hero-slider">
-      <div class="hero-track">
-        <img src="img/banner1.png" alt="Banner 1">
-        <img src="img/banner2.png" alt="Banner 2">
-        <!-- clone -->
-        <img src="img/banner1.png" alt="">
+  <div class="hero-slider">
+    <div class="hero-track">
+      <div class="hero-slide">
+        <img src="img/banner1.png">
+      </div>
+      <div class="hero-slide">
+        <img src="img/banner2.png">
+      </div>
+      <!-- clone -->
+      <div class="hero-slide">
+        <img src="img/banner1.png">
       </div>
     </div>
-
   </div>
 </section>
-
-
 <script>
 const track = document.querySelector(".hero-track");
-const slides = document.querySelectorAll(".hero-track img");
+const slides = document.querySelectorAll(".hero-slide");
 let index = 0;
 
-function slideHero() {
+function slideHero(){
   index++;
-  track.style.transition = "transform 0.7s ease-in-out";
-  track.style.transform = `translateX(-${index * 100}%)`;
+  track.style.transform = `translateX(-${index * 100}vw)`;
 
-  if (index === slides.length - 1) {
-    setTimeout(() => {
+  if(index === slides.length - 1){
+    setTimeout(()=>{
       track.style.transition = "none";
       track.style.transform = "translateX(0)";
       index = 0;
-    }, 700);
+      setTimeout(()=>{
+        track.style.transition = "transform 0.7s ease-in-out";
+      },50);
+    },700);
   }
 }
 
-setInterval(slideHero, 3500);
+setInterval(slideHero,3500);
 </script>
+
+
+
+
+
+
+
+
 
 
 
@@ -203,7 +210,7 @@ Our mission is to promote healthier lives through continuous innovation, and com
 
     <!-- CONTENT -->
     <div class="doctor-content-new">
-      <h2 class="doctor-name-new">DR. SIRISHRTTI YAMINI KUMARI</h2>
+      <h2 class="doctor-name-new">DR. SIRISHETTI YAMINI KUMARI</h2>
       <p class="doctor-degree-new">MBBS, MD (PAEDIATRICS), FIAP</p>
 
       <div class="doctor-tags-new">
@@ -238,7 +245,7 @@ Our mission is to promote healthier lives through continuous innovation, and com
     </div>
 
     <div class="doctor-content-new">
-      <h2 class="doctor-name-new">DR. B. NARASMHA JEEVAN KUMAR</h2>
+      <h2 class="doctor-name-new">DR. B. NARASIHMA JEEVAN KUMAR</h2>
       <p class="doctor-degree-new">MBBS, MS (ORTHOPAEDICS), FIJR</p>
 
       <div class="doctor-tags-new">
