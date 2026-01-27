@@ -5272,6 +5272,7 @@ html, body {
   width: 100%;
   padding: 80px 0;
   background: #ffffff;
+  margin-bottom: -60px;
   
   
  
@@ -5293,6 +5294,7 @@ html, body {
   max-width: 650px;
   padding-left: 50px;
   text-align: left;
+  margin-top: -80px;
 }
 
 /* ================= HEADING (SINGLE LINE) ================= */
@@ -5339,6 +5341,7 @@ html, body {
 /* ================= RIGHT IMAGE ================= */
 .about-image {
   width: 50%;
+  margin-top: -80px;
 }
 
 .about-image img {
@@ -5573,3 +5576,38 @@ html, body {
     font-size:22px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
